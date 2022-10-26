@@ -8,7 +8,7 @@ Le répertoire testContenuCDA contient :
  - des exemples de documents CDA 
 
 
-#### Wiki ####
-Pour plus d'informations et détails, vous pouvez consulter la page du wiki : 
--  [Wiki](https://github.com/ansforge/TestContenuCDA-3.0/wiki)
+<!--#### Wiki #### -->
+<!-Pour plus d'informations et détails, vous pouvez consulter la page du wiki : --> 
+<!- -  [Wiki](https://github.com/ansforge/TestContenuCDA-3.0/wiki) -->
 
