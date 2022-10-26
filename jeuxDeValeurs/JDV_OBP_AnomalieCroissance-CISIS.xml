@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par nmahraz, le 09/03/2022-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008">
+    <ValueSet id="1.2.250.1.213.1.1.4.2.289.15" displayName="JDV_OBP_AnomalieCroissance-CISIS"
+        version="test">
+        <ConceptList>
+            <Concept code="P05.0" displayName="Faible poids pour l'âge gestationnel"
+                codeSystem="2.16.840.1.113883.6.3"/>
+            <Concept code="P08.0" displayName="Macrosomie" codeSystem="2.16.840.1.113883.6.3"/>
+            <Concept code="OBS_123" displayName="Pas d'anomalie de croissance intra-utérine"
+                codeSystem="1.2.250.1.213.1.1.4.2.289"/>
+        </ConceptList>
+    </ValueSet>
+</RetrieveValueSetResponse>
