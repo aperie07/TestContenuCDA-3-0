@@ -141,12 +141,12 @@
         </assert>
         <!-- Voie d'abord -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0019"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="406148008"'>
             [E_DM-PSC] Erreur de Conformité CI-SIS: L'élément Voie d'abord est obligatoire.
         </assert>
         <!-- Localisation -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0054"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="257880008"'>
             [E_DM-PSC] Erreur de Conformité CI-SIS: L'élément Localisation est obligatoire.
         </assert>
         <!-- Mesure Implantation Courant (Oreillette) -->
@@ -197,12 +197,12 @@
         </assert>
         <!-- Voie d'abord -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0019"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="406148008"'>
             [E_DM-PSC] Erreur de Conformité CI-SIS: L'élément Voie d'abord est obligatoire.
         </assert>
         <!-- Localisation -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0054"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="257880008"'>
             [E_DM-PSC] Erreur de Conformité CI-SIS: L'élément Localisation est obligatoire.
         </assert>
         <!-- Mesure Implantation Courant (Oreillette) -->
@@ -255,12 +255,12 @@
         </assert>
         <!-- Voie d'abord -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0019"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="406148008"'>
             [E_DM-PSC] Erreur de Conformité CI-SIS: L'élément Voie d'abord est obligatoire.
         </assert>
         <!-- Localisation -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0054"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="257880008"'>
             [E_DM-PSC] Erreur de Conformité CI-SIS: L'élément Localisation est obligatoire.
         </assert>
         <!-- Mesure Implantation Courant (Oreillette) -->

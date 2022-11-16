@@ -44,12 +44,12 @@
     <!--D0001-12 Endoprothèse -->
     
     <rule
-        context='cda:ClinicalDocument[cda:templateId/@root = "1.2.250.1.213.1.1.1.2.1.5"]/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = "1.2.250.1.213.1.1.2.1"]/cda:entry/cda:supply[cda:participant/cda:participantRole/cda:playingDevice/cda:code/@code = "D0001-12"]'>
+        context='cda:ClinicalDocument[cda:templateId/@root = "1.2.250.1.213.1.1.1.2.1.2"]/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = "1.2.250.1.213.1.1.2.1"]/cda:entry/cda:supply[cda:participant/cda:participantRole/cda:playingDevice/cda:code/@code = "D0001-12"]'>
         
         
         <!-- Localisation -->
         <assert
-            test='cda:entryRelationship/cda:observation/cda:code/@code="L0054"'>
+            test='cda:entryRelationship/cda:observation/cda:code/@code="257880008"'>
             [E_DM-TAP] Erreur de Conformité CI-SIS: L'élément Localisation est obligatoire.
         </assert>
     </rule>
