@@ -517,7 +517,7 @@
                   <reference value="#latMan" />
                 </originalText>
                 <qualifier>
-                  <value code="F-A5420" displayName="Gaucher" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <value code="87683000" displayName="gaucher" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </qualifier>
               </value>
             </observation>
@@ -547,8 +547,7 @@
                   <reference value="#defMot" />
                 </originalText>
               </value>
-              <!-- [ANS] Code à trouver en SNOMED CT -->
-              <targetSiteCode code="C76.4" displayName="Membre supérieur" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+              <targetSiteCode code="53120007" displayName="membre supérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <qualifier>
                   <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                 </qualifier>
@@ -608,12 +607,12 @@
                   <reference value="#ataxie" />
                 </originalText>
               </value>
-              <targetSiteCode code="C76.4" displayName="Membre supérieur" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+              <targetSiteCode code="53120007" displayName="membre supérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <qualifier>
                   <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                 </qualifier>
               </targetSiteCode>
-              <targetSiteCode code="C76.5" displayName="Membre inférieur" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
+              <targetSiteCode code="61685007" displayName="membre inférieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <qualifier>
                   <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                 </qualifier>
@@ -646,8 +645,7 @@
                   <reference value="#troublesVis" />
                 </originalText>
               </value>
-              <!-- [ANS] Code à trouver en SNOMED CT -->
-              <targetSiteCode code="DA-74640" displayName="Hémianopsie" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <targetSiteCode code="77674003" displayName="hémianopsie" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <qualifier>
                   <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                 </qualifier>
@@ -1717,8 +1715,7 @@
               <effectiveTime>
                 <low value="20080811" />
               </effectiveTime>
-              <!--[ANS] Code à trouver en SNOMED CT -->
-              <targetSiteCode code="T-45700" displayName="Artère vertébrale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <targetSiteCode code="85234005" displayName="artère vertébrale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </procedure>
           </entry>
           <!-- Entrée FR-Acte : Angioplastie -->
@@ -1740,8 +1737,7 @@
               <effectiveTime>
                 <low value="20080811" />
               </effectiveTime>
-              <!--[ANS] Code à trouver en SNOMED CT -->
-              <targetSiteCode code="T-D1400" displayName="Intracrânien" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <targetSiteCode code="127955005" displayName="intracrânien" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </procedure>
           </entry>
           <!-- Entrée FR-Acte : Angioplastie -->
@@ -1763,8 +1759,7 @@
               <effectiveTime>
                 <low value="20080811" />
               </effectiveTime>
-              <!-- [ANS] Code à trouver en SNOMED CT -->
-              <targetSiteCode code="T-43000" displayName="Artères coronaires" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <targetSiteCode code="41801008" displayName="artères coronaires" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </procedure>
           </entry>
           <!-- Entrée FR-Acte : 0..* Stent -->
@@ -1786,8 +1781,7 @@
               <effectiveTime>
                 <low value="20080811" />
               </effectiveTime>
-              <!--[ANS] Code à trouver en SNOMED CT -->
-              <targetSiteCode code="T-46700" displayName="artère iliaque" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <targetSiteCode code="10293006" displayName="artère iliaque" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </procedure>
           </entry>
         </section>
@@ -3997,11 +3991,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="G-A105" displayName="Antérieur" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="255549009" displayName="Antérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                     </qualifier>
                   </value>
+                  <!-- [ANS] à trouver dans la SNOMED CT -->
                   <targetSiteCode code="MED-462" displayName="artère cérébrale moyenne territoire superficiel" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                 </observation>
               </entryRelationship>
@@ -4019,7 +4014,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="T-A7086" displayName="centre ovale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <value xsi:type="CD" code="55438003" displayName="centrum ovale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- Entrée FR-Simple-Observation : Territoire postérieur = Oui + Gauche + localisation ACA superficielle -->
@@ -4036,12 +4031,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="G-A106" displayName="Postérieur" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="255551008" displayName="postérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-45320" displayName="artère communicante postérieure" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <targetSiteCode code="43119007" displayName="artère communicante postérieure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                   </targetSiteCode>
                 </observation>
               </entryRelationship>
@@ -4059,7 +4054,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="G-A161" displayName="Jonctionnel" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <value xsi:type="CD" code="50974003" displayName="Jonctionnel" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- Entrée FR-Simple-Observation : Tronc cérébral = Oui + Gauche + localisation Bulbe -->
@@ -4076,12 +4071,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="T-A2050" displayName="Tronc cérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="15926001" displayName="Tronc cérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-A6700" displayName="Bulbe" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <targetSiteCode code="26519002" displayName="bulbe" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
               <!-- Entrée FR-Simple-Observation : Tronc cérébral = Oui + Gauche + localisation Pont -->
@@ -4098,11 +4093,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="T-A2050" displayName="Tronc cérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="15926001" displayName="Tronc cérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
+                  <!-- [ANS] code à trouver dans la SNOMED CT -->
                   <targetSiteCode code="T-A5400" displayName="Pont" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
                 </observation>
               </entryRelationship>
@@ -4120,12 +4116,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="T-A6000" displayName="Cervelet" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="113305005" displayName="Cervelet" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-45840" displayName="Artère cérébelleuse supérieure" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <targetSiteCode code="51691006" displayName="artère cérébelleuse supérieure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                   </targetSiteCode>
                 </observation>
               </entryRelationship>
@@ -4169,7 +4165,7 @@
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-A2200" displayName="lobe frontal" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <targetSiteCode code="83251001" displayName="lobe frontal" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                   </targetSiteCode>
                 </observation>
               </entryRelationship>
@@ -4192,7 +4188,7 @@
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-A3200" displayName="Noyau Caudé" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <targetSiteCode code="11000004" displayName="noyau Caudé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                   </targetSiteCode>
                 </observation>
               </entryRelationship>
@@ -4227,12 +4223,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="T-A6000" displayName="Cervelet" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="113305005" displayName="Cervelet" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-A6210" displayName="vermis" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <targetSiteCode code="58501004" displayName="vermis cérébelleux" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                   </targetSiteCode>
                 </observation>
               </entryRelationship>
@@ -4250,12 +4246,12 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="T-A2050" displayName="Tronc Cérébral" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <value xsi:type="CD" code="15926001" displayName="Tronc Cérébral" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <qualifier>
                       <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                     </qualifier>
                   </value>
-                  <targetSiteCode code="T-A5100" displayName="Mésencéphale" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+                  <targetSiteCode code="61962009" displayName="mésencéphale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                   </targetSiteCode>
                 </observation>
               </entryRelationship>
@@ -4273,7 +4269,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20110622" />
-                  <value xsi:type="CD" code="D3-89260" displayName="hémorragie intraventriculaire" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <value xsi:type="CD" code="23276006" displayName="hémorragie intraventriculaire" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                 </observation>
               </entryRelationship>
             </observation>
@@ -4297,7 +4293,7 @@
                   <reference value="#diag-04" />
                 </originalText>
               </value>
-              <targetSiteCode code="T-49840" displayName="Sinus caverneux" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5">
+              <targetSiteCode code="18782006" displayName="sinus caverneux" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
               </targetSiteCode>
             </observation>
           </entry>

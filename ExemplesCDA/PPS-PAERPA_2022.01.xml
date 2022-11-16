@@ -865,7 +865,7 @@
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
               <value xsi:type="BL" value="true" />
-              <!-- Nom de la mutuelle -->
+              <!-- Entrée FR-Simple-Observation : Nom de la mutuelle -->
               <entryRelationship typeCode="SUBJ">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité Simple Observation (IHE PCC) -->
@@ -904,7 +904,7 @@
               <statusCode code="completed" />
               <effectiveTime nullFlavor="UNK" />
               <value xsi:type="BL" value="true" />
-              <!-- Classe GIR -->
+              <!-- Entrée FR-Simple-Observation : Classe GIR -->
               <entryRelationship typeCode="SUBJ">
                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                   <!-- Conformité Simple Observation (IHE PCC) -->
@@ -1044,12 +1044,12 @@
                   <templateId root='1.2.250.1.213.1.1.3.27'/>
                   <id root="46CFA15C-C4F3-4B12-BDB8-B9FE281A2F76" />
                   <code code="ORG-014" displayName="Actions dont ETP" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+                  <!-- [0..*] Libellé des actions dont ETP (texte libre) -->
                   <text>
                     <reference value="#action-01" />
                   </text>                  
                   <statusCode code="active" />
-                  <effectiveTime nullFlavor="NAV" />                  
-                  <!-- [0..*] Libellé des actions dont ETP (texte libre) -->
+                  <effectiveTime nullFlavor="NAV" />         
                   <value xsi:type="CD" nullFlavor="NAV"/>
                   <!-- [0..*] FR-Participant -->
                   <participant typeCode="PRF">

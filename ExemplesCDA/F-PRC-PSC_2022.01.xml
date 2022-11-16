@@ -1008,6 +1008,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="9E2D9FFC-8BEC-4BD4-AA66-7DADD7AD8694" />
+                  <!-- [ANS]Code à remplacer -->
                   <code code="L0060" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Fréquence avec aimant">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0008" />
@@ -1029,6 +1030,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="35BD28EC-4A3F-4924-9C00-9A1E6A706A56" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0065" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Tension batterie">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0010" />
@@ -1060,6 +1062,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
+                  <!-- [ANS] Code à remplacer par EMDN -->
                   <value xsi:type="CD" code="D0013-1" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Simple Chambre AAI" />
                 </observation>
               </entryRelationship>
@@ -1113,6 +1116,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="151D521A-7839-462B-A1A1-C9FBDFAA1EAD" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0008" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Télésuivi Activé">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0014" />
@@ -1134,6 +1138,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="9408195D-85C9-4990-A6F0-24A4B9813FEA" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0009" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Stade NYHA">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0015" />
@@ -1144,6 +1149,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
+                  <!-- [ANS] Code à remplacer par LA (LOINC) ou SNOMED CT -->
                   <value xsi:type="CD" code="G-E404" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" displayName="Classe NYHA III" />
                 </observation>
               </entryRelationship>
@@ -1155,6 +1161,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="F6928DF6-2F36-4C88-A0FF-40BDB2E75C6D" />
+                  <!-- [ANS] Code à remplacer  -->
                   <code code="L0010" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="FEVG">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0016" />
@@ -1176,6 +1183,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="356EA8F4-034B-4ABE-9D8B-010EB5A131CD" />
+                  <!-- |ANS] Code à remplacer par SNOMED CT -->
                   <code code="L0012" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Date dernier controle">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0017" />
@@ -1196,6 +1204,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- [ANS] Code à remplacer  -->
                   <id root="8687EADC-E461-42AB-B0FB-89B762C8521A" />
                   <code code="L0013" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Mode Programmé">
                     <originalText mediaType="text/xml">
@@ -1218,6 +1227,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="457E1331-DA0E-486B-A7B0-3E02A9EC5164" />
+                  <!-- [ANS] Code à remplacer  -->
                   <code code="L0037" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Fréquence sans aimant">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0019" />
@@ -1239,6 +1249,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="545CB492-1145-4D41-A768-AB5A167A489B" />
+                  <!-- [ANS] Code à remplacer  -->
                   <code code="L0066" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Fréq. s/s aimant dernier contrôle">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0020" />
@@ -1260,6 +1271,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="F80F0872-059A-4A8B-81DC-727EA88B79E6" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0014" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Tension">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0021" />
@@ -1281,6 +1293,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="470DBA81-DF85-4256-BA72-3020755C1F3B" />
+                  <!-- [ANS] Code à remplacer  -->
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0022" />
@@ -1337,6 +1350,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="185CBA27-93E4-4267-BC06-040E6010FB94" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Polarité">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0028" />
@@ -1347,6 +1361,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
+                  <!-- [ANS] Code à remplacer par EMDN -->
                   <value xsi:type="CD" code="D0007-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Bipolaire" />
                 </observation>
               </entryRelationship>
@@ -1358,6 +1373,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="C4B7A330-2D11-45ED-AEA4-AB357D1F183C" />
+                  <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Connexion">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0030" />
@@ -1400,7 +1416,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="53091222-D11E-47F2-8958-87071D19DE59" />
-                  <code code="L0019" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Voie d'abord">
+                  <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0032" />
                     </originalText>
@@ -1410,7 +1426,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <value xsi:type="CD" code="D0008-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sous-Clavière" />
+                  <value xsi:type="CD" code="303578004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="sous-Clavière" />
                 </observation>
               </entryRelationship>
               <!-- Localisation -->
@@ -1421,7 +1437,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="95048585-70A3-4F18-A6C7-6CBD3CC76319" />
-                  <code code="L0054" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Localisation sonde">
+                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0033" />
                     </originalText>
@@ -1431,8 +1447,8 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- [ANS] à remplacer par SNOMED CT -->
-                  <value xsi:type="CD" code="D0009-3" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Infundibulum" />
+                  <!-- [ANS] code à remplacer par SNOMED CT -->
+                  <value xsi:type="CD" code="44627009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="infundibulum" />
                 </observation>
               </entryRelationship>
               <!-- Mesures à l'Implantation -->
@@ -1465,6 +1481,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="84398C71-7494-44BA-BC21-4CCC111026A6" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0022" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Détection">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0035" />
@@ -1486,6 +1503,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="7A701447-DB98-4BDB-BDA0-61E48709BD9C" />
+                  <!-- [ANS] Code à remplacer -->
                   <code code="L0015" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Impédance">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0036" />
@@ -1627,6 +1645,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="2E936B0A-5BDC-45DD-8BF6-42C6DD747616" />
+                  <!-- [ANS] Code à remplacer  -->
                   <code code="L0053" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Polarité">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0046" />
@@ -1637,6 +1656,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
+                  <!-- [ANS] Code à remplacer par EMDN -->
                   <value xsi:type="CD" code="D0007-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Bipolaire" />
                 </observation>
               </entryRelationship>
@@ -1648,6 +1668,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="CA493239-91DE-4FE2-BE16-5D949612BBDF" />
+                  <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0017" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Connexions">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0048" />
@@ -1658,6 +1679,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
+                  <!-- Code à remplacer  -->
                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
                 </observation>
               </entryRelationship>
@@ -1669,6 +1691,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="95796814-9FEE-4C3B-BCCB-5ECEC63C4C1C" />
+                  <!-- [ANS] Code à remplacer par EMDN -->
                   <code code="L0018" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Adaptateur">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0049" />
@@ -1690,7 +1713,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="695F809B-BBBB-4EA5-A44B-C071DCB90B58" />
-                  <code code="L0019" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Voie d'abord">
+                  <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0050" />
                     </originalText>
@@ -1700,7 +1723,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <value xsi:type="CD" code="D0008-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sous-Clavière" />
+                  <value xsi:type="CD" code="303578004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="sous-Clavière" />
                 </observation>
               </entryRelationship>
               <!-- Localisation -->
@@ -1711,7 +1734,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="00C5607E-E16C-44E6-85D8-3A8FE1F8D2BC" />
-                  <code code="L0054" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Localisatiopn sonde">
+                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0051" />
                     </originalText>
@@ -1722,7 +1745,7 @@
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <!-- [ANS] à remplacer par SNOMED CT -->
-                  <value xsi:type="CD" code="D0009-3" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Infundibulum" />
+                  <value xsi:type="CD" code="44627009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="infundibulum" />
                 </observation>
               </entryRelationship>
               <!-- Mesures à l'Implantation -->
@@ -1980,7 +2003,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="6788B930-B652-4EED-BF95-D4928E669FAD" />
-                  <code code="L0019" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Voie d'abord">
+                  <code code="406148008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="site d’insertion intraveineuse">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0068" />
                     </originalText>
@@ -1990,7 +2013,7 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <value xsi:type="CD" code="D0008-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Sous-Clavière" />
+                  <value xsi:type="CD" code="303578004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="sous-Clavière" />
                 </observation>
               </entryRelationship>
               <!-- Localisation -->
@@ -2001,7 +2024,7 @@
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
                   <id root="BAF6429E-A203-4578-96A5-FFD9049225EC" />
-                  <code code="L0054" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Localisation sonde">
+                  <code code="257880008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="localisation">
                     <originalText mediaType="text/xml">
                       <reference value="#psc0069" />
                     </originalText>
@@ -2012,7 +2035,7 @@
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <!-- [ANS] à remplacer par SNOMED CT -->
-                  <value xsi:type="CD" code="D0009-3" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Infundibulum" />
+                  <value xsi:type="CD" code="44627009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="infundibulum" />
                 </observation>
               </entryRelationship>
               <!-- Mesures à l'Implantation Ventricule Gauche -->

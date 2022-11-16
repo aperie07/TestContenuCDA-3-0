@@ -1030,8 +1030,7 @@
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <value xsi:type="BL" value="true" />
-              <!-- [ANS] code localisation à changer en SNOMED CT -->
-              <targetSiteCode code="C25235" displayName="supérieur" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
+              <targetSiteCode code="264217000" displayName="supérieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse dentaire basse du patient -->
@@ -1052,8 +1051,7 @@
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <value xsi:type="BL" value="true" />
-              <!-- [ANS] code localisation à changer en SNOMED CT -->
-              <targetSiteCode code="C25353" displayName="inférieur" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
+              <targetSiteCode code="261089000" displayName="inférieur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse auditive droite du patient -->
@@ -1074,8 +1072,7 @@
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <value xsi:type="BL" value="true" />
-              <!-- [ANS] code localisation à changer en SNOMED CT -->
-              <targetSiteCode code="C25228" displayName="droit" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
+              <targetSiteCode code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse auditive gauche du patient -->
@@ -1096,8 +1093,7 @@
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <value xsi:type="BL" value="true" />
-              <!-- [ANS] code localisation à changer en SNOMED CT -->
-              <targetSiteCode code="C25229" displayName="gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
+              <targetSiteCode code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Autres dispositifs ou objets personnels -->
@@ -1111,6 +1107,7 @@
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="591BFAC8-4850-4324-B6D3-443A4AAE481D" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
+              <!-- [ANS] Code à remplacer -->
               <code code="A-00100"
                 displayName="Autre dispositif ou objet personnel"
                 codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />

@@ -457,7 +457,7 @@
                     </originalText>
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
+                      <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </value>
                 </observation>
@@ -497,13 +497,13 @@
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
                   <!-- Code trouvé en SNOMED CT -->
-                  <value xsi:type="CD" code="82859000" displayName="Macula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="82859000" displayName="macula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#ret003" />
                     </originalText>
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <value code="C25229" displayName="Gauche" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
+                      <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </value>
                 </observation>
@@ -549,7 +549,7 @@
                     </originalText>
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
+                      <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </value>
                 </observation>
@@ -589,14 +589,13 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- Code trouvé en SNOMED CT -->
-                  <value xsi:type="CD" code="82859000" displayName="Macula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="82859000" displayName="macula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#ret004" />
                     </originalText>
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
+                      <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </value>
                 </observation>

@@ -681,6 +681,7 @@
                 </originalText>
               </priorityCode>
               <!-- Voie d'abord : valeur du code CCAM 4ème caractère -->
+              <!-- [ANS] à trouver dans EDQM -->
               <approachSiteCode code="A" displayName="ABORD OUVERT" codeSystem="1.2.250.1.213.2.5"
                 codeSystemName="CCAM">
                 <originalText>
@@ -690,8 +691,8 @@
                 <!-- <qualifier>
                                     <name code="20228-3" displayName="Latéralité"
                                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                                    <value code="C25229" displayName="Gauche"
-								           codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT">
+                                    <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT">
                                         <originalText><reference value="CHIR-lateralite"/></originalText>
                                     </value>
                                 </qualifier> -->
@@ -790,8 +791,8 @@
               <statusCode code="completed"/>
               <effectiveTime value="20200319"/>
               <!-- [0..1] Localisation anatomique : valeur issue du JDV_LocalisationAnesthesie-CISIS (1.2.250.1.213.1.1.5.641) -->
-              <targetSiteCode code="71581" displayName="Veines du membre supérieur"
-                codeSystem="2.16.840.1.113883.6.119" codeSystemName="FMA">
+              <targetSiteCode code="122775001" displayName="veines du membre supérieur"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#ANEST-localisation-02"/>
                 </originalText>
@@ -799,8 +800,8 @@
                 <qualifier>
                   <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1"
-                    codeSystemName="NCIT">
+                  <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#ANEST-lateralite-02"/>
                     </originalText>
@@ -865,8 +866,8 @@
               <statusCode code="completed"/>
               <effectiveTime value="20200319"/>
               <!-- [0..1] Localisation anatomique : valeur issue du JDV_accesVeineuxPeripherique-CISIS (1.2.250.1.213.1.1.5.495) -->
-              <targetSiteCode code="71581" displayName="Veines du membre supérieur"
-                codeSystem="2.16.840.1.113883.6.119" codeSystemName="FMA">
+              <targetSiteCode code="122775001" displayName="veines du membre supérieur"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#acces-veineux-peripherique-abord"/>
                 </originalText>
@@ -874,8 +875,8 @@
                 <qualifier>
                   <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1"
-                    codeSystemName="NCIT">
+                  <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#acces-veineux-peripherique-lateralite"/>
                     </originalText>
@@ -941,8 +942,8 @@
               <statusCode code="completed"/>
               <effectiveTime value="20200319"/>
               <!-- [0..1] Localisation anatomique : valeur issue du JDV_AccesVeineuxCentral-CISIS (1.2.250.1.213.1.1.5.496) -->
-              <targetSiteCode xsi:type="CD" code="21185" displayName="Veine fémorale"
-                codeSystem="2.16.840.1.113883.6.119" codeSystemName="FMA">
+              <targetSiteCode xsi:type="CD" code="83419000" displayName="veine fémorale"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#acces-veineux-central-abord"/>
                 </originalText>
@@ -950,8 +951,8 @@
                 <qualifier>
                   <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1"
-                    codeSystemName="NCIT">
+                  <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#acces-veineux-central-lateralite"/>
                     </originalText>
@@ -1029,8 +1030,8 @@
               <!-- Date de l'acte -->
               <effectiveTime value="20200319"/>
               <!-- [0..1] Localisation anatomique : JDV_AccesArtere-CISIS (1.2.250.1.213.1.1.5.516) -->
-              <targetSiteCode code="70248" displayName="Artère fémorale"
-                codeSystem="2.16.840.1.113883.6.119" codeSystemName="FMA">
+              <targetSiteCode code="7657000" displayName="artère fémorale"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#catheter-abord"/>
                 </originalText>
@@ -1038,8 +1039,8 @@
                 <qualifier>
                   <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1"
-                    codeSystemName="NCIT">
+                  <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#catheter-lateralite"/>
                     </originalText>
@@ -1220,8 +1221,8 @@
               <!-- Date de l'acte -->
               <effectiveTime value="20200319"/>
               <!-- [0..1] Localisation anatomique : JDV_TypeIntubation-CISIS (1.2.250.1.213.1.1.5.524) -->
-              <targetSiteCode code="MED-655" displayName="Intubation orotrachéale"
-                codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+              <targetSiteCode code="232674004" displayName="intubation orotrachéale"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#intubation-abord"/>
                 </originalText>
@@ -1505,8 +1506,8 @@
               <!-- [0..1] Localisation anatomique : JDV_AbordVeineuxPeripherique-CISIS (1.2.250.1.213.1.1.5.495) ou     
                 JDV_AbordVeineuxCentral-CISIS  (1.2.250.1.213.1.1.5.496) ou JDV_AccesArtere-CISIS(1.2.250.1.213.1.1.5.516) ou 
                 JDV_TypeIntubation-CISIS (1.2.250.1.213.1.1.5.524) -->
-              <targetSiteCode code="21185" displayName="Veine fémorale"
-                codeSystem="2.16.840.1.113883.6.119" codeSystemName="FMA">
+              <targetSiteCode xsi:type="CD" code="83419000" displayName="veine fémorale"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                 <originalText>
                   <reference value="#DM-prealablement-pose-localisationAnatomique"/>
                 </originalText>
@@ -1514,8 +1515,8 @@
                 <qualifier>
                   <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
-                  <value code="C25228" displayName="Droit" codeSystem="2.16.840.1.113883.3.26.1.1"
-                    codeSystemName="NCIT">
+                  <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#DM-prealablement-pose-lateralite"/>
                     </originalText>
