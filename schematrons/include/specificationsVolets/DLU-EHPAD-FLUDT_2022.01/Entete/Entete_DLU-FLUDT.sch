@@ -14,8 +14,11 @@
     
     <rule context='cda:ClinicalDocument'>
         
-        <assert test="cda:code[@code='34133-9']">
-            [Entete_DLU-FLUDT] Le code du document DLU doit être égal à '34133-9'
+        <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.23']"> 
+            [Entete_DLU-FLUDT] Le templateId "1.2.250.1.213.1.1.1.23" (Conformité au modèle DLU-FLUDT du CI-SIS) doit être présent.
+        </assert>
+        <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
+            [Entete_DLU-FLUDT] L'élément code doit avoir @code ="34133-9" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
         </assert>
         
         <assert test="cda:recordTarget/cda:patientRole/cda:patient/cda:birthTime">
