@@ -23,6 +23,18 @@
         <assert test='cda:templateId[@root="1.3.6.1.4.1.19376.1.3.3" and @extension="2022.01"]'>
             [Entete_CR-BIO] L'élément templateId fixé à @root="1.3.6.1.4.1.19376.1.3.3" et @extension="2022.01" est obligatoire
         </assert>
+        <assert test="./cda:templateId[@root='1.3.6.1.4.1.19376.1.3.3']"> 
+            [Entete_CR-BIO] Erreur de conformité : L'élément clinicalDocument/templateId doit être présent avec @root='1.3.6.1.4.1.19376.1.3.3'.
+        </assert>
+        <assert
+            test="./cda:versionNumber[@value] and number(./cda:versionNumber/@value) &gt; 0">
+            [Entete_CR-BIO] Erreur de conformité : L'élément "versionNumber" doit être présent dans l'en-tête, avec un attribut @value contenant un entier positif.
+        </assert>
+        
+        <assert
+            test="not(./cda:versionNumber[@nullFlavor])">
+            [Entete_CR-BIO] Erreur de conformité : L'attribut nullFlavor est interdit pour l'élément "versionNumber".
+        </assert>
     </rule>
     
     <rule context='cda:ClinicalDocument/cda:recordTarget/cda:patientRole'>         
@@ -122,6 +134,14 @@
             [Entete_CR-BIO] L'identité du biologiste responsable doit être présente (responsibleParty/assignedEntity/assignedPerson/name/family)
         </assert>
 
+    </rule>
+        
+    <!-- Contrôles des sections de niveau 1 autorisées -->
+    <rule context="cda:structuredBody/cda:component/cda:section">
+        <assert test="(./cda:templateId[@root='1.3.6.1.4.1.19376.1.3.3.2.1']) or (./cda:templateId[@root='1.2.250.1.213.1.1.2.60']) or (./cda:templateId[@root='1.3.6.1.4.1.19376.1.4.1.2.16'])"> 
+            [Entete_CR-BIO] Erreur de conformité : un CR-BIO ne peut comporter que les sections de niveau 1 suivantes : FR-CR-de-biologie (1.3.6.1.4.1.19376.1.3.3.2.1), 
+            FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention (1.2.250.1.213.1.1.2.60) et FR-Commentaire-non-code (1.3.6.1.4.1.19376.1.4.1.2.16)
+        </assert>
     </rule>
     
 </pattern>
