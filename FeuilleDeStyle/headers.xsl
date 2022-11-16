@@ -1335,7 +1335,7 @@
 
   <!-- informationRecipient -->
   <xsl:template name="informationRecipient">
-    <xsl:if test="n1:informationRecipient">Destinataire(s)<table class="header_table">
+    <xsl:if test="n1:informationRecipient">Destinataire(s) prévus<table class="header_table">
         <tbody>
           <xsl:for-each select="n1:informationRecipient">
             <tr>
@@ -1881,9 +1881,9 @@
                   </xsl:call-template>
                   <br/>
                 </xsl:if>
-                <xsl:call-template name="show-consent">
+                <!--<xsl:call-template name="show-consent">
                   <xsl:with-param name="code" select="n1:consent/n1:statusCode"/>
-                </xsl:call-template>
+                </xsl:call-template>-->
               </td>
             </tr>
           </xsl:for-each>
