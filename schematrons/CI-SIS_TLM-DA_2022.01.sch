@@ -55,12 +55,6 @@
     
     <let name="jdv_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation-CISIS.xml'"/> 
 
-    <rule context="cda:ClinicalDocument">
-      <assert test="cda:templateId[@root = '1.2.250.1.213.1.1.1.38']"> 
-        [CI-SIS_TLM-DA_2022.01] Erreur de conformité : Le templateID du modèle TLM-DA (1.2.250.1.213.1.1.1.38) doit être présent.
-      </assert>
-    </rule>
-
     <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
       <!-- Présence obligatoire de la section Anamnèse et facteurs de risques (1.2.250.1.213.1.1.2.68) -->
       <assert test='cda:component/cda:section/cda:templateId[@root = "1.2.250.1.213.1.1.2.68"]'>

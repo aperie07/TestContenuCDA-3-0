@@ -42,6 +42,7 @@
     
     <include href="include/jeuxDeValeurs/F-PRC_2022.01/JDV_UFCV_MatImpl_F-PRC.sch"/>
     <include href="include/jeuxDeValeurs/F-PRC_2022.01/JDV_UFCV_ProtValv_F-PRC.sch"/>
+    <include href="include/jeuxDeValeurs/F-PRC_2022.01/JDV_UFCV_TypeDMCard-CISIS.sch"/>
 
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -59,6 +60,8 @@
         
         <active pattern="JDV_UFCV_MatImpl_F-PRC"/>
         <active pattern="JDV_UFCV_ProtValv_F-PRC"/>
+        <active pattern="JDV_UFCV_TypeDMCard-CISIS"/>
+        
         
     </phase>
     
@@ -66,6 +69,8 @@
         
         <let name="jdv_UFCV_MatImpl" value="'../jeuxDeValeurs/JDV_UFCV_MatImpl-CISIS.xml'"/>
         <let name="jdv_UFCV_ProtValv" value="'../jeuxDeValeurs/JDV_UFCV_ProtValv-CISIS.xml'"/>
+        <let name="jdv_UFCV_TypeDMCard" value="'../jeuxDeValeurs/JDV_UFCV_TypeDMCard-CISIS.xml'"/>
+        
     </pattern>
 
 </schema>

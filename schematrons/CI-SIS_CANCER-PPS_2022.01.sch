@@ -25,6 +25,9 @@
         <include href="abstract/dansJeuDeValeurs.sch"/>
         <include href="abstract/IVL_TS.sch"/>
         
+        <!-- Entete -->
+        <include href="include/specificationsVolets/CANCER-PPS_2022.01/Entete/Entete_Cancer-PPS.sch"/>
+        
         <!--JDV-->
         <include href="include/jeuxDeValeurs/CANCER-PPS_2022.01/JDV_GestionEffetsSecondaires-CISIS.sch"/>
         <include href="include/jeuxDeValeurs/CANCER-PPS_2022.01/JDV_MesuresAssociees-CISIS.sch"/>
@@ -41,6 +44,9 @@
         <phase id="CI-SIS_CANCER-PPS_2022.01">
                 <active pattern="variables"/>
                 <p>Vérification de la conformité au modèle du document CANCER-PPS du CI-SIS</p>
+                
+                <!-- Entete -->
+                <active pattern="Entete_Cancer-PPS"/>
 
                 <!-- JDV -->
                 <active pattern="JDV_GestionEffetsSecondaires-CISIS"/>
@@ -67,13 +73,5 @@
                 <let name="JDV_TypeDeSuivi-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeSuivi-CISIS.xml'"/>
                 <let name="JDV_TypeTraitementPPS-CISIS" value="'../jeuxDeValeurs/JDV_TypeTraitementPPS-CISIS.xml'"/>
                 
-            <rule context="cda:ClinicalDocument">
-               <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.26']"> 
-                       [CI-SIS_CANCER-PPS_2022.01] Le templateId "1.2.250.1.213.1.1.1.26" doit être présent.
-               </assert>
-               <assert test="./cda:code[@code='18776-5' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                       [CI-SIS_CANCER-PPS_2022.01] L'élément code doit avoir @code="18776-5" et @codeSystem="2.16.840.1.113883.6.1". 
-               </assert>    
-            </rule>
         </pattern>
 </schema>

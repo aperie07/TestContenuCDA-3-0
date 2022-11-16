@@ -41,7 +41,8 @@
 
     <pattern id="variables">
         <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root = '1.3.6.1.4.1.19376.1.2.20']"> [CI-SIS_TLM-CR_2021.01] Le
+            <assert test="cda:templateId[@root = '1.3.6.1.4.1.19376.1.2.20']">
+                [CI-SIS_TLM-CR_2021.01] Le
                 templateID du modèle TLM-CR non structuré doit être celui commun à tous les documents
                 non structurés (1.3.6.1.4.1.19376.1.2.20). </assert>
         </rule>

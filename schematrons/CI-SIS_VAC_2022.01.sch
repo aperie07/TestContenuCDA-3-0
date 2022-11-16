@@ -64,21 +64,6 @@
             value="'../jeuxDeValeurs/JDV_RisquePourUsager-CISIS.xml'"/>
         <let name="JDV_RisquePourEntourage-CISIS"
             value="'../jeuxDeValeurs/JDV_RisquePourEntourage-CISIS.xml'"/>
-
-        <rule context="cda:ClinicalDocument">
-
-            <assert test="./cda:templateId[@root = '1.3.6.1.4.1.19376.1.5.3.1.1.18.1.2']">
-                [CI-SIS_VAC_2022.01] Erreur de conformité : Le templateId "1.3.6.1.4.1.19376.1.5.3.1.1.18.1.2" est obligatoire.
-            </assert>
-
-            <assert test="cda:templateId[@root = '1.2.250.1.213.1.1.1.37']">
-                [CI-SIS_VAC_2022.01] Erreur de conformité : Le templateId "1.2.250.1.213.1.1.1.37" est obligatoire.
-            </assert>
-
-            <assert test="./cda:code[@code = '11369-6' and @codeSystem = '2.16.840.1.113883.6.1']">
-                [CI-SIS_VAC_2022.01] Erreur de conformité : L'élément code doit avoir les attributs @code="11369-6" et @codeSystem="2.16.840.1.113883.6.1".
-            </assert>
-        </rule>
         
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            

@@ -10,7 +10,7 @@
     Historique :
        02/09/2021 : Création
        27/11/2021 : Modification
-       05/04/2022:  Migration des terminologies et JDV en SNOMED-CT
+       10/11/2022:  Migration des terminologies et JDV en SNOMED-CT
    ......................................................................................................................................................    
 -->
 
@@ -35,9 +35,8 @@
     <!-- [APE 27/11/2021] ajouté -->
     <include href="include/jeuxDeValeurs/CANCER-DL2M-FIDD_2022.01/JDV_Classification_ACR-CISIS.sch"/>
     
-    <!-- Entete -->      
-    <!-- [APE 08/09/2021] supprimé 
-    <include href="include/specificationsVolets/CANCER-D2LM-FIDD_2021.01/Entete/Entete_D2LM-FIDD.sch"/> -->
+    <!-- Entete -->
+    <include href="include/specificationsVolets/CANCER-DL2M-FIDD_2022.01/Entete/Entete_D2LM-FIDD.sch"/> 
     
     <!-- Sections -->    
     <include href="include/specificationsVolets/CANCER-DL2M-FIDD_2022.01/Sections/S_ResultatsExamens_DL2M-FIDD.sch"/>
@@ -57,7 +56,7 @@
         <active pattern="JDV_Classification_ACR-CISIS"/>   
         
         <!--Entete-->
-        <!-- [APE 08/09/2021] supprimé <active pattern="Entete_D2LM-FIDD"/> -->
+        <active pattern="Entete_D2LM-FIDD"/>
         
         <!-- Sections -->
         <active pattern="S_ResultatsExamens_DL2M-FIDD"/>
@@ -77,29 +76,16 @@
         <!-- [APE 27/11/2021] ajouté -->        
         <let name="JDV_Classification_ACR-CISIS" value="'../jeuxDeValeurs/JDV_Classification_ACR-CISIS.xml'"/> 
         
-        <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.28']"> 
-                [CI-SIS_CANCER-DL2M-FIDD] Le templateId "1.2.250.1.213.1.1.1.28" doit être présent.
-            </assert>
-            <assert test="./cda:code[@code='18748-4' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                [CI-SIS_CANCER-DL2M-FIDD] L'élément code doit avoir @code="18748-4" et @codeSystem="2.16.840.1.113883.6.1". 
-            </assert>
-        </rule>
-        
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            
             <assert test="count(cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.3.28'])=1"> 
-                [CI-SIS_CANCER-DL2M-FIDD] Erreur de conformité au modèle : La section FR-Resultats-examens (1.3.6.1.4.1.19376.1.5.3.1.3.28) doit être présente.
+                [Entete_D2LM-FIDD] Erreur de conformité au modèle : La section FR-Resultats-examens (1.3.6.1.4.1.19376.1.5.3.1.3.28) doit être présente.
             </assert>
             <assert test="count(cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.3.36'])=1"> 
-                [CI-SIS_CANCER-DL2M-FIDD] Erreur de conformité au modèle : La section FR-Plan-de-soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) doit être présente.
+                [Entete_D2LM-FIDD] Erreur de conformité au modèle : La section FR-Plan-de-soins (1.3.6.1.4.1.19376.1.5.3.1.3.36) doit être présente.
             </assert>
-            <!-- [APE 08/09/2021] supprimé 
-            <assert test="count(cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.3.6'])=1"> 
-                [CI-SIS_CANCER-DL2M-FIDD] Erreur de conformité au modèle : La section FR-Problemes-actifs-DL2M-FIDD(1.3.6.1.4.1.19376.1.5.3.1.3.6) doit être présente.
-            </assert> -->
             <assert test="count(cda:component/cda:section[cda:templateId/@root='1.2.250.1.213.1.1.2.37'])=1"> 
-                [CI-SIS_CANCER-DL2M-FIDD] Erreur de conformité au modèle : La section FR-Documents-ajoutes(1.2.250.1.213.1.1.2.37) doit être présente.
+                [Entete_D2LM-FIDD] Erreur de conformité au modèle : La section FR-Documents-ajoutes(1.2.250.1.213.1.1.2.37) doit être présente.
             </assert>
         </rule>
         

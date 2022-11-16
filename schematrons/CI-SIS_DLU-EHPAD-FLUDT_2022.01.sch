@@ -49,12 +49,6 @@
         <pattern id="variables">
                 <let name="JDV_ProtheseObjetPersonnel" value = "'../jeuxDeValeurs/JDV_ProtheseObjetPersonnel-CISIS.xml'"/>
                 <rule context="cda:ClinicalDocument">
-                        <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.23']"> 
-                                [CI-SIS_DLU-EHPAD-FLUDT_2022.01] Le templateId "1.2.250.1.213.1.1.1.23" (Conformité au modèle DLU-FLUDT du CI-SIS) doit être présent.
-                        </assert>
-                        <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                                [CI-SIS_DLU-EHPAD-FLUDT_2022.01] L'élément code doit avoir @code ="34133-9" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
-                        </assert>
                         <assert test="count(cda:component/cda:structuredBody/cda:component/cda:section/cda:templateId[@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7'])=1"> 
                                 [CI-SIS_DLU-EHPAD-FLUDT_2022.01] La section "Resultats d'évenements : Transfert du patient de l'EHPAD vers le SU" doit être présente une fois. Cardinalité [1..1].
                         </assert>

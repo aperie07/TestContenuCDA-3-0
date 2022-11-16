@@ -47,7 +47,7 @@
     <include href="abstract/IVL_TS.sch"/>   
     
     <!-- Entete -->
-    <include href="include/specificationsVolets/CSE-CS8_2022.01/Entete/Entete_CSE.sch"/>
+    <include href="include/specificationsVolets/CSE-CS8_2022.01/Entete/Entete_CSE-CS8.sch"/>
     
     <!-- Sections spécifiques au volet -->
     <include href="include/specificationsVolets/CSE-CS8_2022.01/Sections/S_codedPhysicalExam-CSE-CS8.sch"/>
@@ -97,7 +97,7 @@
         <active pattern="variables"/>
         
         <!-- Entete -->
-        <active pattern="Entete_CSE"/>
+        <active pattern="Entete_CSE-CS8"/>
         
         <!-- Section spécifique -->        
         <active pattern="S_codedPhysicalExam-CSE-CS8"/>
@@ -185,32 +185,10 @@
                 [CI-SIS_CSE-CS8_2022.01] Erreur de conformité : 
                 L'élément code doit avoir @code ="CERT_DECL" et @codeSystem = "1.2.250.1.213.1.1.4.12"/>.
             </assert>
-            <assert test="./cda:recordTarget/cda:patientRole/cda:addr/cda:postalCode and not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
-                [CI-SIS_CSE-CS8_2022.01] Erreur de conformité : 
-                L'utilisation des composants élémentaires de l’adresse est obligatoire. Le code postal est aussi obligatoire.
-            </assert>
+            
         </rule>
         
-        <rule context="cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer/cda:assignedEntity">
-            
-            <assert test="cda:assignedPerson"> 
-                [CI-SIS_CSE-CS8_2022.01] Erreur de conformité :
-                Le PS ayant réalisé l’examen est obligatoire.
-            </assert>
-            <assert test="cda:representedOrganization/cda:id"> 
-                [CI-SIS_CSE-CS8_2022.01] Erreur de conformité :
-                L'identifiant de l’organisation est obligatoire.
-            </assert>
-            <assert test="cda:representedOrganization/cda:name"> 
-                [CI-SIS_CSE-CS8_2022.01] Erreur de conformité :
-                Le nom de l’organisation est obligatoire.
-            </assert>
-            <assert test="cda:representedOrganization/cda:addr/cda:postalCode"> 
-                [CI-SIS_CSE-CS8_2022.01] Erreur de conformité :
-                L'adresse de l’organisation est obligatoire. L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
-            </assert>
-            
-        </rule>
+        
         
         <rule context='cda:ClinicalDocument/cda:component/cda:structuredBody'>
             

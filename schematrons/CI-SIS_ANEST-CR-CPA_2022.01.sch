@@ -40,6 +40,9 @@
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_Severite-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-CPA_2022.01/JDV_SupportNutritionnel-CISIS.sch"/>
     
+    <!-- Entete -->
+    <include href="include/specificationsVolets/ANEST-CR-CPA_2022.01/Entete/Entete_Anest-CR-CPA.sch"/>
+    
     <!-- Sections -->
     <include href="include/specificationsVolets/ANEST-CR-CPA_2022.01/Sections/S_SignesVitaux-CISIS.sch"/>
     <include href="include/specificationsVolets/ANEST-CR-CPA_2022.01/Sections/S_ExamenPhysiqueDetaille-CISIS.sch"/>
@@ -70,6 +73,9 @@
         <active pattern="JDV_Severite-CISIS"/>
         <active pattern="JDV_SupportNutritionnel-CISIS"/>
         
+        <!-- Entete -->
+        <active pattern="Entete_Anest-CR-CPA"/>
+        
        <!-- Sections spécifiques au volet ANEST-CR-CPA -->
         <active pattern="S_SignesVitaux-CISIS"/>
         <active pattern="S_ExamenPhysiqueDetaille-CISIS"/>
@@ -98,24 +104,11 @@
         <let name="jdv_ANEST-CR-CPA_Severite" value="'../jeuxDeValeurs/JDV_SeveriteObservation-CISIS.xml'"/>
         <let name="jdv_ANEST-CR-CPA_SupportNutritionnel" value="'../jeuxDeValeurs/JDV_SupportNutritionnel-CISIS.xml'"/>
         
-        <!-- Contrôle spécifique à l'en tête -->
-        <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.41']"> 
-                [CI-SIS_ANEST-CR-CPA] Le templateId "1.2.250.1.213.1.1.1.41" (Conformité au modèle ANEST-CR-CPA du CI-SIS) doit être présent.
-            </assert>
-            <assert test="./cda:code[@code='34749-2' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                [CI-SIS_ANEST-CR-CPA] L'élément "code" de ANEST-CR-CPA doit avoir les attributs @code ="34749-2" et @codeSystem = "2.16.840.1.113883.6.1". 
-            </assert>
-            <assert test="(./cda:documentationOf/cda:serviceEvent/cda:code[@code='CS' and @codeSystem='1.2.250.1.215.200.3.3']) or (./cda:documentationOf/cda:serviceEvent/cda:code[@code='APC' and @codeSystem='1.2.250.1.215.200.3.3']) "> 
-                [CI-SIS_ANEST-CR-CPA] L'élément "code" de l'acte principal doit avoir les attributs @code ="CS" ou "APC" et @codeSystem = "1.2.250.1.215.200.3.3". 
-            </assert>
-        </rule>
-        
         <!-- présence des sections obligatoires -->
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
             
             <assert test="count(cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2'])=1"> 
-                [CI-SIS_ANEST-CR-CPA] Erreur de conformité au modèle ANEST-CR-CPA : La section "FR-Signes-vitaux" (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2)  doit être présente.
+                [CI-SIS_ANEST-CR-CPA_2022.01] Erreur de conformité au modèle ANEST-CR-CPA : La section "FR-Signes-vitaux" (1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2)  doit être présente.
             </assert>
             
         </rule>

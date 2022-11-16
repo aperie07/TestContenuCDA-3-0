@@ -66,7 +66,9 @@
         <include href="include/jeuxDeValeurs/CANCER-D2LM-FIN_2022.01/JDV_Classification_ACR-CISIS_2.sch"/>
         <include href="include/jeuxDeValeurs/CANCER-D2LM-FIN_2022.01/JDV_Classification_ACR-CISIS_3.sch"/>
          
-        <!--Entete-->        
+        <!--Entete-->
+        <include href="include/specificationsVolets/CANCER-D2LM-FIN_2022.01/Entete/Entete_D2LM-FIN.sch"/>
+        
         <!-- [APE 06/09/2021] supprimé : pas de schématron spécifique -->
         
         <phase id="CI-SIS_CANCER-D2LM-FIN_2022.01">
@@ -101,7 +103,7 @@
                 <active pattern="JDV_Classification_ACR-CISIS_3"/>
                 
                 <!--Entete-->
-                <!-- [APE 06/09/2021] supprimé : pas de schématron spécifique -->
+                <active pattern="Entete_D2LM-FIN"/>
                 
         </phase>
 
@@ -124,13 +126,5 @@
                 <let name="JDV_Classification_ACR-CISIS_2" value="'../jeuxDeValeurs/JDV_Classification_ACR-CISIS.xml'"/>
                 <let name="JDV_Classification_ACR-CISIS_3" value="'../jeuxDeValeurs/JDV_Classification_ACR-CISIS.xml'"/>
                 
-                <rule context="cda:ClinicalDocument">
-                    <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.27']"> 
-                         [CI-SIS_CANCER-D2LM-FIN] Le templateId "1.2.250.1.213.1.1.1.27" doit être présent.
-                    </assert>
-                    <assert test="./cda:code[@code='18748-4' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                         [CI-SIS_CANCER-D2LM-FIN] L'élément "code" doit avoir les attributs @code="18748-4" et @codeSystem="2.16.840.1.113883.6.1". 
-                    </assert>
-                </rule>
         </pattern>
 </schema>

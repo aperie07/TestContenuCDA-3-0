@@ -69,36 +69,6 @@
 		<!-- chemins relatifs des fichiers jeux de valeurs -->
 		<let name="JDV_HL7_ObservationInterpretation-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ObservationInterpretation-CISIS.xml'"/>
 		
-		<rule context="cda:ClinicalDocument">
-			
-			<assert test="./cda:templateId[@root='1.3.6.1.4.1.19376.1.3.3']"> 
-				[CI-SIS_BIO-CR-BIO_2022.01] Erreur de conformité : L'élément clinicalDocument/templateId doit être présent avec @root='1.3.6.1.4.1.19376.1.3.3'.
-			</assert>
-			
-			<assert test="./cda:code[@code='11502-2' and @codeSystem='2.16.840.1.113883.6.1']"> 
-				[CI-SIS_BIO-CR-BIO_2022.01] Erreur de conformité : L'élément code doit égal à @code='11502-2' et @codeSystem='2.16.840.1.113883.6.1'.
-			</assert>
-			
-			<assert
-				test="./cda:versionNumber[@value] and number(./cda:versionNumber/@value) &gt; 0">
-				[CI-SIS_BIO-CR-BIO_2022.01] Erreur de conformité : L'élément "versionNumber" doit être présent dans l'en-tête, avec un attribut @value contenant un entier positif.
-			</assert>
-			
-			<assert
-				test="not(./cda:versionNumber[@nullFlavor])">
-				[CI-SIS_BIO-CR-BIO_2022.01] Erreur de conformité : L'attribut nullFlavor est interdit pour l'élément "versionNumber".
-			</assert>
-			
-		</rule>
-		
-		<!-- Contrôles des sections de niveau 1 autorisées -->
-		<rule context="cda:structuredBody/cda:component/cda:section">
-			<assert test="(./cda:templateId[@root='1.3.6.1.4.1.19376.1.3.3.2.1']) or (./cda:templateId[@root='1.2.250.1.213.1.1.2.60']) or (./cda:templateId[@root='1.3.6.1.4.1.19376.1.4.1.2.16'])"> 
-				[CI-SIS_BIO-CR-BIO_2022.01] Erreur de conformité : un CR-BIO ne peut comporter que les sections de niveau 1 suivantes : FR-CR-de-biologie (1.3.6.1.4.1.19376.1.3.3.2.1), 
-				FR-Resultats-de-laboratoire-de-biologie-de-seconde-intention (1.2.250.1.213.1.1.2.60) et FR-Commentaire-non-code (1.3.6.1.4.1.19376.1.4.1.2.16)
-			</assert>
-		</rule>
-		
 	</pattern>
 	
 </schema>

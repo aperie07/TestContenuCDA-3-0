@@ -46,6 +46,9 @@
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_TypeProduitSanguinLabile-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/ANEST-CR-ANEST_2022.01/JDV_RouteofAdministration-CISIS.sch"/>
     
+    <!-- Entete -->
+    <include href="include/specificationsVolets/ANEST-CR-ANEST_2022.01/Entete/Entete_Anest-CR-Anest.sch"/>
+    
     <!-- Sections -->
     <include href="include/specificationsVolets/ANEST-CR-ANEST_2022.01/Sections/S_ActesEtInterventions_ANEST-CR-ANEST.sch"/>
     <include href="include/specificationsVolets/ANEST-CR-ANEST_2022.01/Sections/S_DispositifsMedicaux_ANEST-CR-ANEST.sch"/>
@@ -80,6 +83,9 @@
         <active pattern="JDV_TypeProduitSanguinLabile-CISIS"/>
         <active pattern="JDV_RouteofAdministration-CISIS"/>
         
+        <!-- Entete -->
+        <active pattern="Entete_Anest-CR-Anest"/>
+        
         <!-- Sections spécifiques au volet ANEST-CR-ANEST -->
         <active pattern="S_ActesEtInterventions_ANEST-CR-ANEST"/>
         <active pattern="S_DispositifsMedicaux_ANEST-CR-ANEST"/>
@@ -106,7 +112,7 @@
         <let name="JDV_ScoreASA-CISIS" value="'../jeuxDeValeurs/JDV_ScoreASA-CISIS.xml'"/>
         <let name="JDV_EvaluationDouleur-CISIS" value="'../jeuxDeValeurs/JDV_EvaluationDouleur-CISIS.xml'"/>
         <let name="JDV_DefaillanceMaterielle-CISIS" value="'../jeuxDeValeurs/JDV_DefaillanceMaterielle-CISIS.xml'"/>
-        <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteNCIT-CISIS.xml'"/>
+        <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_Lateralite-CISIS.xml'"/>
         <let name="JDV_ClassificationRingMessmer-CISIS" value="'../jeuxDeValeurs/JDV_ClassificationRingMessmer-CISIS.xml'"/>
         <let name="JDV_AccesArtere-CISIS" value="'../jeuxDeValeurs/JDV_AccesArtere-CISIS.xml'"/>
         <let name="JDV_HL7_ActPriority-CISIS" value="'../jeuxDeValeurs/JDV_HL7_ActPriority-CISIS.xml'"/>
@@ -114,21 +120,13 @@
         <let name="JDV_TypeProduitSanguinLabile-CISIS" value="'../jeuxDeValeurs/JDV_TypeProduitSanguinLabile-CISIS.xml'"/>
         <let name="JDV_RouteofAdministration-CISIS" value="'../jeuxDeValeurs/JDV_RouteofAdministration-CISIS.xml'"/>
         
-        <!-- Contrôles spécifiques à l'en tête -->
-        <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.40']"> 
-                [CI-SIS_ANEST-CR-ANEST] Erreur de conformité au modèle : Le templateId "1.2.250.1.213.1.1.1.40" doit être présent.
-            </assert>
-            <assert test="./cda:code[@code='77436-4' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                [CI-SIS_ANEST-CR-ANEST] Erreur de conformité au modèle : L'élément "code" doit avoir les attributs @code="77436-4" et @codeSystem="2.16.840.1.113883.6.1". 
-            </assert>
-        </rule>
-        
         <!-- présence des sections obligatoires -->        
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">            
             <assert test="count(cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11'])=1"> 
-                [CI-SIS_ANEST-CR-ANEST] Erreur de conformité au modèle : La section "Actes et interventions" (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11) doit être présente.
+                [Entete_ANEST-CR-ANEST] Erreur de conformité au modèle : La section "Actes et interventions" (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11) doit être présente.
             </assert>
         </rule>
+        
+        
     </pattern>
 </schema>

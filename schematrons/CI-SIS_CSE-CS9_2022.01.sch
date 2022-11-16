@@ -42,7 +42,7 @@
     <include href="abstract/IVL_TS.sch"/> 
     
     <!-- Entete -->    
-    <include href="include/specificationsVolets/CSE-CS9_2022.01/Entete/Entete_CSE.sch"/>
+    <include href="include/specificationsVolets/CSE-CS9_2022.01/Entete/Entete_CSE-CS9.sch"/>
     
     <!-- Sections spécifiques au volet -->    
     <include href="include/specificationsVolets/CSE-CS9_2022.01/Sections/S_codedPhysicalExam_CSE-CS9.sch"/>
@@ -82,7 +82,7 @@
         <p>Vérification complète de la conformité au CI-SIS</p>
         
         <!--Entete-->        
-        <active pattern="Entete_CSE"/>
+        <active pattern="Entete_CSE-CS9"/>
         
         <!-- Sections spécifiques -->        
         <active pattern="S_codedPhysicalExam_CSE-CS9"/>
@@ -126,47 +126,6 @@
         <let name="JDV_Profession-CISIS" value="'../jeuxDeValeurs/JDV_Profession-CISIS.xml'"/>         
         <let name="JDV_TypeGarde-CISIS" value="'../jeuxDeValeurs/JDV_TypeGarde-CISIS.xml'"/> 
         <let name="JDV_VaccinCSE9-CISIS" value="'../jeuxDeValeurs/JDV_VaccinCSE9-CISIS.xml'"/> 
-        
-        <rule context="cda:ClinicalDocument">
-            <assert test="./cda:templateId[@root='1.2.250.1.213.1.1.1.5.2']"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité :
-                L'élément ClinicalDocument/templateId doit être présent avec @root="1.2.250.1.213.1.1.1.5.2".
-            </assert>
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.5']"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité : 
-                Le template parent "Certificat de Santé de l'Enfant" (1.2.250.1.213.1.1.1.5) doit être présent.
-            </assert>            
-            <assert test="./cda:code[@code='CERT_DECL' and @codeSystem='1.2.250.1.213.1.1.4.12']"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité : 
-                L'élément code doit avoir @code ="CERT_DECL" et @codeSystem = "1.2.250.1.213.1.1.4.12"/>.
-            </assert>  
-            <assert test="./cda:recordTarget/cda:patientRole/cda:addr/cda:postalCode and not(./cda:recordTarget/cda:patientRole/cda:addr/cda:streetAddressLine)"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité :
-                L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
-            </assert>
-        </rule>
-        
-        <rule context="cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer/cda:assignedEntity">
-            
-            <assert test="cda:assignedPerson"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité :
-                Le PS ayant réalisé l’examen est obligatoire.
-            </assert>
-            <assert test="cda:representedOrganization/cda:id"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité :
-                L'identifiant de l’organisation est obligatoire.
-            </assert>
-            <assert test="cda:representedOrganization/cda:name"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité :
-                Le nom de l’organisation est obligatoire.
-            </assert>
-            <assert test="cda:representedOrganization/cda:addr/cda:postalCode"> 
-                [CI-SIS_CSE-CS9_2022.01.sch] Erreur de conformité :
-                L'adresse de l’organisation est obligatoire. 
-                L'utilisation des composants élémentaires de l’adresse est obligatoire et le code postal est obligatoire.
-            </assert>
-            
-        </rule>
         
         <rule context='cda:ClinicalDocument/cda:component/cda:structuredBody'>
             
