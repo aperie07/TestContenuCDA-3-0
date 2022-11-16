@@ -15,9 +15,13 @@
     
     <rule context='cda:ClinicalDocument'>
         
-        <assert test="cda:code[@code='34133-9']">
-            [Entete_DLU-FLUDR] Le code du document DLU doit être égal à '34133-9'
+        <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.24']"> 
+            [Entete_DLU-FLUDR] Le templateId "1.2.250.1.213.1.1.1.24" (Conformité au modèle DLU-FLUDR du CI-SIS) doit être présent.
         </assert>
+        <assert test="./cda:code[@code='34133-9' and @codeSystem='2.16.840.1.113883.6.1']"> 
+            [Entete_DLU-FLUDR] L'élément code doit avoir @code ="34133-9" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
+        </assert>
+        
         
         <assert test="cda:recordTarget/cda:patientRole/cda:patient/cda:birthTime">
             [Entete_DLU-FLUDR] La date de naissance du patient est obligatoirement présente
