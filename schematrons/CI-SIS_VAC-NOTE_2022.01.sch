@@ -33,11 +33,23 @@
     
     <!-- Entete -->
     <include href="include/specificationsVolets/VAC-NOTE_2022.01/Entete/Entete_VAC-NOTE_2022.01.sch"/>
+    
+    <!-- Section -->
+    <include href="include/specificationsVolets/VAC-NOTE_2022.01/Sections/S_Vaccination_VAC-Note.sch"/>
 
+    <!-- Entrée -->
+    <include href="include/specificationsVolets/VAC-NOTE_2022.01/Entrees/E_Vaccination_VAC-Note.sch"/>
+    
     <phase id="CI-SIS_VAC-NOTE_2022.01">
         
         <!-- Entete -->
         <active pattern="Entete_VAC-NOTE"/>
+        
+        <!-- Section -->
+        <active pattern="S_Vaccination_VAC-Note"/>
+        
+        <!-- Entrée -->
+        <active pattern="E_Vaccination_VAC-Note"/>
         
         <!-- JDV -->
         <active pattern="variables"/>
