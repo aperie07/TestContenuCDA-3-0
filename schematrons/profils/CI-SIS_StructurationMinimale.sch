@@ -137,6 +137,7 @@
     <include href="../include/jeuxDeValeurs/JDV_vitalSignCode.sch"/>   
     <include href="../include/jeuxDeValeurs/JDV_administrativeGenderCode.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_SocialHistoryCodes.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_TypeDirectiveAnticipee.sch"/>
     
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -199,6 +200,7 @@
         <active pattern="JDV_vitalSignCode"/>     
         <active pattern="JDV_administrativeGenderCode"/>
         <active pattern="JDV_SocialHistoryCodes"/>
+        <active pattern="JDV_TypeDirectiveAnticipee"/>
          
     </phase>
 
@@ -260,6 +262,7 @@
         <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/TRE_R303-HL7v3AdministrativeGen.xml'"/>
         <let name="jdv_SocialHistoryCodes" value="'../../jeuxDeValeurs/JDV_SocialHistoryCodes-CISIS.xml'"/>
 <!--        <let name="jdv_AllergieReaction" value="'../../jeuxDeValeurs/JDV_AllergieReaction-CISIS.xml'"/> -->
+        <let name="jdv_typeDirectiveAnticipee" value="'../../jeuxDeValeurs/JDV_TypeDirectiveAnticipee-CISIS.xml'"/>
         
         
     </pattern>
