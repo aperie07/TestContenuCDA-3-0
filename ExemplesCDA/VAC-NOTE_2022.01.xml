@@ -834,7 +834,7 @@
           <!-- Conformité FR-Allergies-et-intolerances (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.137"/>
           <id root="7649C5FA-A444-49A6-91E9-78D2E5880C67" />
-          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, réactions adverses, alertes" />
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies et hypersensibilités" />
           <title>Allergies et hypersensibilités</title>
           <text>
             <table border="0">
