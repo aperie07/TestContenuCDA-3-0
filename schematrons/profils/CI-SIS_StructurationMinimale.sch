@@ -86,6 +86,9 @@
     <include href="../abstract/abstractTypeCode.sch"/>
     <include href="../abstract/abstractEncompassingEncounterCode.sch"/>
     
+    
+    <include href="../abstract/abstractImmunization.sch"/>
+    
     <!-- schématrons des éléments de l'en-tête -->
     <include href="../include/en-tete/addr.sch"/>   
     <include href="../include/en-tete/assignedAuthor_fr.sch"/>
@@ -130,7 +133,7 @@
     <include href="../include/jeuxDeValeurs/JDV_problemCodes.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_HL7_allergyintolerance-clinical.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_HL7_conditionClinical.sch"/>
-    <include href="../include/jeuxDeValeurs/JDV_actSubstanceAdministrationImmunizationCode.sch"/>
+    <!--<include href="../include/jeuxDeValeurs/JDV_actSubstanceAdministrationImmunizationCode.sch"/>-->
     <include href="../include/jeuxDeValeurs/JDV_observationIntoleranceType.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_substanceAdministration_ImmunizationRouteCodes.sch"/>
 <!--    <include href="../include/jeuxDeValeurs/JDV_substanceAdministration_RouteOfAdministration.sch"/>-->
@@ -138,6 +141,9 @@
     <include href="../include/jeuxDeValeurs/JDV_administrativeGenderCode.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_SocialHistoryCodes.sch"/>
     <include href="../include/jeuxDeValeurs/JDV_TypeDirectiveAnticipee.sch"/>
+    
+    
+    <include href="../include/jeuxDeValeurs/ImmunizationCode.sch"/>
     
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
@@ -187,7 +193,7 @@
         <active pattern="JDV_encompassingEncounterCode"/>
         
         <!-- schématrons des JDV génériques -->
-        <active pattern="JDV_actSubstanceAdministrationImmunizationCode"/>
+        <!--<active pattern="JDV_actSubstanceAdministrationImmunizationCode"/>-->
         <!--<active pattern="JDV_clinicalStatusCodes"/>-->
         <active pattern="JDV_HL7_allergyintolerance-clinical"/>
         <active pattern="JDV_HL7_conditionclinical"/>
@@ -201,6 +207,8 @@
         <active pattern="JDV_administrativeGenderCode"/>
         <active pattern="JDV_SocialHistoryCodes"/>
         <active pattern="JDV_TypeDirectiveAnticipee"/>
+        
+        <active pattern="immunizationCode"/>
          
     </phase>
 
@@ -264,6 +272,9 @@
 <!--        <let name="jdv_AllergieReaction" value="'../../jeuxDeValeurs/JDV_AllergieReaction-CISIS.xml'"/> -->
         <let name="jdv_typeDirectiveAnticipee" value="'../../jeuxDeValeurs/JDV_TypeDirectiveAnticipee-CISIS.xml'"/>
         
+        
+        <let name="jdv_immunization_1" value="'../../jeuxDeValeurs/JDV_HL7_ActSubstanceAdministrationImmunizationCode-CISIS.xml'"/>
+        <let name="jdv_immunization_2" value="'../../jeuxDeValeurs/JDV_AbsentOrUnknownImmunization-CISIS.xml'"/>
         
     </pattern>
 
