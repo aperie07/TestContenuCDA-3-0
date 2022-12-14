@@ -21,22 +21,6 @@
             [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
             La section "Labor and Delivery" dans le contexte du CS8 doit être attribué à la mère.
         </assert>        
-        <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='11878-6'"> 
-            [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
-            Cette section doit mentionner le "Nb de fœtus (grossesse actuelle)" (11878-6).
-        </assert>      
-        <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='11884-4'"> 
-            [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
-            Cette section doit mentionner l"Age gestationnel (semaine d'amenorrhée révolues)" (11884-4).
-        </assert>
-        <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='11876-0'"> 
-            [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
-            Cette section doit mentionner la "Présentation" (11876-0).
-        </assert>
-        <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='MED-166'"> 
-            [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
-            Cette section doit mentionner la "Rupture membranaire plus de 12 h avant l'accouchement" (MED-166).
-        </assert>
         <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='73813-8'"> 
             [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
             Cette section doit mentionner le "Début de travail" (73813-8).
