@@ -637,7 +637,7 @@
   <documentationOf>
     <serviceEvent classCode="ACT">
       <!-- Topographie : JDV_Tumeur-CISIS (1.2.250.1.213.1.1.4.2.281.21) -->
-      <code code="C50.2" displayName="Quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O" />
+      <code code="C50.2" displayName="Tumeur maligne du quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
       <!-- si Topographie ne peut être codée avec le JDV_Tumeur-CISIS : texte libre dans <originalText> 
          <code code="GEN-243" displayName="Topographie"
             codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
@@ -1195,7 +1195,7 @@
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
               <!-- Conformité IHE PCC -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité CI-SIS FR-Probleme -->
               <templateId root="1.2.250.1.213.1.1.3.39"/>
               <id root="015B3222-62B8-4A27-801F-A414B285D58B" />
               <code nullFlavor="NA" />
@@ -1240,7 +1240,7 @@
                                     <originalText><reference value="#morphologie-1"/></originalText>
                                 </value> -->
                   <!-- [0..1] Topographie : JDV_Tumeur-CISIS (1.2.250.1.213.1.1.4.2.281.21) -->
-                  <targetSiteCode code="C502" displayName="Quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="CIM-O">
+                  <targetSiteCode code="C50.2" displayName="Tumeur maligne du quadrant supéro-interne du sein" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10">
                     <originalText>
                       <reference value="#topographie-1" />
                     </originalText>
@@ -1281,7 +1281,7 @@
                         </qualifier>
                         <!-- Version de la nomenclature TNM utilisée -->
                         <qualifier>
-                          <name code="21917-0" displayName="Version TNM utilisée" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <name code="21917-0" displayName="Version TNM Classification" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                           <value xsi:type="CD" code="7" displayName="TNM_UICC 7ème édition" codeSystem="2.16.840.1.113883.15.6" codeSystemName="TNM_UICC" />
                         </qualifier>
                       </value>
@@ -1345,10 +1345,10 @@
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
                       <!-- Conformité CI-SIS -->
                       <templateId root="1.2.250.1.213.1.1.3.48"/>
-                      <id />
+                      <id root="EDDB9FC6-2CC6-4AF8-BA4A-559E840ED075"/>
                       <code code="21918-8" displayName="Autre classification du stade" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                       <text>
-                        <reference />
+                        <reference value="#"/>
                       </text>
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />

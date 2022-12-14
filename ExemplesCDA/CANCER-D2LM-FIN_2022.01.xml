@@ -4079,6 +4079,7 @@
               <templateId root="1.2.250.1.213.1.1.2.158"/>
               <id root="0AE41264-0383-4422-BEA3-4E687963080B" />
               <code code="18776-5" displayName="Plan de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <title>Plan de soins</title>
               <!-- Bloc narratif de la section -->
               <text>
                 <table border="0">

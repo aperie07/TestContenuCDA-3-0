@@ -37,9 +37,9 @@
   <!-- Identifiant du document -->
   <id root="1.2.250.1.213.1.1.1.37.1"/>
   <!-- Type du document -->
-  <code code="11369-6" displayName="Historique des vaccinations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <code code="11369-6" displayName="Historique de vaccinations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Titre du document -->
-  <title>Historique des vaccinations</title>
+  <title>Historique de vaccinations</title>
   <!-- Date et heure du document -->
   <effectiveTime value="20210409170000+0100"/>
   <!-- Niveau de confidentialité -->

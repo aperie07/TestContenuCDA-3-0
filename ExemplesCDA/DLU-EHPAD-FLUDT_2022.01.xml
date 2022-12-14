@@ -17,15 +17,16 @@
       Notes:            
       11/06/2018 : Correction d'erreurs suite à la mise à jour des schématrons  
       26/08/2020 : Amélioration mise en forme du document (pas de modification technique)   
-	  09/09/2020 : Correctifs vs Art Decor
-	  06/01/2021 : Nouvelle version 2021.01 :
-	  -	Ajoût du numéro de version pour différencier les différentes versions du modèle DLU-FLUDT
-	  - Remplacement des sections FR-Raison-de-la-recommandation-non-code (motif du transfert) et FR-Historique-prises-en-charge-medicales (description du transfert) 
-	    par la nouvelle section FR-Resultats-evenements qui comprend une entrée FR-Simple-Observation pour le motif et 
-	    une entrée FR-Transfert-du-patient pour la description du transfert.
-	  -	Section Evaluation fonctionnelle du sommeil et de l’alimentation / Entrée FR-Simple-Observation : Utilisation du code GEN-244 "Date et heure du dernier repas"
-	  - Remplacement de la section FR-Commentaire-Asip (1.2.250.1.213.1.1.2.47) par la section FR-Commentaire-non-code (1.2.250.1.213.1.1.2.73) qui ne contient pas d’entrée. 
-	  - 14/04/2022 : Migration des terminologies et JDVs en SNOMED CT
+	    09/09/2020 : Correctifs vs Art Decor
+	    06/01/2021 : Nouvelle version 2021.01 :
+	    -	Ajoût du numéro de version pour différencier les différentes versions du modèle DLU-FLUDT
+	    - Remplacement des sections FR-Raison-de-la-recommandation-non-code (motif du transfert) et FR-Historique-prises-en-charge-medicales (description du transfert) 
+	      par la nouvelle section FR-Resultats-evenements qui comprend une entrée FR-Simple-Observation pour le motif et 
+	      une entrée FR-Transfert-du-patient pour la description du transfert.
+	    -	Section Evaluation fonctionnelle du sommeil et de l’alimentation / Entrée FR-Simple-Observation : Utilisation du code GEN-244 "Date et heure du dernier repas"
+	    - Remplacement de la section FR-Commentaire-Asip (1.2.250.1.213.1.1.2.47) par la section FR-Commentaire-non-code (1.2.250.1.213.1.1.2.73) qui ne contient pas d’entrée. 
+	    05/12/2022 : Nouvelle version 2022.01
+      - Migration des terminologies et JDVs
       **********************************************************************************************************
  -->
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../infrastructure/cda/CDA_extended.xsd">
@@ -233,7 +234,6 @@
           <postalCode>92000</postalCode>
           <city>NANTERRE</city>
         </addr>
-        <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode" />
       </receivedOrganization>
     </intendedRecipient>
   </informationRecipient>
@@ -388,14 +388,15 @@
     -->
   <component>
     <structuredBody>
+      
       <!-- [1..1] Section FR-Resultats-evenements : Transfert du patient de l'EHPAD vers le SU -->
       <component>
         <section>
-          <!-- Conformité IHE PCC Event Outcomes -->
+          <!-- Conformité Event Outcomes (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.21.2.9"/>
-          <!-- Conformité IHE PCC Coded Event Outcomes -->
+          <!-- Conformité Coded Event Outcomes (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.13.7"/>
-          <!-- Conformité CI-SIS -->
+          <!-- Conformité FR-Resultats-evenements (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.163"/>
           <id root="BCE86697-249D-431B-A97C-1AC53B70BC89" />
           <code code="42545-4" displayName="Evènements observés" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -431,9 +432,9 @@
           <!-- [0..1] Entrée FR-Simple-Observation : Motif du transfert  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1" />
               <code code="57277-6" displayName="Motif du transfert vers le service des urgences" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -453,9 +454,9 @@
           <!-- [1..*] Entrée FR-Transfert-du-patient : Transfert du résident en service des urgences (SU) -->
           <entry>
             <act classCode="ACT" moodCode="EVN">
-              <!-- Conformité IHE PCC -->
+              <!-- Conformité Patient Transfer (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.25.1.4.1"/>
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Transfert-du-patient (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.28"/>
               <id root="6DA489A9-D085-4D7E-B669-1EC4973EFA64" />
               <code code="80413-8" displayName="Transfert du patient" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -493,16 +494,17 @@
           </entry>
         </section>
       </component>
+      
       <!-- [1..1] Section FR-Signes-vitaux : Pouls / Température / Poids / Tension artérielle haute / Tension artérielle basse -->
       <component>
         <section>
-          <!-- Conformité CCD Parent Template Vital Signs -->
+          <!-- Conformité Vital Signs (CCD) -->
           <templateId root="2.16.840.1.113883.10.20.1.16"/>
-          <!-- Conformité IHE PCC Vital Signs narrative -->
+          <!-- Conformité Vital Signs (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
-          <!-- Conformité IHE PCC Coded Vital Signs -->
+          <!-- Conformité Coded Vital Signs (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
-          <!-- Conformité CI-SIS -->
+          <!-- Conformité FR-Signes-vitaux (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.75"/>
           <code code="8716-3" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Constantes du patient</title>
@@ -510,7 +512,7 @@
             <table border="0">
               <thead>
                 <tr>
-                  <th align="left">Constante</th>
+                  <th>Constante</th>
                   <th>Mesure</th>
                 </tr>
               </thead>
@@ -551,29 +553,28 @@
           <!-- [1..1] Entrée FR-Signes-vitaux -->
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <!-- Conformité CCD Result organizer -->
+              <!-- Conformité Result organizer (CCD) -->
               <templateId root="2.16.840.1.113883.10.20.1.32"/>
-              <!-- Conformité CCD Vital signs organizer -->
+              <!-- Conformité Vital signs organizer (CCD) -->
               <templateId root="2.16.840.1.113883.10.20.1.35"/>
-              <!-- Conformité IHE PCC Vital Signs Organizer -->
+              <!-- Conformité Vital Signs Organizer (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Signes-vitaux (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.49"/>
               <id root="0E08A205-50D2-48E4-8F11-029DE794264F" />
-              <!--<code code="F-03400" displayName="Signes vitaux" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />-->
               <code code="85353-1" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <!-- [1..*] Entrée FR-Signe-vital-observe : Pouls -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-                  <!-- Conformité CCD Result observation -->
+                  <!-- Conformité Result observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <!-- Conformité IHE PCC Vital Signs Observation -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-                  <!-- Conformité CI-SIS -->
+                  <!-- Conformité FR-Signe-vital-observe (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="32DD091E-8820-4E21-A08C-527B96F0EF3A" />
                   <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Fréquence cardiaque" codeSystemName="LOINC" />
@@ -589,13 +590,13 @@
               <!-- [1..*] Entrée FR-Signe-vital-observe : Température -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-                  <!-- Conformité CCD Result observation -->
+                  <!-- Conformité Result observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <!-- Conformité IHE PCC Vital Signs Observation -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-                  <!-- Conformité CI-SIS -->
+                  <!-- Conformité FR-Signe-vital-observe (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="0E08A205-50D2-48E4-8F11-029DE794264F" />
                   <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="Température corporelle" codeSystemName="LOINC" />
@@ -610,13 +611,13 @@
               <!-- [1..*] Entrée FR-Signe-vital-observe : Poids récent -->
               <component>
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-                  <!-- Conformité CCD Result observation -->
+                  <!-- Conformité Result observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <!-- Conformité IHE PCC Vital Signs Observation -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-                  <!-- Conformité CI-SIS -->
+                  <!-- Conformité FR-Signe-vital-observe (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="3237D4E1-402A-43A5-B905-0D0A8442B634" />
                   <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" displayName="Poids" codeSystemName="LOINC" />
@@ -631,13 +632,13 @@
               <!-- [1..*] Entrée FR-Signe-vital-observe : Tension artérielle haute -->
               <component>
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-                  <!-- Conformité CCD Result observation -->
+                  <!-- Conformité Result observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <!-- Conformité IHE PCC Vital Signs Observation -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-                  <!-- Conformité CI-SIS -->
+                  <!-- Conformité FR-Signe-vital-observe (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="22C8375A-5B6E-4600-8E42-9CEBE15988DB" />
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Pression artérielle systolique" codeSystemName="LOINC" />
@@ -652,13 +653,13 @@
               <!-- [1..*] Entrée FR-Signe-vital-observe : Tension artérielle basse -->
               <component>
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-                  <!-- Conformité CCD Result observation -->
+                  <!-- Conformité Result observation (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <!-- Conformité IHE PCC Vital Signs Observation -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité Vital Signs Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-                  <!-- Conformité CI-SIS -->
+                  <!-- Conformité FR-Signe-vital-observe (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="842AD920-6A99-4841-AAA9-3E212F9D1B92" />
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Pression artérielle diastolique" codeSystemName="LOINC" />
@@ -674,14 +675,15 @@
           </entry>
         </section>
       </component>
+      
       <!-- [1..1] Section FR-Resultats-examens : Patient Conscient et éveillé / Eveillable / Non éveillable + Douleurs récentes -->
       <component>
         <section>
-          <!-- Conformité IHE PCC -->
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28"/>
-          <!-- Conformité IHE PCC parent (Hospital Studies Summary) -->
+          <!-- Conformité Results Section (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.27"/>
-          <!-- Conformité CI-SIS -->            
+          <!-- Conformité Coded Results Section (IHE PCC) -->
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28"/>
+          <!-- Conformité FR-Resultats-examens (CI-SIS) -->            
           <templateId root="1.2.250.1.213.1.1.2.151"/>
           <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1" />
           <code code="30954-2" displayName="Résultats d'examens" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -703,12 +705,12 @@
                 </tr>
                 <tr>
                   <td>
-                    <content ID="douleur">Douleur récente</content>
+                    <content ID="douleur">Douleurs récentes</content>
                   </td>
                   <td>
-                    <content ID="douleur-localisation-01">Membre inférieur</content>
+                    <content ID="douleur-localisation-01">avant-bras gauche</content>
                     <br />
-                    <content ID="douleur-localisation-02">Bras droit</content>
+                    <content ID="douleur-localisation-02">cuisse gauche</content>
                   </td>
                 </tr>
               </tbody>
@@ -717,11 +719,11 @@
           <!-- [1..*] Entrée FR-Acte : utiliser ici un code nullFlavor="NA" -->
           <entry>
             <procedure classCode="PROC" moodCode="EVN">
-              <!-- Conformité CCD -->
+              <!-- Conformité Procedure activity (CCD) -->
               <templateId root="2.16.840.1.113883.10.20.1.29"/>
-              <!-- Conformité IHE PCC -->
+              <!-- Conformité Procedure Entry (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
-              <!-- Conformité CI-SIS -->            
+              <!-- Conformité FR-Acte (CI-SIS) -->            
               <templateId root="1.2.250.1.213.1.1.3.62"/>
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1" />
               <code nullFlavor="NA" />
@@ -735,9 +737,9 @@
           <!-- [0..1] Entrée FR-Simple-Observation : Conscient et éveillé  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1" />
               <code code="DLU_002" displayName="Conscient et éveillé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -752,9 +754,9 @@
           <!-- [0..*] Entrée FR-Simple-Observation : Douleur récente  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1" />
               <code code="R52.9" displayName="Douleur" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
@@ -764,57 +766,17 @@
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <value xsi:type="BL" value="true" />
-              <!-- Entrée FR-Simple-Observation : Localisation de la douleur -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <id root="24314A2F-4243-4E0F-ACCB-70231A787700" />
-                  <code code="39111-0" displayName="Localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#douleur-localisation-01" />
-                  </text>
-                  <statusCode code="completed" />
-                  <effectiveTime nullFlavor="NASK" />
-                  <value xsi:type="CD">
-                    <originalText>
-                      <reference value="#douleur-localisation-01" />
-                    </originalText>
-                  </value>
-                </observation>
-              </entryRelationship>
-              <!-- Entrée FR-Simple-Observation : Localisation de la douleur -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <id root="24314A2F-4243-4E0F-ACCB-70231A787700" />
-                  <code code="39111-0" displayName="Localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#douleur-localisation-01" />
-                  </text>
-                  <statusCode code="completed" />
-                  <effectiveTime nullFlavor="NASK" />
-                  <!-- [ANS] à trouver le code SNMED-CT -->
-                  <value xsi:type="CD" code="24895" displayName="Bras droit" codeSystem="2.16.840.1.113883.6.119" codeSystemName="FMA">
-                    <originalText>
-                      <reference value="#douleur-localisation-02" />
-                    </originalText>
-                  </value>
-                </observation>
-              </entryRelationship>
+              <targetSiteCode code="66480008" displayName="avant-bras gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText><reference value="#douleur-localisation-01" /></originalText>
+              </targetSiteCode>               
             </observation>
           </entry>
           <!-- [0..*] Entrée FR-Simple-Observation : Douleur récente  -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1" />
               <code code="R52.9" displayName="Douleur" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
@@ -824,54 +786,37 @@
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
               <value xsi:type="BL" value="true" />
-              <!-- Entrée FR-Simple-Observation : Localisation de la douleur -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <id root="24314A2F-4243-4E0F-ACCB-70231A787700" />
-                  <code code="39111-0" displayName="Localisation anatomique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="#douleur-localisation" />
-                  </text>
-                  <statusCode code="completed" />
-                  <effectiveTime nullFlavor="NASK" />
-                  <value xsi:type="CD">
-                    <originalText>
-                      <reference value="#douleur-localisation" />
-                    </originalText>
-                  </value>
-                </observation>
-              </entryRelationship>
+              <targetSiteCode code="61396006" displayName="cuisse gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText><reference value="#douleur-localisation-02" /></originalText>
+              </targetSiteCode>              
             </observation>
           </entry>
         </section>
       </component>
+      
       <!-- [1..1] Section FR-Traitements : date et l’heure de la dernière prise du traitement habituel  -->
       <component>
         <section>
-          <!-- Conformité CI-SIS -->
-          <templateId root="1.2.250.1.213.1.1.2.143"/>
-          <!-- Conformité CCD Medication -->
+          <!-- Conformité Medication (CCD) -->
           <templateId root="2.16.840.1.113883.10.20.1.8"/>
-          <!-- Conformité IHE PCC Medication -->
+          <!-- Conformité Medications (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
+          <!-- Conformité FR-Traitements (CI-SIS) -->
+          <templateId root="1.2.250.1.213.1.1.2.143"/>
           <code code="10160-0" displayName="Traitements" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Date et heure de la dernière prise du traitement habituel</title>
           <text>Dernière prise du traitement habituel le 27 mars 2020 à 12h00.</text>
           <!-- [1..*] Entrée FR-Traitement -->
           <entry>
             <substanceAdministration classCode="SBADM" moodCode="EVN">
-              <!-- Conformité CI-SIS -->
-              <templateId root="1.2.250.1.213.1.1.3.42"/>
-              <!-- Conformité CCD Medication activity -->
-              <templateId root="2.16.840.1.113883.10.20.1.24"/>
-              <!-- Conformité IHE PCC Medication -->
-              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-              <!-- Conformité IHE Mode d’administration "Normal" -->
-              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+              <!-- Medication Activity (CCD) -->
+              <templateId root="2.16.840.1.113883.10.20.1.24" />
+              <!-- Medications Entry (IHE PCC) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7" />
+              <!-- FR-Traitement (FR CI-SIS) -->
+              <templateId root="1.2.250.1.213.1.1.3.42" />
+              <!-- Mode d'administration (normal) -->
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1" />
               <id root="BADC9E92-AD6F-4D95-A3C4-2294C18C2FE9" />
               <code nullFlavor="NA" />
               <text>
@@ -889,12 +834,12 @@
               <!-- Entrée FR-Produit-de-sante -->
               <consumable>
                 <manufacturedProduct>
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.43"/>
-                  <!-- Conformité IHE CCD -->
+                  <!-- Product (CCD) -->
                   <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                  <!-- Conformité IHE PCC IHE Product Entry-->
+                  <!-- Product Entry (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                  <!-- FR-Produit-de-sante (CI-SIS) -->
+                  <templateId root="1.2.250.1.213.1.1.3.43"/>
                   <manufacturedMaterial>
                     <code nullFlavor="UNK" />
                     <name nullFlavor="UNK" />
@@ -905,12 +850,13 @@
           </entry>
         </section>
       </component>
+      
       <!-- [1..1] Section FR-Evaluation-fonctionnelle-du-sommeil-et-de-l-alimentation : date et l’heure du dernier repas -->
       <component>
         <section>
-          <!-- Conformité IHE PCC -->
+          <!-- Conformité Eating and sleeping assessment Section (IHE PCC) -->
           <templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.13.5"/>
-          <!-- Conformité CI-SIS-->
+          <!-- Conformité FR-Evaluation-fonctionnelle-du-sommeil-et-de-l-alimentation (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.162"/>
           <code code="47420-5" displayName="Évaluation du statut fonctionnel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Date et heure du dernier repas</title>
@@ -918,9 +864,9 @@
           <!-- [1..*] Entrée FR-Simple-Observation -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="673E3AA9-9962-4D43-AF57-8559E8F477B4" />
               <code code="GEN-244" displayName="Date et heure du dernier repas" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
@@ -934,10 +880,11 @@
           </entry>
         </section>
       </component>
+      
       <!-- [1..1] Section FR-Protheses-et-objets-personnels -->
       <component>
         <section>
-          <!-- Conformité CI-SIS -->
+          <!-- Conformité FR-Protheses-et-objets-personnels (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.53"/>
           <id root="A0E6E8E4-520A-4B4C-90D3-3ED305FF68B1" />
           <code code="46264-8" displayName="Dispositifs médicaux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -946,7 +893,7 @@
             <table border="0">
               <thead>
                 <tr>
-                  <th align="left">Prothèse / Objet personnel</th>
+                  <th>Prothèse / Objet personnel</th>
                   <th>Commentaire</th>
                 </tr>
               </thead>
@@ -993,16 +940,15 @@
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Lunettes du patient -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS Simple Observation -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="29D020AA-168F-4D98-A706-D6AD009EECE1" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-              <code code="Q021003" displayName="Lunettes" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
-              <!--<code code="02276797" displayName="aucun" codeSystem="1.2.250.1.213.2.63" codeSystemName="EMDN" />-->
+              <code code="Q021003" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#lunettes" />
               </text>
@@ -1015,15 +961,15 @@
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse dentaire haute du patient -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS Simple Observation -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="00845861-509F-432A-96B7-1898E3574609" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-              <code code="P0102" displayName="Prothèses dentaires" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
+              <code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protDentHaut" />
               </text>
@@ -1036,15 +982,15 @@
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse dentaire basse du patient -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS Simple Observation -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="BC760D09-4F49-41F0-8529-3ED75F5CA9C5" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-              <code code="P0102" displayName="Prothèses dentaires" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
+              <code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protDentBas" />
               </text>
@@ -1057,15 +1003,15 @@
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse auditive droite du patient -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS Simple Observation -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="2603E6C3-1ED7-4505-A2C9-AE97E53C8B1D" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-              <code code="Y2145" displayName="Prothèses auditives" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
+              <code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protAudDroit" />
               </text>
@@ -1078,15 +1024,15 @@
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse auditive gauche du patient -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS Simple Observation -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="3AEBD44A-0A9B-403B-8748-53BB788A740E" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-              <code code="Y2145" displayName="Prothèses auditives" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
+              <code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN" />
               <text>
                 <reference value="#protAudGauche" />
               </text>
@@ -1099,61 +1045,43 @@
           <!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Autres dispositifs ou objets personnels -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
-              <!-- Conformité IHE PCC Simple Observation -->
+              <!-- Conformité Simple Observation (IHE PCC) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-              <!-- Conformité CI-SIS Simple Observation -->
+              <!-- Conformité FR-Simple-Observation (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.12" />
               <id root="591BFAC8-4850-4324-B6D3-443A4AAE481D" />
               <!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-              <!-- [ANS] Code à remplacer -->
-              <code code="A-00100"
-                displayName="Autre dispositif ou objet personnel"
-                codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+              <code code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
               <text>
                 <reference value="#autreDispoST" />
               </text>
               <statusCode code="completed" />
               <effectiveTime value="20200327153500+0100" />
-              <value xsi:type="BL" value="true" />
-              <targetSiteCode nullFlavor="NASK" />
-              <!-- entrée FR-Simple-Observation : Autres dispositifs ou objets personnels -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC Simple Observation -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <id root="FED30749-050C-4039-B5D8-9D82BFAC5BBC" />
-                  <code code="GEN-092" displayName="Autre"
-                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
-                  <text>
-                    <reference value="#autreDispoST" />
-                  </text>
-                  <statusCode code="completed" />
-                  <effectiveTime value="20200327153500+0100" />
-                  <value xsi:type="ST" />
-                </observation>
-              </entryRelationship>
+              <value xsi:type="CD">
+                <originalText><reference value="#autreDispoST"/></originalText>
+              </value>              
             </observation>
           </entry>
         </section>
       </component>
+      
       <!-- [0..1] Section FR-Commentaire-non-code -->
       <component>
         <section>
-          <!-- Conformité CCD -->
+          <!-- Conformité CDA Section (CCD) -->
           <templateId root="2.16.840.1.113883.10.12.201"/>
-          <!-- Conformité IHE PCC -->
+          <!-- Conformité Document Summary (IHE CARD) -->
           <templateId root="1.3.6.1.4.1.19376.1.4.1.2.16"/>
-          <!-- Conformité CI-SIS -->
+          <!-- Conformité FR-Commentaire-non-code (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.73"/>
           <code code="55112-7" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Commentaires</title>
           <text>(Texte libre)</text>
         </section>
       </component>
+    
     </structuredBody>
   </component>
 </ClinicalDocument>

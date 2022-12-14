@@ -643,7 +643,7 @@
                               <!-- Conformité CI-SIS FR-Severite -->
                               <templateId root="1.2.250.1.213.1.1.3.29"/>
                               <code code="SEV" displayName="Severity"
-                                codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                                codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
                               <text>
                                 <reference value="#sevPatho"/>
                               </text>
@@ -762,7 +762,7 @@
                 </section>
               </component>
 
-              <!-- [0..1] Sous-section FR-Antecedents-chirurgicaux -->
+              <!-- [0..1] Sous-section FR-Historique-des-actes -->
               <component>
                 <section>
                   <!-- Conformité CCD -->
@@ -771,12 +771,12 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
                   <!-- Conformité IHE PCC Coded List of Surgeries Section -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
-                  <!-- Conformité CI-SIS FR-Antecedents-chirurgicaux -->
+                  <!-- Conformité CI-SIS FR-Historique-des-actes -->
                   <templateId root="1.2.250.1.213.1.1.2.136"/>
                   <id root="8EB396A9-79A4-4716-BF9D-38F5CD2652E3"/>
-                  <code code="47519-4" displayName="Antécédents chirurgicaux"
+                  <code code="47519-4" displayName="Historique des actes"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <title>Antécédents chirurgicaux</title>
+                  <title>Historique des actes</title>
                   <text>
                     <table border="0">
                       <thead align="center">
@@ -864,7 +864,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
                   <!-- Conformité CI-SIS FR-Allergies-et-hypersensibilites -->
                   <templateId root="1.2.250.1.213.1.1.2.137"/>
-                  <code code="48765-2" displayName="Allergies, réactions adverses, alertes"
+                  <code code="48765-2" displayName="Allergies et hypersensibilités"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <title>Allergies connues</title>
                   <!-- Partie narrative de la section -->
@@ -1012,7 +1012,7 @@
                               <!-- Conformité CI-SIS FR-Severite -->
                               <templateId root="1.2.250.1.213.1.1.3.29"/>
                               <code code="SEV" displayName="Severity"
-                                codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                                codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
                               <text>
                                 <reference value="#Severite_allerg"/>
                               </text>
@@ -1131,8 +1131,8 @@
                           <templateId root="1.2.250.1.213.1.1.3.51"/>
                           <id root="6F3F483F-374C-4CE2-9127-EA1B285E72D2"/>
                           <!--<code code="75326-9" displayName="Problème" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />-->
-                          <code code="F-01000" displayName="Problème"
-                            codeSystem="1.2.250.1.213.2.12"/>
+                          <code code="55607006" displayName="problème"
+                            codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                           <text>
                             <reference value="#patho004"/>
                           </text>
@@ -1368,6 +1368,8 @@
         <section>
           <!-- Conformité CI-SIS FR-Dispositifs-medicaux -->
           <templateId root="1.2.250.1.213.1.1.2.1"/>
+          <templateId root="2.16.840.1.11383.10.20.1.7"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.5"/>
           <id root="A5516277-3F86-4681-9013-93868243AB67"/>
           <code code="46264-8" displayName="Dispositifs médicaux" codeSystem="2.16.840.1.113883.6.1"
             codeSystemName="LOINC"/>
@@ -1407,7 +1409,9 @@
                 <reference value="#DM001"/>
               </text>
               <!-- Date d'utilisation du DM -->
-              <effectiveTime nullFlavor="UNK"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low nullFlavor="UNK"/>
+              </effectiveTime>
               <!-- Dispensateur -->
               <performer typeCode="PRF">
                 <!-- Date de délivrance -->

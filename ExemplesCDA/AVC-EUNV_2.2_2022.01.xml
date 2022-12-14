@@ -571,7 +571,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-395" displayName="Vigilant, réagit vivement" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18436-8" displayName="Vigilant, réagit vivement" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssCons" />
                         </originalText>
@@ -595,7 +595,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="1" />
-                      <interpretationCode code="MED-400" displayName="Ne répond correctement qu'à une seule question." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18441-8" displayName="Ne répond correctement qu'à une seule question." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssQuest" />
                         </originalText>
@@ -619,7 +619,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="1" />
-                      <interpretationCode code="MED-403" displayName="Exécute un seul ordre sur les deux." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18444-2" displayName="Exécute un seul ordre sur les deux." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssCom" />
                         </originalText>
@@ -643,7 +643,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="1" />
-                      <interpretationCode code="MED-405" displayName="Paralysie partielle (ce score est attribué quand l'oculomotricité est anormale pour 1 ou 2 yeux, mais sans déviation forcée, ni paralysie complète)." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18446-7" displayName="Paralysie partielle (ce score est attribué quand l'oculomotricité est anormale pour 1 ou 2 yeux, mais sans déviation forcée, ni paralysie complète)." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssOculo" />
                         </originalText>
@@ -667,7 +667,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-407" displayName="Aucun trouble du champ visuel." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18448-3" displayName="Aucun trouble du champ visuel." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssVisu" />
                         </originalText>
@@ -691,7 +691,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-412" displayName="Paralysie mineure (effacement du sillon nasogénien, asymétrie du sourire)." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18453-3" displayName="Paralysie mineure (effacement du sillon nasogénien, asymétrie du sourire)." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssPara" />
                         </originalText>
@@ -715,7 +715,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-415" displayName="Absence de chute; maintien du membre supérieur à 90° (ou 45°) pendant 10 secondes." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18456-6" displayName="Absence de chute; maintien du membre supérieur à 90° (ou 45°) pendant 10 secondes." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssMsd" />
                         </originalText>
@@ -739,7 +739,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-415" displayName="Absence de chute; maintien du membre supérieur à 90° (ou 45°) pendant 10 secondes." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18456-6" displayName="Absence de chute; maintien du membre supérieur à 90° (ou 45°) pendant 10 secondes." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssMsg" />
                         </originalText>
@@ -763,7 +763,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="1" />
-                      <interpretationCode code="MED-422" displayName="Chute; la position ne peut être maintenue pendant 5 secondes mais le membre inférieur ne retombe pas sur le lit." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18463-2" displayName="Chute; la position ne peut être maintenue pendant 5 secondes mais le membre inférieur ne retombe pas sur le lit." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssMid" />
                         </originalText>
@@ -787,7 +787,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-422" displayName="Chute; la position ne peut être maintenue pendant 5 secondes mais le membre inférieur ne retombe pas sur le lit." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18463-2" displayName="Chute; la position ne peut être maintenue pendant 5 secondes mais le membre inférieur ne retombe pas sur le lit." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssMig" />
                         </originalText>
@@ -811,7 +811,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="2" />
-                      <interpretationCode code="MED-429" displayName="présente pour deux membres." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18467-3" displayName="présente pour deux membres." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssAtax" />
                         </originalText>
@@ -835,7 +835,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Normal">
+                      <interpretationCode code="LA18478-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Normal">
                         <originalText>
                           <reference value="#nihssSensi" />
                         </originalText>
@@ -859,7 +859,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="MED-432" displayName="Aphasie discrète à modérée." codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
+                      <interpretationCode code="LA18472-3" displayName="Aphasie discrète à modérée." codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                         <originalText>
                           <reference value="#nihssLang" />
                         </originalText>
@@ -883,7 +883,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Normal">
+                      <interpretationCode code="LA18468-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Normal">
                         <originalText>
                           <reference value="#nihssDysarthrie" />
                         </originalText>
@@ -907,7 +907,7 @@
                       <statusCode code="completed" />
                       <effectiveTime value="20180923" />
                       <value xsi:type="INT" value="0" />
-                      <interpretationCode code="GEN-103" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" displayName="Normal">
+                      <interpretationCode code="LA18468-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Normal">
                         <originalText>
                           <reference value="#nihssNegli" />
                         </originalText>

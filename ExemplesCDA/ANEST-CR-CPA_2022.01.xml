@@ -2701,7 +2701,7 @@
           <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.137" />
           <id root="0910313D-7F4E-4278-88F0-8BABF5F21BAC" />
-          <code code="48765-2" displayName="Allergies, réactions adverses, alertes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <code code="48765-2" displayName="Allergies et hypersensibilités" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Allergies, effets indésirables, alertes</title>
           <text>
             <table border="0">

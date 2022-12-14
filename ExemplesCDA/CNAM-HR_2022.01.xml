@@ -392,7 +392,6 @@
                       <id nullFlavor="UNK" />
                       <!-- Délivré par -->
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="1750300550"/>
                         <name>CLINIQUE SAINTE GENEVIEVE</name>
                       </representedOrganization>
                       </assignedEntity>
@@ -514,7 +513,6 @@
                       <id nullFlavor="UNK" />
                       <!-- Délivré par -->
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="1750017212"/>
                         <name>HARMACIE COMPAIN</name>
                       </representedOrganization>
                     </assignedEntity>
@@ -637,7 +635,6 @@
                       <id nullFlavor="UNK" />
                       <!-- Délivré par -->
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="1750017212"/>
                         <name>HARMACIE COMPAIN</name>
                       </representedOrganization>
                     </assignedEntity>
@@ -812,7 +809,6 @@
                       <id nullFlavor="UNK" />
                       <!-- Délivré par -->
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="1750017212"/>
                         <name>PHARMACIE COMPAIN</name>
                       </representedOrganization>
                     </assignedEntity>
@@ -905,7 +901,6 @@
                       <id nullFlavor="UNK" />
                       <!-- Délivré par -->
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="1750017212"/>
                         <name>PHARMACIE COMPAIN</name>
                       </representedOrganization>
                     </assignedEntity>
@@ -997,7 +992,6 @@
                       <id nullFlavor="UNK" />
                       <!-- Délivré par -->
                       <representedOrganization>
-                        <id root="1.2.250.1.71.4.2.2" extension="1750017212"/>
                         <name>PHARMACIE COMPAIN</name>
                       </representedOrganization>
                     </assignedEntity>

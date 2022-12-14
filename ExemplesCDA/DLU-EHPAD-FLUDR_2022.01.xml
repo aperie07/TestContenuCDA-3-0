@@ -19,14 +19,15 @@
       Notes:            
       11/06/2018 : NMA : Correction d'erreurs suite à la mise à jour des schématrons     
       26/08/2020 : ANS : Amélioration mise en forme du document (pas de modification technique)  
-      06/01/2021 : Nouvelle version 2021.01 :
+      06/01/2021 : Nouvelle version 2021.01
 	  -	Ajoût du numéro de version pour différencier les différentes versions du modèle DLU-FLUDT
-	  - Remplacement des sections FR-Raison-de-la-recommandation-non-code (motif du transfert) et FR-Historique-prises-en-charge-medicales (description du transfert) 
+	  - Remplacement sections FR-Raison-de-la-recommandation-non-code (motif du transfert) et FR-Historique-prises-en-charge-medicales (description du transfert) 
 	    par la nouvelle section FR-Resultats-evenements qui comprend une entrée FR-Simple-Observation pour le motif et 
 	    une entrée FR-Transfert-du-patient pour la description du transfert.
-	  - Remplacement de la section FR-Commentaire-Asip (1.2.250.1.213.1.1.2.47) par la section FR-Commentaire-non-code (1.2.250.1.213.1.1.2.73) qui ne contient pas d’entrée. 
+	  - Remplacement section FR-Commentaire-Asip (1.2.250.1.213.1.1.2.47) par section FR-Commentaire-non-code (1.2.250.1.213.1.1.2.73). 
       -	Remplacement de la section FR-Elements-cliniques-rapportes (1.2.250.1.213.1.1.2.46) par la section FR-Documents-ajoutes (1.2.250.1.213.1.1.2.37).
-      - 14/04/2022 : Migration des terminologies et JDVs en SNOMED CT
+      05/12/2022 : Nouvelle version 2022.01
+      - Migration des terminologies et JDVs
       **********************************************************************************************************
 -->
 
@@ -245,9 +246,6 @@
 					<postalCode>92100</postalCode>
 					<city>BOULOGNE-BILLANCOURT</city>
 				</addr>
-				<standardIndustryClassCode code="ETABLISSEMENT"
-					displayName="Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.9"
-					codeSystemName="practiceSettingCode"/>
 			</receivedOrganization>
 		</intendedRecipient>
 	</informationRecipient>
@@ -433,11 +431,11 @@
 			<!-- [1..1] Section FR-Resultats-evenements : Retour du patient à l'EHPAD -->
 			<component>
 				<section>
-					<!-- Conformité IHE PCC Event Outcomes -->
+					<!-- Conformité Event Outcomes (IHE PCC) -->
 					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.21.2.9"/>
-					<!-- Conformité IHE PCC Coded Event Outcomes -->
+					<!-- Conformité Coded Event Outcomes (IHE PCC) -->
 					<templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.13.7"/>
-					<!-- Conformité CI-SIS -->
+					<!-- Conformité FR-Resultats-evenements (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.163"/>
 					<id root="BCE86697-249D-431B-A97C-1AC53B70BC89"/>
 					<code code="42545-4" displayName="Evènements observés"
@@ -462,9 +460,9 @@
 					<!-- [0..1] Entrée FR-Simple-Observation : Motif du transfert  -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
 							<id root="2914B83F-B6EB-4DD4-9178-7C737E4B35B1"/>
 							<code code="15515-0" displayName="Motif du transport"
@@ -481,9 +479,9 @@
 					<!-- [1..*] Entrée FR-Transfert-du-patient : Retour du résident à l'EHPAD -->
 					<entry>
 						<act classCode="ACT" moodCode="EVN">
-							<!-- Conformité IHE PCC -->
+							<!-- Conformité Patient Transfer (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.25.1.4.1"/>
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Transfert-du-patient (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.28"/>
 							<id root="6DA489A9-D085-4D7E-B669-1EC4973EFA66"/>
 							<code code="80413-8" displayName="Transfert du patient"
@@ -526,9 +524,9 @@
 			<!-- [1..1] Section FR-Diagnostic-de-sortie-episode-de-soins (structurée) -->
 			<component>
 				<section>
-					<!-- Conformité IHE PCC -->
+					<!-- Conformité Discharge Diagnosis Section (IHE PCC) -->
 					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.7"/>
-					<!-- Conformité CI-SIS -->
+					<!-- Conformité FR-Diagnostic-de-sortie-episode-de-soins (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.133"/>
 					<id root="E52A7B75-3B12-44DF-80B3-3DEA64E25B4B"/>
 					<code code="11535-2" displayName="Diagnostic de sortie"
@@ -547,14 +545,14 @@
 					<!-- [1..*] Entrée FR-Liste-des-problemes -->
 					<entry>
 						<act classCode="ACT" moodCode="EVN">
-							<!-- Conformité CCD Problem Act  -->
-							<templateId root="2.16.840.1.113883.10.20.1.27"/>
-							<!-- Conformité IHE PCC Concern -->
-							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
-							<!-- Conformité IHE PCC Problem Concern -->
-							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-							<!-- Conformité CI-SIS -->
-							<templateId root="1.2.250.1.213.1.1.3.39"/>
+							<!-- Problem Act (CCD) -->
+							<templateId root="2.16.840.1.113883.10.20.1.27" />
+							<!-- Concern Entry (IHE PCC) -->
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+							<!-- Problem Concern Entry (IHE PCC) -->
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" />
+							<!-- FR-Liste-des-problemes (CI-SIS) -->
+							<templateId root="1.2.250.1.213.1.1.3.39" />
 							<id root="6C4C6A5C-CE23-4AFD-9FC2-8B0FA6E829FF"/>
 							<code nullFlavor="NA"/>
 							<statusCode code="completed"/>
@@ -565,12 +563,12 @@
 							<!-- [1..*] Entrée FR-Probleme : Bronchite chronique simple --> 
 							<entryRelationship typeCode="SUBJ" inversionInd="false">
 								<observation classCode="OBS" moodCode="EVN" negationInd="false">
-									<!-- Conformité CCD Problem Observation -->
-									<templateId root="2.16.840.1.113883.10.20.1.28"/>
-									<!-- Conformité IHE PCC Problem -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-									<!-- Conformité CI-SIS -->
-									<templateId root="1.2.250.1.213.1.1.3.37"/>
+									<!-- Problem observation (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.28" />
+									<!-- Problem Entry (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+									<!-- FR-Probleme (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.37" />
 									<id root="B47243F7-6470-43DC-97FA-4FA67A384BF4"/>
 									<code code="282291009" codeSystem="2.16.840.1.113883.6.96"
 										codeSystemName="SNOMED CT" displayName="interprétation diagnostique"/>
@@ -582,9 +580,8 @@
 										<low value="20200328"/>
 										<high nullFlavor="NA"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="J41.0"
-										codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10"
-										displayName="Bronchite chronique simple">
+									<value xsi:type="CD" code="J41.0" displayName="Bronchite chronique simple"
+										codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
 										<originalText>
 											<reference value="#probleme-001"></reference>
 										</originalText>
@@ -599,9 +596,9 @@
 			<!-- [1..1] Section FR-Traitements-a-la-sortie (structurée) -->
 			<component>
 				<section>
-					<!-- Conformité IHE PCC Hospital Discharge Medications -->
+					<!-- Conformité Hospital Discharge Medications (IHE PCC) -->
 					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.22"/>
-					<!-- Conformité CI-SIS -->
+					<!-- Conformité FR-Traitements-a-la-sortie (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.146"/>
 					<code code="10183-2" displayName="Traitements à la sortie"
 						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -641,14 +638,14 @@
 					<!-- [1..*] Entrée FR-Traitement -->
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="INT">
-							<!-- Conformité CI-SIS -->
-							<templateId root="1.2.250.1.213.1.1.3.42"/>
-							<!-- Conformité CCD Medication activity -->
-							<templateId root="2.16.840.1.113883.10.20.1.24"/>
-							<!-- Conformité IHE PCC Medication -->
-							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-							<!-- Conformité IHE Mode d’administration "Normal" -->
-							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+							<!-- Medication Activity (CCD) -->
+							<templateId root="2.16.840.1.113883.10.20.1.24" />
+							<!-- Medications Entry (IHE PCC) -->
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7" />
+							<!-- FR-Traitement (FR CI-SIS) -->
+							<templateId root="1.2.250.1.213.1.1.3.42" />
+							<!-- Mode d'administration (normal) -->
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1" />
 							<id root="AD366B24-96F4-4AA6-9783-9FD445FDD17C"/>
 							<text><reference></reference></text>
 							<statusCode code="completed"/>
@@ -671,20 +668,19 @@
 							<maxDoseQuantity>
 								<numerator value="4"/>
 								<denominator value="1" unit="d"/>
-							</maxDoseQuantity>
-							<consumable typeCode="CSM">								
-								<!-- Entrée FR-Produit-de-sante -->
+							</maxDoseQuantity>					
+							<!-- Entrée FR-Produit-de-sante -->
+							<consumable typeCode="CSM">			
 								<manufacturedProduct>
-									<!-- Conformité CI-SIS -->
-									<templateId root="1.2.250.1.213.1.1.3.43"/>
-									<!-- Conformité IHE CCD -->
+									<!-- Product (CCD) -->
 									<templateId root="2.16.840.1.113883.10.20.1.53"/>
-									<!-- Conformité IHE PCC IHE Product Entry-->
+									<!-- Product Entry (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+									<!-- FR-Produit-de-sante (CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.43"/>
 									<manufacturedMaterial classCode="MMAT">
-										<code code="68496001" codeSystem="1.2.250.1.213.2.3.1"
-											codeSystemName="CIS"
-											displayName="AMPICILLINE PANPHARMA 500 mg, poudre et solution pour préparation injectable">
+										<code code="68496001" displayName="AMPICILLINE PANPHARMA 500 mg, poudre et solution pour préparation injectable"
+											codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
 											<originalText>
 												<reference value="#TRT-MED-001"/>
 											</originalText>
@@ -700,7 +696,7 @@
 			<!-- [1..1] Section FR-Protheses-et-objets-personnels -->
 			<component>				
 				<section>
-					<!-- Conformité CI-SIS -->
+					<!-- Conformité FR-Protheses-et-objets-personnels (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.53"/>
 					<id root="A0E6E8E4-520A-4B4C-90D3-3ED305FF68B1"/>
 					<code code="46264-8" displayName="Dispositifs médicaux"
@@ -709,7 +705,7 @@
 					<text> 
 						<table border="0">
 							<thead>
-								<tr><th align="left">Prothèse / Objet personnel</th><th>Commentaire</th></tr>
+								<tr><th>Prothèse / Objet personnel</th><th>Commentaire</th></tr>
 							</thead>
 							<tbody>
 								<tr><td><content ID="lunettes">Lunettes</content></td><td>oui</td></tr>
@@ -724,17 +720,18 @@
 					<!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Lunettes du patient -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC Simple Observation -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS Simple Observation -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="29D020AA-168F-4D98-A706-D6AD009EECE1"/>
 							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-							<code  code="Q021003" displayName="Lunettes" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
+							<code  code="Q021003" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)" 
+								   codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#lunettes"/></text> 
-							<statusCode code="completed"/>
+							<statusCode code="completed"/> 
 							<effectiveTime value="20200327153500+0100"/>
 							<value xsi:type="BL" value="true"/>
 							<targetSiteCode nullFlavor="NASK"/>
@@ -743,15 +740,15 @@
 					<!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse dentaire haute du patient -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC Simple Observation -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS Simple Observation -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="00845861-509F-432A-96B7-1898E3574609"/>
 							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-							<code code="P0102" displayName="Prothèses dentaires" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
+							<code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protDentHaut"/></text> 
 							<statusCode code="completed"/>
 							<effectiveTime value="20200327153500+0100"/>
@@ -762,15 +759,15 @@
 					<!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse dentaire basse du patient -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC Simple Observation -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS Simple Observation -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="BC760D09-4F49-41F0-8529-3ED75F5CA9C5"/>
 							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-							<code code="P0102" displayName="Prothèses dentaires" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
+							<code code="P0102" displayName="PROTHÈSES DENTAIRES" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protDentBas"/></text> 
 							<statusCode code="completed"/>
 							<effectiveTime value="20200327153500+0100"/>
@@ -781,15 +778,15 @@
 					<!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse auditive droite du patient -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC Simple Observation -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS Simple Observation -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="2603E6C3-1ED7-4505-A2C9-AE97E53C8B1D"/>
 							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-							<code code="Y2145" displayName="Prothèses auditives" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
+							<code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protAudDroit"/></text> 
 							<statusCode code="completed"/>
 							<effectiveTime value="20200327153500+0100"/>
@@ -800,15 +797,15 @@
 					<!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Prothèse auditive gauche du patient -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC Simple Observation -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS Simple Observation -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="3AEBD44A-0A9B-403B-8748-53BB788A740E"/>
 							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-							<code code="Y2145" displayName="Prothèses auditives" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
+							<code code="Y2145" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" codeSystem="1.2.250.1.213.2.68" codeSystemName="EMDN"/>
 							<text><reference value="#protAudGauche"/></text> 
 							<statusCode code="completed"/>
 							<effectiveTime value="20200327153500+0100"/>
@@ -819,41 +816,21 @@
 					<!-- [1..*] Entrée FR-Prothese-et-objet-personnel : Autres dispositifs ou objets personnels -->
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<!-- Conformité IHE PCC Simple Observation -->
+							<!-- Conformité Simple Observation (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-							<!-- Conformité CI-SIS Simple Observation -->
+							<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.48" />
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Prothese-et-objet-personnel (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.12" />
 							<id root="591BFAC8-4850-4324-B6D3-443A4AAE481D"/>
-							<!-- [ANS] Code à remplacer -->
 							<!-- valeur issue du JDV_ProtheseObjetPersonnel-CISIS (1.2.250.1.213.1.1.5.515) -->
-							<code code="A-00100"
-								displayName="Autre dispositif ou objet personnel"
-								codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+							<code code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
 							<text><reference value="#autreDispoST"/></text> 
 							<statusCode code="completed"/>
 							<effectiveTime value="20200327153500+0100"/>
-							<value xsi:type="BL" value="true"/>
-							<targetSiteCode nullFlavor="NASK"/>
-							<!-- entrée FR-Simple-Observation : Autres dispositifs ou objets personnels -->
-							<entryRelationship typeCode="COMP">
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- Conformité IHE PCC -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-									<!-- Conformité CI-SIS -->
-									<templateId root="1.2.250.1.213.1.1.3.48" />
-									<id root="FED30749-050C-4039-B5D8-9D82BFAC5BBC"/>
-									<!-- [ANS] code à trouver -->
-									<code code="GEN-092"
-										displayName="Autre"
-										codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
-									<text><reference value="#autreDispoST"/></text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20200327153500+0100"/>
-									<value xsi:type="ST"/>
-								</observation>
-							</entryRelationship>
+							<value xsi:type="CD">
+								<originalText><reference value="#autreDispoST"/></originalText>
+							</value> 							
 						</observation>
 					</entry>
 				</section>
@@ -862,7 +839,7 @@
 			<!-- [1..1] Section FR-Documents-ajoutes -->
 			<component>
 				<section>
-					<!-- Conformité CI-SIS -->
+					<!-- Conformité FR-Documents-ajoutes (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.37"/>
 					<id root="770B0DC2-A6B8-468E-8432-632B18D35F68"/>
 					<code code="55107-7" displayName="Documents ajoutés"
@@ -871,7 +848,7 @@
 					<text> 
 						<table border="0">
 							<thead>
-								<tr><th align="left">Document</th><th>Annexé à la FLUDR</th><th></th></tr>
+								<tr><th>Document</th><th>Annexé à la FLUDR</th><th></th></tr>
 							</thead>
 							<tbody>
 								<tr><td><content ID="doc1">Ordonnance de sortie</content></td><td>oui</td><td><renderMultiMedia referencedObject="doc-1"/></td></tr>
@@ -885,7 +862,7 @@
 					<!-- [1..*] Entrée FR-Document-attache : Ordonnance de sortie -->
 					<entry>
 						<organizer classCode="CLUSTER" moodCode="EVN">
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Document-attache (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.18"/>
 							<id root="88BEB395-3B4C-37F5-9A31-03BEA73A8D8B"/>
 							<code code="55107-7" displayName="Document attaché"
@@ -894,11 +871,11 @@
 							<!-- [1..1] Entrée FR-Type-document-attache -->
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
-									<!-- Conformité IHE PCC Simple Observation -->
+									<!-- Conformité Simple Observation (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-									<!-- Conformité CI-SIS simple observation -->
+									<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.48"/>
-									<!-- Conformité CI-SIS -->
+									<!-- Conformité FR-Type-document-attache (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.48.18"/>
 									<id root="0D1629B3-CC69-4632-81F3-2301FD4C318B"/>
 									<code code="69764-9" displayName="Type de document"
@@ -924,7 +901,7 @@
 					<!-- [1..*] Entrée FR-Document-attache : Copie du dossier des urgences -->
 					<entry>
 						<organizer classCode="CLUSTER" moodCode="EVN">
-							<!-- Conformité CI-SIS -->
+							<!-- Conformité FR-Document-attache (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.3.18"/>
 							<id root="88BEB395-3B4C-37F5-9A31-03BEA73A8D8B"/>
 							<code code="55107-7" displayName="Document attaché"
@@ -933,11 +910,11 @@
 							<!-- [1..1] Entrée FR-Type-document-attache -->
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
-									<!-- Conformité IHE PCC Simple Observation -->
+									<!-- Conformité Simple Observation (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-									<!-- Conformité CI-SIS simple observation -->
+									<!-- Conformité FR-Simple-Observation (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.48"/>
-									<!-- Conformité CI-SIS -->
+									<!-- Conformité FR-Type-document-attache (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.3.48.18"/>
 									<id root="0D1629B3-CC69-4632-81F3-2301FD4C318B"/>
 									<code code="69764-9" displayName="Type de document"
@@ -965,11 +942,11 @@
 			<!-- [0..1] Section FR-Commentaire-non-code -->
 			<component>
 				<section>
-					<!-- Conformité CCD -->
+					<!-- Conformité CDA Section (CCD) -->
 					<templateId root="2.16.840.1.113883.10.12.201"/>
-					<!-- Conformité IHE PCC -->
+					<!-- Conformité Document Summary (IHE CARD) -->
 					<templateId root="1.3.6.1.4.1.19376.1.4.1.2.16"/>
-					<!-- Conformité CI-SIS -->
+					<!-- Conformité FR-Commentaire-non-code (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.73"/>
 					<code code="55112-7" displayName="Commentaire"
 						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>

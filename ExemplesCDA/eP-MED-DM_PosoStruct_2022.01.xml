@@ -15,7 +15,7 @@
     format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
     **********************************************************************************************************
     Historique :
-    - 21/10/2022 : Création 
+    - 02/12/2022 : Création exemple avec posologie structurée
     **********************************************************************************************************
 -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -39,10 +39,9 @@
   <!-- Conformité au volet IHE PCC -->
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
   <!-- Conformité au modèle de document eP-MED-DM_2022.01 -->
-  <templateId root="1.2.250.1.213.1.1.1.39" extension="2022.01"/>
-  <!-- Identifiant unique du document : calculé selon la règle fournie dans les spécifications de la Cnam / root="1.2.250.1.215.500.1.1" -->
-  <!-- [APE] à revoir car DMP n'accepte que root -->
-  <id root="1.2.250.1.215.500.1.1" extension="01S2TBPZ2JCNZZYGHZ"/>
+  <templateId root="1.2.250.1.213.1.1.1.39" extension="2022.01"/>  
+  <!-- Identifiant du document CDA -->
+  <id root="1.2.250.1.213.1.1.1.39.1.1"/>
   <!-- Type de document -->
   <code code="57833-6" displayName="Prescription de produits de santé" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <!-- Titre du document -->
@@ -54,8 +53,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <!-- [APE] à revoir car DMP n'accepte que root -->
-  <setId root="1.2.250.1.215.500.1.1" extension="01S2TBPZ2JCNZZYGHZ"/>
+  <setId root="1.2.250.1.213.1.1.1.39.1"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="1"/>
 
@@ -366,6 +364,8 @@
   <!-- [1..1] Acte documenté : prescription -->
   <documentationOf>
     <serviceEvent classCode="ACT">
+      <!-- Identifiant de la prescription EPU : root="1.2.250.1.215.500.1.1" + extension calculé selon la règle fournie dans les spécifications de la Cnam -->
+      <id root="1.2.250.1.215.500.1.1" extension="01S2TBPZ2JCNZZYGHZ"/>
       <code code="57833-6" displayName="Prescription de produits de santé" 
         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"></code>
       <!-- Période de validité de la prescription -->
@@ -837,7 +837,7 @@
                       <!-- Conformité Product Entry (IHE PCC) -->
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
                       <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                      <templateId root="1.2.250.1.213.1.1.3.43"/>
+                      <templateId root="1.2.250.1.213.1.1.3.84"/>
                       <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
                         <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
                         <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
@@ -921,7 +921,7 @@
                       <!-- Conformité Product Entry (IHE PCC) -->
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
                       <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                      <templateId root="1.2.250.1.213.1.1.3.43"/>
+                      <templateId root="1.2.250.1.213.1.1.3.84"/>
                       <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
                         <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
                         <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
@@ -1057,7 +1057,7 @@
                   <!-- Conformité FR-En-rapport-avec-la-prevention (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.34"/>
                   <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
-                  <code code="GEN-295" displayName="En rapport avec la prevention"
+                  <code code="GEN-295" displayName="En rapport avec la prévention"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text>
                     <reference value="#med-001-prev"/>
@@ -1332,7 +1332,7 @@
                   <!-- Conformité FR-En-rapport-avec-la-prevention (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.34"/>
                   <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
-                  <code code="GEN-295" displayName="En rapport avec la prevention"
+                  <code code="GEN-295" displayName="En rapport avec la prévention"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text>
                     <reference value="#med-002-prev"/>
@@ -1538,7 +1538,7 @@
                   <!-- Conformité FR-En-rapport-avec-la-prevention (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.34"/>
                   <id root="40C12236-3721-11EC-8D3D-0242AC130035"/>
-                  <code code="GEN-295" displayName="En rapport avec la prevention"
+                  <code code="GEN-295" displayName="En rapport avec la prévention"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                   <text>
                     <reference value="#DM-001-prev"/>

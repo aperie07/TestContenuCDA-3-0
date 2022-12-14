@@ -11,7 +11,7 @@
   <!-- 
 	**********************************************************************************************************
 	Document : Compte-rendu de rétinographie (CR-RTN_2022.01)
-	Auteur : ANS / PML
+	Auteur : ANS
 	**********************************************************************************************************
 	format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
 	**********************************************************************************************************
@@ -21,7 +21,7 @@
       13/07/2021 : Correction du code LOINC de la section Informations assuré
       04/11/2021 : Version 2021.01
       26/04/2022 : version 2022.01
-		  26/04/2022 : Migration des terminologies et JDV en SNOMED CT
+		  06/12/2022 : Migration des terminologies et JDV en SNOMED CT
 	**********************************************************************************************************
 -->
   <realmCode code="FR" />
@@ -346,11 +346,11 @@
       <!-- Section FR-Commentaire-non-code : Compte rendu d’intervention de l’orthoptiste -->
       <component>
         <section>
-          <!-- Conformité IHE CCD -->
+          <!-- Conformité CDA Section (CDD) -->
           <templateId root="2.16.840.1.113883.10.12.201"/>
-          <!-- Conformité IHE PCC -->
+          <!-- Conformité Document Summary (IHE CARD) -->
           <templateId root="1.3.6.1.4.1.19376.1.4.1.2.16"/>
-          <!-- Conformité CI-SIS -->
+          <!-- Conformité FR-Commentaire-non-code (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.73"/>
           <code code="55112-7" displayName="Commentaire" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Compte rendu d’intervention de l’orthoptiste</title>
@@ -363,7 +363,7 @@
       <!-- Section FR-Documents-ajoutes -->
       <component>
         <section>
-          <!-- Conformité CI-SIS -->
+          <!-- Conformité FR-Documents-ajoutes (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.37" />
           <code code="55107-7" displayName="Documents ajoutés" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Rétinographie</title>
@@ -429,7 +429,7 @@
           <!-- Entrée FR-Document-attache : Cliché Papille Oeil Gauche -->
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Document-attache (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.18" />
               <id root="7FCD2515-53C5-49B8-8C1E-EFC3EDF59829" />
               <code code="55107-7" displayName="Document attaché" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -437,11 +437,11 @@
               <!-- Entrée FR-Type-document-attache : Papille Oeil Gauche -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS Simple Observation -->
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <!-- Conformité CI-SIS Type document attaché -->
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.18" />
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -450,8 +450,8 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- Code trouvé en SNOMED CT -->
-                  <value xsi:type="CD" code="392406005" displayName="partie intraoculaire du nerf optique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="392406005" displayName="partie intraoculaire du nerf optique" 
+                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#ret001" />
                     </originalText>
@@ -482,11 +482,11 @@
               <!-- Entrée FR-Type-document-attache : Macula Oeil Gauche -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS Simple Observation -->
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <!-- Conformité CI-SIS Type document attaché -->
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.18" />
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -496,7 +496,6 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- Code trouvé en SNOMED CT -->
                   <value xsi:type="CD" code="82859000" displayName="macula" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#ret003" />
@@ -528,11 +527,11 @@
               <!-- Entrée FR-Type-document-attache : Papille Droite -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS Simple Observation -->
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <!-- Conformité CI-SIS Type document attaché -->
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.18" />
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -542,14 +541,14 @@
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime nullFlavor="NASK" />
-                  <!-- Code trouvé en SNOMED CT -->
-                  <value xsi:type="CD" code="392406005" displayName="partie intraoculaire du nerf optique"   codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="392406005" displayName="partie intraoculaire du nerf optique" 
+                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
                       <reference value="#ret002" />
                     </originalText>
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                      <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </value>
                 </observation>
@@ -575,11 +574,11 @@
               <!-- Entrée FR-Type-document-attache : Macula Oeil Droit -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS Simple Observation -->
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <!-- Conformité CI-SIS Type document attaché -->
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.18" />
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -595,7 +594,7 @@
                     </originalText>
                     <qualifier>
                       <name code="20228-3" displayName="Latéralité" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                      <value code="7771000" displayName="gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                      <value code="24028007" displayName="droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </qualifier>
                   </value>
                 </observation>
@@ -612,7 +611,7 @@
           <!-- Entrée FR-Document-attache : Fichier numérisé des données cliniques d'orientation -->
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <!-- Conformité IHE PCC -->
+              <!-- Conformité FR-Document-attache (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.18" />
               <id root="8F2431E5-96B6-4EE0-8CD6-ABF05E07AE20" />
               <code code="55107-7" displayName="Document attaché" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -620,11 +619,11 @@
               <!-- Entrée FR-Type-document-attache -->
               <component>
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS Simple Observation -->
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <!-- Conformité CI-SIS Type document attaché -->
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.18" />
                   <id root="38D20D12-3CF7-44DF-BBF9-50AF5EA3FB84" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -3212,7 +3211,7 @@ MjM2NDM2Pl0gPj4NCnN0YXJ0eHJlZg0KMTQ0MzI2DQolJUVPRg==
           <!-- Entrée FR-Document-attache : Fichier xml des données administratives -->
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
-              <!-- Conformité CI-SIS -->
+              <!-- Conformité FR-Document-attache (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.18" />
               <id root="96E3A08A-7983-4B19-BF72-F3501F04B058" />
               <code code="55107-7" displayName="Document attaché" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
@@ -3220,11 +3219,11 @@ MjM2NDM2Pl0gPj4NCnN0YXJ0eHJlZg0KMTQ0MzI2DQolJUVPRg==
               <!-- Entrée FR-Type-document-attache -->
               <component>
                 <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
+                  <!-- Conformité Simple Observation (IHE PCC) -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS Simple Observation -->
+                  <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <!-- Conformité CI-SIS Type document attaché -->
+                  <!-- Conformité FR-Type-document-attache (CI-SIS) -->
                   <templateId root="1.2.250.1.213.1.1.3.48.18" />
                   <id root="C6130D3A-C465-4B2C-BB7E-683DCC0D23F5" />
                   <code code="69764-9" displayName="Type de document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />

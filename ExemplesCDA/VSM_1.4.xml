@@ -39,8 +39,9 @@
      					- Entrée Habitus, Mode de vie : modification des codes ASIP par des codes LOINC
      					- Section Antécédents familiaux : ajout de l'OID 2.16.840.1.113883.10.20.1.4
      					- Entrée Traitement : correction des codes CIP utilisés
-     	21/07/2021 : correction de l'unité pour la consommation de tabac par "{pack}/a" (au lieu de "PA")
-     					
+     	21/07/2021 : Correction de l'unité pour la consommation de tabac par "{pack}/a" (au lieu de "PA") et de l'unité pour {tbl} par {tablet}
+     	02/12/2022 : Remplacement code SNOMED 3.5 "G-1009" (Diagnostic) par code SNOMED CT "282291009" (interprétation diagnostique)
+     	             Remplacement terminologie voie d'administration pour les traitements par EDQM Standards terms.     					
       **********************************************************************************************************
    -->	
 
@@ -490,34 +491,31 @@
 	<component>
 		<structuredBody>
 
-			<!--=<<o#%@O[ 1..1] Section Pathologie en cours, antécédents, allergies et facteurs de risques ]O@%#o>>=-->
+			<!-- [1..1] Section FR-Pathologies-antecedent-allergies-facteurs-de-risques -->
 			<component>
 				<section>
-					<!-- Conformité CI-SIS Pathologie en cours, antécédents, allergies et facteurs de risques -->
+					<!-- Conformité FR-Pathologies-antecedent-allergies-facteurs-de-risques (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.29"/>
 					<id root="5BD8E00D-FFD2-4D65-8899-6438FD974086"/>
-					<code code="46612-8" codeSystem="2.16.840.1.113883.6.1"
-						displayName="Conclusions de synthèse"/>
+					<code code="46612-8" displayName="Conclusions de synthèse" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 					<title>Pathologie en cours, antécédents, allergies et facteurs de risques</title>
-				
 
-					<!--=<<o#%@O[ [1..1] Sous-section Pathologie en cours, antécédents et allergies]O@%#o>>=-->
+					<!-- [0..1] Sous-section FR-Pathologies-antecedents-allergies -->
 					<component>
 						<section>
-							<!-- Conformité CI-SIS Pathologie en cours, antécédents et allergies -->
+							<!-- Conformité FR-Pathologies-antecedents-allergies (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.2.30"/>
 							<id root="00B7A76C-094F-41FF-A358-773B36572D23"/>
-							<code code="34117-2" codeSystem="2.16.840.1.113883.6.1"
-								displayName="Historique et physique"/>
+							<code code="34117-2" displayName="Historique et physique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<title>Pathologies en cours, antécédents et allergies</title>
-							<!--====%[ [0..1] Sous-section Problèmes actifs  ]%====-->
+							<!-- [0..1] Sous-section FR-Problemes-actifs -->
 							<component>
 								<section>
-									<!-- Conformité CCD -->
+									<!-- Conformité Problems Section (CCD) -->
 									<templateId root="2.16.840.1.113883.10.20.1.11"/>
-									<!-- Conformité IHE PCC Active Problems Section -->
+									<!-- Conformité Active Problems Section (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
-									<!-- Conformité CI-SIS FR-Problemes-actifs -->
+									<!-- Conformité FR-Problemes-actifs (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.2.132"/>
 									<id root="E52A7B75-3B12-44DF-80B3-3DEA64E25B4B"/>
 									<code code="11450-4" displayName="Liste des problèmes actifs"
@@ -532,25 +530,25 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td>11/08/2019</td><td><content ID="vsm0001">Accident ischémique cérébral transitoire</content></td>
+													<td>11/08/2019</td><td><content ID="pb-actif-01">Accident ischémique cérébral transitoire</content></td>
 												</tr>
 												<tr>
-													<td>11/08/2019</td><td><content ID="vsm0002">Angine de poitrine instable</content></td>
+													<td>11/08/2019</td><td><content ID="pb-actif-02">Angine de poitrine instable</content></td>
 												</tr>
 											</tbody>
 										</table>
 									</text>
 
-									<!-- Entrée Liste des Problèmes -->
+									<!-- Entrée FR-Liste-des-problemes -->
 									<entry>
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité CCD Problem Act  -->
+											<!-- Conformité Problem Act (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.27"/>
-											<!-- Conformité IHE PCC Concern -->
+											<!-- Conformité Concern Entry (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
-											<!-- Conformité IHE PCC Problem Concern -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-											<!-- Conformité CI-SIS FR-Liste-des-problemes -->
+											<!-- Conformité Problem Concern (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/> 
+											<!-- Conformité FR-Liste-des-problemes (CI-SIS) -->        
 											<templateId root="1.2.250.1.213.1.1.3.39"/>
 											<id root="12DA3A06-18E7-40B7-9397-1FA5B1552472"/>
 											<code nullFlavor="NA"/>
@@ -558,62 +556,44 @@
 											<effectiveTime xsi:type="IVL_TS">
 												<low value="20190811"/>
 											</effectiveTime>
-											<!-- Entrée Problème (AIT) -->
+											<!-- Entrée FR-Probleme (AIT) -->
 											<entryRelationship typeCode="SUBJ" inversionInd="false">
-												<observation classCode="OBS" moodCode="EVN"
-													negationInd="false">
-													<!-- Conformité CCD -->
+												<observation classCode="OBS" moodCode="EVN" negationInd="false">
+													<!-- Conformité Problem observation (CCD) -->
 													<templateId root="2.16.840.1.113883.10.20.1.28"/>
-													<!-- Conformité IHE PCC Problem Entry -->
+													<!-- Conformité Problem Entry (IHE PCC) -->
 													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-													<!-- Conformité CI-SIS FR-Problème -->
+													<!-- Conformité FR-Probleme (CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.37"/>
 													<id root="12DA3A06-18E7-40B7-9397-1FA5B1552472"/>
+													<!--<code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>-->
 													<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-													<!--<code code="G-1009" displayName="Diagnostic"
-															codeSystem="1.2.250.1.213.2.12"
-															codeSystemName="SNOMED 3.5"/>-->
 													<text>
-														<reference value="#vsm0001"/>
+														<reference value="#pb-actif-01"/>
 													</text>
 													<statusCode code="completed"/>
 													<effectiveTime>
 														<low value="20190811"/>
 													</effectiveTime>
-													<value xsi:type="CD" code="G45.9"
-														codeSystem="2.16.840.1.113883.6.3"
-														codeSystemName="CIM10"
-														displayName="Accident Ischémique Cérébral Transitoire">
-														<originalText><reference value="#vsm0001"/></originalText>
+													<value xsi:type="CD" code="G45.9" displayName="Accident Ischémique Cérébral Transitoire"
+														codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+														<originalText><reference value="#pb-actif-01"/></originalText>
 													</value>
 												</observation>
-											</entryRelationship>
-											<!-- 03/04/2020 : entryRelationship supprimé -->
-											<!-- <entryRelationship typeCode="REFR">
-												<observation classCode="OBS" moodCode="EVN">
-													<templateId root="2.16.840.1.113883.10.20.1.50"/>
-													<code code="33999-4"
-														codeSystem="2.16.840.1.113883.6.1"
-														displayName="Status"/>
-													<statusCode code="completed"/>
-													<value xsi:type="CE" code="55561003"
-														codeSystem="2.16.840.1.113883.6.96"
-														displayName="Active"/>
-												</observation>
-											</entryRelationship> -->
+											</entryRelationship>											
 										</act>
 									</entry>
 									
-									<!-- Entrée Liste des Problèmes -->
+									<!-- Entrée FR-Liste-des-problemes -->
 									<entry>
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité CCD Problem Act  -->
+											<!-- Conformité Problem Act (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.27"/>
-											<!-- Conformité IHE PCC Concern -->
+											<!-- Conformité Concern Entry (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
-											<!-- Conformité IHE PCC Problem Concern -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-											<!-- Conformité CI-SIS FR-Liste-des-problemes -->
+											<!-- Conformité Problem Concern (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/> 
+											<!-- Conformité FR-Liste-des-problemes (CI-SIS) -->        
 											<templateId root="1.2.250.1.213.1.1.3.39"/>
 											<id root="CDBD5B08-6CDE-11DB-9FE1-0800200C9A66"/>
 											<code nullFlavor="NA"/>
@@ -621,23 +601,20 @@
 											<effectiveTime>
 												<low value="20190811"/>
 											</effectiveTime>
-											<!-- Entrée Problème (Angine de Poitrine instable) -->
+											<!-- Entrée FR-Probleme (Angine de Poitrine instable) -->
 											<entryRelationship typeCode="SUBJ" inversionInd="false">
-												<observation classCode="OBS" moodCode="EVN"
-													negationInd="false">
-													<!-- Conformité CCD -->
+												<observation classCode="OBS" moodCode="EVN" negationInd="false">
+													<!-- Conformité Problem observation (CCD) -->
 													<templateId root="2.16.840.1.113883.10.20.1.28"/>
-													<!-- Conformité IHE PCC Problem Entry -->
+													<!-- Conformité Problem Entry (IHE PCC) -->
 													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-													<!-- Conformité CI-SIS FR-Problème -->
+													<!-- Conformité FR-Probleme (CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.37"/>
 													<id root="12DA3A06-18E7-40B7-9397-1FA5B1552472"/>
+													<!--<code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>-->
 													<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-													<!--<code code="G-1009" displayName="Diagnostic"
-														codeSystem="1.2.250.1.213.2.12"
-														codeSystemName="SNOMED 3.5"/>-->
 													<text>
-														<reference value="#vsm0002"/>
+														<reference value="#pb-actif-02"/>
 													</text>
 													<statusCode code="completed"/>
 													<effectiveTime>
@@ -647,39 +624,26 @@
 														codeSystem="2.16.840.1.113883.6.3"
 														codeSystemName="CIM10"
 														displayName="Angine de poitrine instable">
-														<originalText><reference value="#vsm0002"/></originalText>
+														<originalText><reference value="#pb-actif-02"/></originalText>
 													</value>
 												</observation>
-											</entryRelationship>											
-											<!-- 03/04/2020 : entryRelationship supprimé -->
-											<!-- <entryRelationship typeCode="REFR">
-												<observation classCode="OBS" moodCode="EVN">
-													<templateId root="2.16.840.1.113883.10.20.1.50"/>
-													<code code="33999-4"
-														codeSystem="2.16.840.1.113883.6.1"
-														displayName="Status"/>
-													<statusCode code="completed"/>
-													<value xsi:type="CE" code="55561003"
-														codeSystem="2.16.840.1.113883.6.96"
-														displayName="Active"/>
-												</observation>
-											</entryRelationship> -->
+											</entryRelationship>		
 										</act>
 									</entry>
 								
 								</section>
 							</component>
 							
-							<!--====%[ [0..1] Sous-section Antécédents médicaux  ]%====-->
+							<!-- [0..1] Sous-section FR-Antecedents-medicaux -->
 							<component>
 								<section>
-									<!-- Conformité IHE PCC History of past illness -->
+									<!-- Conformité History of Past Illness Section (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.8"/>
-									<!-- Conformité CI-SIS FR-Antecedents-medicaux -->
+									<!-- Conformité FR-Antecedents-medicaux (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.2.134"/>
 									<id root="8EB396A9-79A4-4716-BF9D-38F5CE2652E3"/>
 									<code code="11348-0" displayName="Antécédents médicaux"
-										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+										  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<title>Antécédents médicaux</title>									
 									<text>
 										<table border="0">
@@ -690,24 +654,24 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td>22/04/2018</td><td><content ID="vsm0003">Pyélonéphrite aiguë</content></td>
+													<td>22/04/2018</td><td><content ID="antecedent-med-01">Pyélonéphrite aiguë</content></td>
 												</tr>
 												<tr>
-													<td>14/01/2018</td><td><content ID="vsm0004">Infarctus transmural inférieur</content></td>
+													<td>14/01/2018</td><td><content ID="antecedent-med-02">Infarctus transmural inférieur</content></td>
 												</tr>
 											</tbody>
 										</table>
 									</text>
-									<!-- Entrée Liste des Problèmes -->
+									<!-- Entrée FR-Liste-des-problemes -->
 									<entry>
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité CCD Problem Act  -->
+											<!-- Conformité Problem Act (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.27"/>
-											<!-- Conformité IHE PCC Concern -->
+											<!-- Conformité Concern Entry (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
-											<!-- Conformité IHE PCC Problem Concern -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-											<!-- Conformité CI-SIS FR-Liste-des-problemes -->
+											<!-- Conformité Problem Concern (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/> 
+											<!-- Conformité FR-Liste-des-problemes (CI-SIS) -->        
 											<templateId root="1.2.250.1.213.1.1.3.39"/>
 											<id root="D3DCE1E0-EB52-47CB-8507-D33F0041D138"/>
 											<code nullFlavor="NA"/>
@@ -716,47 +680,45 @@
 												<low value="20180422"/>
 												<high value="20180430"/>
 											</effectiveTime>
-											<!-- Entrée Problème (Pyélonéphrite aiguë) -->
+											<!-- Entrée FR-Probleme (Pyélonéphrite aiguë) -->
 											<entryRelationship typeCode="SUBJ" inversionInd="false">
 												<observation classCode="OBS" moodCode="EVN" negationInd="false">
-													<!-- Conformité CCD -->
+													<!-- Conformité Problem observation (CCD) -->
 													<templateId root="2.16.840.1.113883.10.20.1.28"/>
-													<!-- Conformité IHE PCC Problem Entry -->
+													<!-- Conformité Problem Entry (IHE PCC) -->
 													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-													<!-- Conformité CI-SIS FR-Problème -->
+													<!-- Conformité FR-Probleme (CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.37"/>
 													<id root="21872220-FBDF-4BCC-85B1-61D1BBB420A5"/>
-													<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96"
-														codeSystemName="SNOMED CT"/>
+													<!--<code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>-->
+													<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 													<text>
-														<reference value="#vsm0003"/>
+														<reference value="#antecedent-med-01"/>
 													</text>
 													<statusCode code="completed"/>
 													<effectiveTime>
 														<low value="20180422"/>
 														<high value="20180430"/>
 													</effectiveTime>
-													<value xsi:type="CD" code="N10"
-														displayName="Pyélonéphrite aiguë"
-														codeSystem="2.16.840.1.113883.6.3"
-														codeSystemName="CIM10">
-														<originalText><reference value="#vsm0003"/></originalText>
+													<value xsi:type="CD" code="N10" displayName="Pyélonéphrite aiguë"
+														codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+														<originalText><reference value="#antecedent-med-01"/></originalText>
 													</value>
 												</observation>
 											</entryRelationship>
 										</act>
 									</entry>
 									
-									<!-- Entrée Liste des Problèmes -->
+									<!-- Entrée FR-Liste-des-problemes -->
 									<entry>
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité CCD Problem Act  -->
+											<!-- Conformité Problem Act (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.27"/>
-											<!-- Conformité IHE PCC Concern -->
+											<!-- Conformité Concern Entry (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
-											<!-- Conformité IHE PCC Problem Concern -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-											<!-- Conformité CI-SIS FR-Liste-des-problemes -->
+											<!-- Conformité Problem Concern (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/> 
+											<!-- Conformité FR-Liste-des-problemes (CI-SIS) -->        
 											<templateId root="1.2.250.1.213.1.1.3.39"/>
 											<id root="FC21DC59-43D5-4BB0-ACC7-3601784BFBC0"/>
 											<code nullFlavor="NA"/>
@@ -765,67 +727,49 @@
 												<low value="20180114"/>
 												<high value="20180125"/>
 											</effectiveTime>
-											<!-- Entrée Problème (Infarctus transmural inférieur) -->
+											<!-- Entrée FR-Probleme (Infarctus transmural inférieur) -->
 											<entryRelationship typeCode="SUBJ" inversionInd="false">
-												<observation classCode="OBS" moodCode="EVN"
-													negationInd="false">
-													<!-- Conformité CCD -->
+												<observation classCode="OBS" moodCode="EVN" negationInd="false">
+													<!-- Conformité Problem observation (CCD) -->
 													<templateId root="2.16.840.1.113883.10.20.1.28"/>
-													<!-- Conformité IHE PCC Problem Entry -->
+													<!-- Conformité Problem Entry (IHE PCC) -->
 													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-													<!-- Conformité CI-SIS FR-Problème -->
+													<!-- Conformité FR-Probleme (CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.37"/>
 													<id root="FC21DC59-43D5-4BB0-ACC7-3601784BFBC0"/>
+													<!--<code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>-->
 													<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-													<!--<code code="G-1009" displayName="Diagnostic"
-														codeSystem="1.2.250.1.213.2.12"
-														codeSystemName="SNOMED 3.5"/>-->
 													<text>
-														<reference value="#vsm0004"/>
+														<reference value="#antecedent-med-02"/>
 													</text>
 													<statusCode code="completed"/>
 													<effectiveTime>
 														<low value="20180114"/>
 														<high value="20180125"/>
 													</effectiveTime>
-													<value xsi:type="CD" code="I21.1"
-														codeSystem="2.16.840.1.113883.6.3"
-														codeSystemName="CIM10"
-														displayName="Infarctus transmural inférieur">
-														<originalText><reference value="#vsm0004"/></originalText>
+													<value xsi:type="CD" code="I21.1" displayName="Infarctus transmural inférieur"
+														codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+														<originalText><reference value="#antecedent-med-02"/></originalText>
 													</value>
 												</observation>
-											</entryRelationship>											
-											<!-- 03/04/2020 : entryRelationship supprimé -->
-											<!-- <entryRelationship typeCode="REFR">
-												<observation classCode="OBS" moodCode="EVN">
-													<templateId root="2.16.840.1.113883.10.20.1.50"/>
-													<code code="33999-4"
-														codeSystem="2.16.840.1.113883.6.1"
-														displayName="Status"/>
-													<statusCode code="completed"/>
-													<value xsi:type="CE" code="55561003"
-														codeSystem="2.16.840.1.113883.6.96"
-														displayName="Active"/>
-												</observation>
-											</entryRelationship> -->
+											</entryRelationship>	
 										</act>
 									</entry>
 
 								</section>
 							</component>
 
-							<!--====%[ [0..1] Sous-section Antécédents chirurgicaux ]%====-->
+							<!-- [0..1] Sous-section FR-Historique-des-actes -->
 							<component>
 								<section>
-									<!-- Conformité CCD -->
-									<templateId root="2.16.840.1.113883.10.20.1.12"/>
-									<!-- Conformité IHE PCC parent Antécédents chirurgicaux non codes -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
-									<!-- Conformité IHE PCC Coded List of Surgeries Section -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
-									<!-- Conformité CI-SIS FR-Antecedents-chirurgicaux -->
-									<templateId root="1.2.250.1.213.1.1.2.136"/>
+									<!-- Conformité Procedures Section (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.12" />
+									<!-- Conformité List of Surgeries Section (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11" />
+									<!-- Conformité Coded List of Surgeries Section (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12" />
+									<!-- Conformité FR-Historique-des-actes (FR CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.2.136" />
 									<id root="6F7DBEC2-0E15-48F0-B61E-00B0753BFCAD"/>
 									<code code="47519-4" displayName="Antécédents chirurgicaux"
 										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -839,28 +783,28 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td>14/01/2018</td><td><content ID="vsm0005">Dilatation
+													<td>14/01/2018</td><td><content ID="acte-001">Dilatation
 														intraluminale de deux vaisseaux coronaires avec
 														pose d'endoprothèse, par voie artérielle
-														transcutanée </content>(<content ID="vsm0006">Infarctus inférieur transmural</content>)</td>
+														transcutanée </content>(<content ID="acte-001-motif">Infarctus inférieur transmural</content>)</td>
 												</tr>
 											</tbody>
 										</table>
 									</text>
-									<!-- [1..*] Entrée Acte -->
+									<!-- [1..*] Entrée FR-Acte -->
 									<entry>
 										<procedure classCode="PROC" moodCode="EVN">
-											<!-- Conformité CCD -->
-											<templateId root="2.16.840.1.113883.10.20.1.29"/>
-											<!-- Conformité IHE PCC Procedure -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
-											<!-- Conformité CI-SIS FR-Acte -->
-											<templateId root="1.2.250.1.213.1.1.3.62"/>
+											<!-- Conformité Procedure Entry (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
+											<!-- Conformité Procedure activity (CCD) = acte réalisé -->
+											<templateId root="2.16.840.1.113883.10.20.1.29" />
+											<!-- Conformité FR-Acte (CI-SIS) -->
+											<templateId root="1.2.250.1.213.1.1.3.62" />
 											<id root="A6BC7FD2-EC3F-4E01-B567-854B087D1D9B"/>
 											<!-- Code de l'acte -->
 											<code code="DDAF004"  displayName="Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
 												codeSystem="1.2.250.1.213.2.5" codeSystemName="CCAM"/>
-											<text><reference value="#vsm0005"/></text>
+											<text><reference value="#acte-001"/></text>
 											<statusCode code="completed"/>
 											<!-- Date de l'acte -->
 											<effectiveTime value="20180114"/>
@@ -885,19 +829,17 @@
 													</representedOrganization>
 												</assignedAuthor>
 											</author>
-											<!-- [0..*] Entrée Référence interne (Motif de l'acte) -->
+											<!-- [0..*] Entrée FR-Reference-interne (Motif de l'acte) -->
 											<entryRelationship typeCode="RSON">
 												<act classCode="ACT" moodCode="EVN">
-													<!-- Conformité IHE PCC Internal References -->
-													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-													<!-- Conformité CI-SIS FR-Reference-interne  -->
-													<templateId root="1.2.250.1.213.1.1.3.36"/>
+													<!-- Conformité Internal Reference Entry (IHE PCC) -->
+													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1" />
+													<!-- Conformité FR-Reference-interne (FR CI-SIS) -->
+													<templateId root="1.2.250.1.213.1.1.3.36" />
 													<id root="FC21DC59-43D5-4BB0-ACC7-3601784BFBC0"/>
-													<code code="I21.1"
-														codeSystem="2.16.840.1.113883.6.3"
-														codeSystemName="CIM10"
-														displayName="Infarctus transmural inférieur">
-														<originalText><reference value="#vsm0006"/></originalText>
+													<code code="I21.1" displayName="Infarctus transmural inférieur"
+														codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
+														<originalText><reference value="#acte-001-motif"/></originalText>
 													</code>
 												</act>
 											</entryRelationship>
@@ -906,19 +848,19 @@
 								</section>
 							</component>
 
-							<!--====%[ [0..1] Sous-section Allergies & intolerances ]%====-->
+							<!-- [0..1] Sous-section FR-Allergies-et-hypersensibilites -->
 							<component>
 								<section>
-									<!-- Conformité CCD -->
-									<templateId root="2.16.840.1.113883.10.20.1.2"/>
-									<!-- Conformité IHE PCC Allergies and Other Adverse Reactions Section -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
-									<!-- Conformité CI-SIS FR-Allergies-et-intolerances -->
-									<templateId root="1.2.250.1.213.1.1.2.137"/>
+									<!-- Conformité Alerts section (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.2" />
+									<!-- Conformité Allergies and Other Adverse Reactions Section (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13" />
+									<!-- Conformité FR-Allergies-et-hypersensibilites (FR CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.2.137" />
 									<id root="7649C5FA-A444-49A6-91E9-78D2E5880C67"/>
-									<code code="48765-2" displayName="Allergies, réactions adverses, alertes"
-										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-									<title>Allergies, réactions adverses, alertes</title>
+									<code code="48765-2" displayName="Allergies et hypersensibilités"
+										  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<title>Allergies et hypersensibilités</title>
 									<text>
 										<table border="0">
 											<thead>
@@ -926,32 +868,30 @@
 													<th>Date</th>
 													<th>Type d'allergie</th>
 													<th>Agent responsable</th>
-													<th>Manifestation</th>
 													<th>Statut</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
 													<td>03/06/2018</td>
-													<td><content ID="vsm0007">Allergie Médicamenteuse</content></td>
-													<td><content ID="vsm0009">Paracétamol</content></td>
-													<td><content ID="vsm0008">Urticaire</content></td>
-													<td><content ID="vsm0010">Intermittent</content></td>
+													<td><content ID="allergie-001-type">Allergie médicamenteuse</content></td>
+													<td><content ID="allergie-001-agent">Paracétamol</content></td>
+													<td><content ID="allergie-001-statut">Intermittent</content></td>
 												</tr>
 											</tbody>
 										</table>
 									</text>
-									<!-- Entrée Liste des allergies et intolérances -->
+									<!-- Entrée FR-Liste-des-allergies-et-hypersensibilites -->
 									<entry>
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité CCD -->
-											<templateId root="2.16.840.1.113883.10.20.1.27"/>
-											<!-- Conformité IHE PCC Concern Entry -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
-											<!-- Conformité IHE PCC Allergies and Intolerances Concern -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
-											<!-- Conformité CI-SIS FR-Liste-des-allergies-et-intolerances -->
-											<templateId root="1.2.250.1.213.1.1.3.40"/>
+											<!-- Conformité Problem Act (CCD) -->
+											<templateId root="2.16.840.1.113883.10.20.1.27" />
+											<!-- Conformité Concern Entry (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+											<!-- Conformité Allergy and Intolerance Concern (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" />
+											<!-- Conformité FR-Liste-des-allergies-et-hypersensibilites (FR CI-SIS) -->
+											<templateId root="1.2.250.1.213.1.1.3.40" />
 											<id root="1269C206-4D59-4A9D-AA2D-AA0C4622D525"/>
 											<code nullFlavor="NA"/>
 											<statusCode code="active"/>
@@ -959,35 +899,34 @@
 											<effectiveTime>
 												<low nullFlavor="UNK"/>
 											</effectiveTime>
-											<!-- [1..*] Entrée Allergie ou intolérance (PARACETAMOL) -->
+											<!-- [1..*] Entrée FR-Allergie-ou-hypersensibilites (PARACETAMOL) -->
 											<entryRelationship typeCode="SUBJ" inversionInd="false">
 												<observation classCode="OBS" moodCode="EVN" negationInd="false">
-													<!-- Conformité CCD Problem Observation -->
-													<templateId root="2.16.840.1.113883.10.20.1.28"/>
-													<!-- Conformité CCD Alert Observation -->
-													<templateId root="2.16.840.1.113883.10.20.1.18"/>
-													<!-- Conformité IHE PCC Problem Entry -->
-													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-													<!-- Conformité IHE PCC Allergy and Intolerance -->
-													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
-													<!-- Conformité CI-SIS FR-Allergie-ou-intolerance -->
-													<templateId root="1.2.250.1.213.1.1.3.41"/>
+													<!-- Conformité Alert observation (CCD) -->
+													<templateId root="2.16.840.1.113883.10.20.1.18" />
+													<!-- Conformité Problem observation (CCD) -->
+													<templateId root="2.16.840.1.113883.10.20.1.28" />
+													<!-- Conformité Problem Entry (IHE PCC) -->
+													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+													<!-- Conformité Allergies And Intolerances Entry (IHE PCC) -->
+													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6" />
+													<!-- Conformité FR-Allergie-ou-hypersensibilite (FR CI-SIS) -->
+													<templateId root="1.2.250.1.213.1.1.3.41" />
 													<id root="C64C6013-C8AF-4938-AD10-1B7D26DEE2A0"/>
 													<!-- Type d'allergie /intolérance -->
 													<code code="DALG" displayName="Allergie à un produit pharmaceutique"
 														codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/>
-													<text><reference value="#vsm0007"/></text>	
+													<text><reference value="#allergie-001-type"/></text>	
 													<statusCode code="completed"/>
 													<!-- Date de l'allergie / intolérance -->
 													<effectiveTime xsi:type="IVL_TS">
 														<low value="20180603"/>
 													</effectiveTime>
-													<!-- Description clinique de l'allergie / intolérance -->
-													<value xsi:type="CD" code="T78.3"
-														displayName="Urticaire"
-														codeSystem="2.16.840.1.113883.6.3"
-														codeSystemName="CIM-10">
-														<originalText><reference value="#vsm0008"/></originalText>
+													<!-- Description clinique de l'allergie / intolérance : non renseigné -->
+													<value xsi:type="CD">
+														<originalText>
+															<reference value="#" />
+														</originalText>
 													</value>
 													<!-- Agent responsable de l'allergie / de l'intolérance -->
 													<participant typeCode="CSM">
@@ -996,33 +935,31 @@
 																<code code="60234100" displayName="PARACETAMOL"
 																	codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
 																	<originalText>
-																		<reference value="#vsm0009"/>
+																		<reference value="#allergie-001-agent"/>
 																	</originalText>
 																</code>
 																<name/>
 															</playingEntity>
 														</participantRole>
 													</participant>	
-													<!-- Statut clinique de l'allergie / de l'intolérance -->
+													<!-- Entrée FR-Statut-du-probleme : Statut clinique de l'allergie -->
 													<entryRelationship typeCode="REFR" inversionInd="false">
 														<observation classCode="OBS" moodCode="EVN" negationInd="false">
-															<!-- Conformité CCD -->
-															<templateId root="2.16.840.1.113883.10.20.1.57"/>
-															<!-- Conformité CCD -->
-															<templateId root="2.16.840.1.113883.10.20.1.50"/>
-															<!-- Conformité IHE PCC Problem Status Observation -->
-															<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-															<!-- Conformité CI-SIS  FR-Statut-du-probleme -->
-															<templateId root="1.2.250.1.213.1.1.3.30"/>
+															<!-- Conformité Problem status observation (CCD) --> 
+															<templateId root="2.16.840.1.113883.10.20.1.50" />
+															<!-- Conformité Status observation (CCD) -->
+															<templateId root="2.16.840.1.113883.10.20.1.57" />
+															<!-- Conformité Problem Status Observation (IHE PCC) --> 
+															<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1" />
+															<!-- Conformité FR-Statut-du-probleme (FR CI-SIS) --> 
+															<templateId root="1.2.250.1.213.1.1.3.30" />
 															<code code="33999-4" displayName="Status"
 																codeSystem="2.16.840.1.113883.6.1"
 																codeSystemName="LOINC"/>
-															<text><reference value="#vsm0010"/></text>
+															<text><reference value="#allergie-001-statut"/></text>
 															<statusCode code="completed"/>
-															<!--<value xsi:type="CE" code="G-A397"
-																codeSystem="1.2.250.1.213.2.12"
-																codeSystemName="SNOMED 3.5"
-																displayName="Intermittent"/> -->
+															<!--<value xsi:type="CE" code="G-A397" displayName="Intermittent" 
+																codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/> -->
 															<value xsi:type="CE" code="inactive" displayName="Inactif"
 																codeSystem="2.16.840.1.113883.4.642.4.1373"/>
 														</observation>
@@ -1037,27 +974,26 @@
 						</section>
 					</component>
 
-					<!--=<<o#%@O[ [1..1] Sous-section Facteurs de risque ]O@%#o>>=-->
+					<!-- [0..1] Sous-section FR-Facteurs-de-risques -->
 					<component>
 						<section>
-							<!-- Conformité CI-SIS FR-Facteurs-de-risques -->
+							<!-- Conformité FR-Facteurs-de-risques (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.2.31"/>
 							<id root="56BFF75D-EA45-43AB-A2D4-B9A67CDEF8C0"/>
 							<code code="57207-3" displayName="Facteurs de risque présents ou passés affectant l'état de santé et/ou une circonstance"
 								codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<title>Facteurs de risque</title>
-							<!--====%[ [0..1] Sous-section Habitus, mode de vie ]%====-->
+							<!-- [0..1] Sous-section FR-Habitus-mode-de-vie -->
 							<component>
 								<section>
-									<!-- [APE 12/10/2020] Ajout OID 2.16.840.1.113883.10.20.1.15 -->
-									<!-- Conformité CCD -->
-									<templateId root="2.16.840.1.113883.10.20.1.15"/>
-									<!-- Conformité IHE PCC parent Social History Section -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
-									<!-- Conformité IHE PCC Coded Social History Section -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16.1"/>
-									<!-- Conformité CI-SIS FR-Habitus-mode-de-vie -->
-									<templateId root="1.2.250.1.213.1.1.2.141"/>
+									<!-- Conformité Social History Section (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.15" />
+									<!-- Conformité Social History Section (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16" />
+									<!-- Conformité Coded Social History Section (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16.1" />
+									<!-- Conformité FR-Habitus-mode-de-vie (FR CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.2.141" />
 									<id root="D99F46A4-C196-44CC-9F77-CB034DF6D1AF"/>
 									<code code="29762-2" displayName="Habitus, Mode de vie"
 										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -1080,58 +1016,57 @@
 											</tbody>
 										</table>
 									</text>
-									<!-- [1..*] Entrée Habitus, mode de vie (Consommation tabagique) -->
+									<!-- [1..*] Entrée FR-Habitus-Mode-de-vie (Consommation tabagique) -->
 									<entry>
 										<observation classCode="OBS" moodCode="EVN">
-											<!-- Conformité CCD -->
-											<templateId root="2.16.840.1.113883.10.20.1.33"/>
-											<!-- Conformité IHE PCC parent Simple Observation -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-											<!-- Conformité IHE PCC Social History Observation -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
-											<!-- Conformité CI-SIS FR-Habitus-Mode-de-vie -->
-											<templateId root="1.2.250.1.213.1.1.3.52"/>
+											<!-- Conformité Social history observation (CCD) -->
+											<templateId root="2.16.840.1.113883.10.20.1.33" />
+											<!-- Conformité Simple Observation (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+											<!-- Conformité Social history observation (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4" />
+											<!-- Conformité FR-Habitus-Mode-de-vie (FR CI-SIS) -->
+											<templateId root="1.2.250.1.213.1.1.3.52" />
 											<id root="CF5B21BC-387A-44AD-9FE9-D6582A6CF332"/>
-											<code code="74011-8"
-												displayName="Consommation tabagique"
-												codeSystem="2.16.840.1.113883.6.1"
-												codeSystemName="LOINC"/>
+											<code code="74011-8" displayName="Consommation tabagique"
+												codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 											<text><reference value="#tabac"/></text>
 											<statusCode code="completed"/>
 											<effectiveTime nullFlavor="NA"/>
 											<value xsi:type="PQ" value="25" unit="{pack}/a"/>
 										</observation>
 									</entry>
-									<!-- [1..*] Entrée Habitus, mode de vie (Consommation de drogue) -->
+									<!-- [1..*] Entrée FR-Habitus-Mode-de-vie (Consommation de drogue) -->
 									<entry>
 										<observation classCode="OBS" moodCode="EVN">
-											<!-- Conformité CCD -->
-											<templateId root="2.16.840.1.113883.10.20.1.33"/>
-											<!-- Conformité IHE PCC parent Simple Observation -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-											<!-- Conformité IHE PCC Social History Observation -->
-											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
-											<!-- Conformité CI-SIS FR-Habitus-Mode-de-vie -->
-											<templateId root="1.2.250.1.213.1.1.3.52"/>
+											<!-- Conformité Social history observation (CCD) -->
+											<templateId root="2.16.840.1.113883.10.20.1.33" />
+											<!-- Conformité Simple Observation (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+											<!-- Conformité Social history observation (IHE PCC) -->
+											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4" />
+											<!-- Conformité FR-Habitus-Mode-de-vie (FR CI-SIS) -->
+											<templateId root="1.2.250.1.213.1.1.3.52" />
 											<id root="8378F25F-7EC2-4CEE-A9A5-168030827D07"/>
 											<code code="42831-8" displayName="Consommation de drogue"
-												codeSystem="2.16.840.1.113883.6.1"
-												codeSystemName="LOINC"/>
+												codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 											<text><reference value="#drogue"/></text>
 											<statusCode code="completed"/>
 											<effectiveTime nullFlavor="NA"/>
-											<value xsi:type="ST">Consommation de cannabis occasionnelle</value>
+											<value xsi:type="CD" code="8063-14-7" displayName="Cannabis" codeSystem="1.2.250.1.213.2.72" codeSystemName="ChemIDPlus">
+												<originalText><reference value="#drogue"/></originalText>
+											</value>
 										</observation>
 									</entry>
 								</section>
 							</component>
 
-							<!--====%[ [0..1] Sous-section Facteurs de risque professionnels (non-codé) ]%====-->
+							<!-- [0..1] Sous-section FR-Facteurs-de-risque-professionnels-non-code -->
 							<component>
 								<section>
-									<!-- Conformité IHE PCC Hazardous working conditions -->
+									<!-- Conformité Hazardous working conditions (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.1"/>
-									<!-- Conformité CI-SIS FR-Facteurs-de-risque-professionnels-noncode -->
+									<!-- Conformité FR-Facteurs-de-risque-professionnels-noncode (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.2.74"/>
 									<id root="BC6A2067-884F-4D55-8B27-E8C2BE276F29"/>
 									<code code="10161-8" displayName="Facteurs de risques professionnels"
@@ -1154,20 +1089,19 @@
 								</section>
 							</component>
 
-							<!--====%[ [0..1] Sous-section Antécédents familiaux ]%====-->
+							<!-- [0..1] Sous-section FR-Antecedents-familiaux -->
 							<component>
 								<section>
-									<!-- Conformité CCD -->
+									<!-- Conformité Family History Section (CCD) -->
 									<templateId root="2.16.840.1.113883.10.20.1.4"/>
-									<!-- Conformité IHE PCC parent Family Medical History Section -->
+									<!-- Conformité Family Medical History Section (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.14"/>
-									<!-- Conformité IHE PCC Coded Family Medical History Section -->
+									<!-- Conformité Coded Family Medical History Section (IHE PCC) -->
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.15"/>
-									<!-- Conformité CI-SIS FR-Antecedents-familiaux -->
+									<!-- Conformité FR-Antecedents-familiaux (CI-SIS) -->
 									<templateId root="1.2.250.1.213.1.1.2.139"/>
 									<id root="B6B00F3F-40A0-419F-847F-FDA1E0908EC8"/>
-									<code code="10157-6"
-										displayName="Historique des pathologies familiales"
+									<code code="10157-6" displayName="Historique des pathologies familiales"
 										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<title>Antécédents familiaux</title>									
 									<text>
@@ -1179,34 +1113,33 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td><content ID="vsm0011">Mère</content></td>
-													<td><content ID="vsm0012">Anémie drépanocytaire </content></td>
+													<td><content ID="antecedent-familial-001-sujet">Mère</content></td>
+													<td><content ID="antecedent-familial-001-probleme">Anémie drépanocytaire </content></td>
 												</tr>
 											</tbody>
 										</table>
 									</text>
-									<!-- [1..*] Entrée Antécédents familiaux (de la Mère) -->
+									<!-- [1..*] Entrée FR-Antecedents-familiaux (de la Mère) -->
 									<entry>
 										<organizer classCode="CLUSTER" moodCode="EVN">
-											<!-- Conformité CCD -->
+											<!-- Conformité Family history organizer (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.23"/>
-											<!-- Conformité IHE PCC Family history organizer -->
+											<!-- Conformité Family History Organizer (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15"/>
-											<!-- Conformité CI-SIS FR-Antecedents-familiaux -->
+											<!-- Conformité FR-Antecedents-familiaux (CI-SIS) -->
 											<templateId root="1.2.250.1.213.1.1.3.59"/>
 											<statusCode code="completed"/>
-											<!-- Lien de parenté -->
+											<!-- FR-Sujet : Lien de parenté -->
 											<subject typeCode="SBJ">
-												<!-- Conformité IHE PCC Subject participation -->
+												<!-- Conformité Subject participation (IHE PCC) -->
 												<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15.2"/>
-												<!-- Conformité CI-SIS Sujet -->
+												<!-- Conformité FR-Sujet (CI-SIS) -->
 												<templateId root="1.2.250.1.213.1.1.3.60"/>
 												<relatedSubject classCode="PRS">
 													<code code="MTH" displayName="Mère"
-														codeSystem="2.16.840.1.113883.5.111"
-														codeSystemName="RoleCode">
+														codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
 														<originalText>
-															<reference value="#vsm0011"/>
+															<reference value="#antecedent-familial-001-sujet"/>
 														</originalText>
 													</code>
 													<subject>
@@ -1215,30 +1148,27 @@
 												</relatedSubject>
 											</subject>
 											
-											<!-- [1..*] Antécédent familial observé -->
+											<!-- [1..*] Entrée FR-Antecedent-familial-observe -->
 											<component typeCode="COMP">
 												<observation classCode="OBS" moodCode="EVN">
-													<!-- Conformité CCD -->
+													<!-- Conformité Family history observation (CCD) -->
 													<templateId root="2.16.840.1.113883.10.20.1.22"/>
-													<!-- Conformité IHE PCC parent Simple Observation -->
+													<!-- Conformité Simple Observation (IHE PCC) -->
 													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-													<!-- Conformité IHE PCC Family History Observation -->
+													<!-- Conformité Family History Observation (IHE PCC) -->
 													<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.3"/>
-													<!-- Conformité CI-SIS FR-Antecedent-familial-observe -->
+													<!-- Conformité FR-Antecedent-familial-observe (CI-SIS) -->
 													<templateId root="1.2.250.1.213.1.1.3.51"/>
 													<id root="6F3F483F-374C-4CE2-9127-EA1B285E72D2"/>
-													<code code="G-1009" displayName="Diagnostic"
-														codeSystem="1.2.250.1.213.2.12"
-														codeSystemName="SNOMED 3.5"/>
-													<text><reference value="#vsm0012"/></text>
+													<!--<code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5"/>-->
+													<code code="282291009" displayName="interprétation diagnostique" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+													<text><reference value="#antecedent-familial-001-probleme"/></text>
 													<statusCode code="completed"/>
 													<effectiveTime nullFlavor="UNK"/>
-													<value xsi:type="CD" code="D57.1"
-														displayName="Anémie drépanocytaire"
-														codeSystem="2.16.840.1.113883.6.3"
-														codeSystemName="CIM10">
+													<value xsi:type="CD" code="D57.1" displayName="Anémie drépanocytaire"
+														codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
 														<originalText>
-															<reference value="#vsm0012"/>
+															<reference value="#antecedent-familial-001-probleme"/>
 														</originalText>
 													</value>
 												</observation>
@@ -1254,12 +1184,12 @@
 				</section>
 			</component>
 
-			<!--=<<o#%@O[ [1..1] Section Résultats d'examens (non codée) ]O@%#o>>=-->
+			<!-- [1..1] Section FR-Resultats-examens-non-code -->
 			<component>
 				<section>
-					<!-- Conformité IHE PCC Results Section -->
+					<!-- Conformité Results Section (IHE PCC) -->
 					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.27"/>
-					<!-- Conformité CI-SIS FR-Resultats-examens-non-code -->
+					<!-- Conformité FR-Resultats-examens-non-code (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.150"/>		
 					<id root="8EB396A9-79A4-4716-BF9D-38F5CE2652E3"/>
 					<code code="30954-2" displayName="Résultats d'examens"
@@ -1267,7 +1197,7 @@
 					<title>Points de vigilance</title>
 					<text>
 						<table border="0">
-							<tbody align="left">
+							<tbody>
 								<tr><td>ECG Hémibloc antérieur gauche</td></tr>
 								<tr><td>Echodoppler VG non dilaté, trouble de la relaxation du VG</td></tr>
 								<tr><td>Hypertriglycéridémie avec VLDL élevés - notion familiale ?</td></tr>
@@ -1277,26 +1207,26 @@
 				</section>
 			</component>
 
-			<!--=<<o#%@O[ [1..1] Section Traitement au long cours : FR-Plan-de-Traitement ]O@%#o>>=-->
+			<!-- [1..1] Section FR-Plan-de-Traitement : Traitement au long cours -->
 			<component>
 				<section>
-					<!-- Conformité CI-SIS Plan de traitement -->
+					<!-- Conformité FR-Plan-de-Traitement (CI-SIS) -->
 					<templateId root="1.2.250.1.213.1.1.2.32"/>
 					<id root="F0147DC8-77FE-4513-A5BD-D90F431BEE68"/>
 					<code code="18776-5" displayName="Plan de traitement"
 						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 					<title>Traitement au long cours</title>
 										
-					<!--=<<o#%@O[ [0..1] Sous-section Traitement ]O@%#o>>=-->
+					<!-- [0..1] Sous-section FR-Traitements -->
 					<component>
 						<section>
-							<!-- Conformité CCD -->
+							<!-- Conformité Medications Section (CCD) -->
 							<templateId root="2.16.840.1.113883.10.20.1.8"/>
-							<!-- Conformité IHE PCC Medications -->
+							<!-- Conformité Medications (IHE PCC) -->
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
-							<!-- Conformité CI-SIS FR-Traitement-->
+							<!-- Conformité FR-Traitement (CI-SIS) -->
 							<templateId root="1.2.250.1.213.1.1.2.143"/>
-							<code code="10160-0" displayName="Historique de la prise médicamenteuse"
+							<code code="10160-0" displayName="Traitements"
 								codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<title>Traitements</title>
 							<text>
@@ -1307,6 +1237,7 @@
 											<th>Date de fin</th>
 											<th>Médicament</th>
 											<th>Posologie</th>
+											<th>Voie d'administration</th>
 											<th>Motif</th>
 										</tr>
 									</thead>
@@ -1314,35 +1245,37 @@
 										<tr>
 											<td>11/08/2019</td>
 											<td>-</td>
-											<td><content ID="vsm0015">PLAVIX 75mg, comprimé pelliculé</content></td>
+											<td><content ID="med-001-pdt">PLAVIX 75mg, comprimé pelliculé</content></td>
 											<td>1 cp/j</td>
-											<td><content ID="vsm0017">Angine de poitrine instable</content></td>
+											<td><content ID="med-001-voie">Voie orale</content></td>
+											<td><content ID="med-001-motif">Angine de poitrine instable</content></td>
 										</tr>
 										<tr>
 											<td>11/08/2019</td>
 											<td>-</td>
-											<td><content ID="vsm0018">COUMADINE 5mg, comprimé sécable </content></td>
+											<td><content ID="med-002-pdt">COUMADINE 5mg, comprimé sécable </content></td>
 											<td>1 cp/j</td>
-											<td><content ID="vsm0020">Accident Ischémique Cérébral Transitoire</content></td>
+											<td><content ID="med-002-voie">Voie orale</content></td>
+											<td><content ID="med-002-motif">Accident Ischémique Cérébral Transitoire</content></td>
 										</tr>
 									</tbody>
 								</table>
 							</text>
 							
-							<!-- [1..*] Entrée Traitement (Plavix pour Angine de poitrine) -->
+							<!-- [1..*] Entrée FR-Traitement (Plavix pour Angine de poitrine) -->
 							<entry typeCode="DRIV">
 								<substanceAdministration classCode="SBADM" moodCode="EVN">
-									<!-- Conformité CCD -->
-									<templateId root="2.16.840.1.113883.10.20.1.24"/>
-									<!-- Conformité IHE PCC Medication -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-									<!-- Mode d'administration (normal) -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
-									<!-- Conformité CI-SIS FR-Traitement -->
-									<templateId root="1.2.250.1.213.1.1.3.42"/>
+									<!-- Conformité Medication Activity (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.24" />
+									<!-- Conformité Medications Entry (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7" />
+									<!-- Conformité FR-Traitement (FR CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.42" />
+									<!-- Conformité Mode d'administration (normal) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1" />
 									<id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
-									<code code="DRUG" displayName="Médicament" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"></code>
-									<text><reference value="#vsm0015"></reference></text>
+									<code code="DRUG" displayName="Médicament" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+									<text><reference value="#med-001-pdt"></reference></text>
 									<statusCode code="completed"/>
 									<!-- Durée du traitement -->
 									<effectiveTime xsi:type="IVL_TS">
@@ -1354,16 +1287,13 @@
 										<period value="1" unit="d"/>
 									</effectiveTime>
 									<!-- Voie d'administration -->
-									<routeCode code="PO" displayName="prendre par la bouche"
-										codeSystem="2.16.840.1.113883.5.112"/>
-									<!-- approachSiteCode -->
-									<approachSiteCode code="BN" displayName="dans les deux narines" codeSystem="2.16.840.1.113883.5.1052">
-										<originalText><reference value="#"></reference></originalText>
-									</approachSiteCode>
+									<routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
+										<originalText><reference value="#med-001-voie"></reference></originalText>
+									</routeCode>   									
 									<!-- Dose à administrer -->
 									<doseQuantity>
-										<low value="2" unit="{tbl}"/>
-										<high value="2" unit="{tbl}"/>
+										<low value="2" unit="{tablet}"/>
+										<high value="2" unit="{tablet}"/>
 									</doseQuantity>
 									<!-- Rythme d'administration -->
 									<rateQuantity nullFlavor="NAV"/>
@@ -1372,25 +1302,23 @@
 										<numerator/>
 										<denominator/>
 									</maxDoseQuantity>
-									<!-- Produit de santé -->
+									<!-- [1..1] Entrée FR-Produit-de-sante -->
 									<consumable>
 										<manufacturedProduct>
-											<!-- Conformité CCD -->
+											<!-- Product (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.53"/>
-											<!-- Conformité IHE PCC Product entry -->
+											<!-- Product Entry (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-											<!-- Conformité CI-SIS FR-Produit-de-sante -->
+											<!-- FR-Produit-de-sante (FR CI-SIS) -->
 											<templateId root="1.2.250.1.213.1.1.3.43"/>
 											<manufacturedMaterial>
 												<!-- Code CIS du produit -->
 												<code code="63564053" displayName="PLAVIX 75 mg, comprimé pelliculé"
 													codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
-													<originalText><reference value="#vsm0015"/></originalText>
+													<originalText><reference value="#med-001-pdt"/></originalText>
 													<!-- Code CIP du produit -->
 													<translation code="3400938022209" displayName="PLAVIX 75 mg, comprimé pelliculé, plaquette(s) thermoformée(s) PVC PVDC aluminium de 30 comprimé(s)"
-														codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
-														<originalText><reference value="#vsm0016"/></originalText>
-													</translation>
+														codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
 												</code>
 												<name>PLAVIX 75 mg</name>
 												<lotNumberText/>
@@ -1400,34 +1328,34 @@
 									<!-- Motif du traitement -->
 									<entryRelationship typeCode="RSON">										
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité IHE PCC Internal Reference -->
+											<!-- Conformité Internal References (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-											<!-- Conformité CI-SIS FR-Reference-interne -->
+											<!-- Conformité FR-Reference-interne (FR CI-SISI) -->
 											<templateId root="1.2.250.1.213.1.1.3.36"/>
 											<id root="CDBD5B08-6CDE-11DB-9FE1-0800200C9A66"/>
 											<code code="I20.0" displayName="Angine de poitrine instable"
 												codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
-												<originalText mediaType="text/xml"><reference value="#vsm0017"/></originalText>
+												<originalText mediaType="text/xml"><reference value="#med-001-motif"/></originalText>
 											</code>											
 										</act>
 									</entryRelationship>
 								</substanceAdministration>
 							</entry>
 							
-							<!-- [1..*] Entrée Traitement (Coumadine pour AIT) -->
+							<!-- [1..*] Entrée FR-Traitement (Coumadine pour AIT) -->
 							<entry typeCode="DRIV">
 								<substanceAdministration classCode="SBADM" moodCode="EVN">
-									<!-- Conformité CCD -->
-									<templateId root="2.16.840.1.113883.10.20.1.24"/>
-									<!-- Conformité IHE PCC Medication -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-									<!-- Mode d'administration (normal) -->
-									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
-									<!-- Conformité CI-SIS FR-Traitement -->
-									<templateId root="1.2.250.1.213.1.1.3.42"/>
+									<!-- Conformité Medication Activity (CCD) -->
+									<templateId root="2.16.840.1.113883.10.20.1.24" />
+									<!-- Conformité Medications Entry (IHE PCC) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7" />
+									<!-- Conformité FR-Traitement (FR CI-SIS) -->
+									<templateId root="1.2.250.1.213.1.1.3.42" />
+									<!-- Conformité Mode d'administration (normal) -->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1" />
 									<id root="8609F763-4F75-4FB5-A1A3-A6A269D15F4A"/>
 									<code code="DRUG" displayName="Médicament" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"></code>
-									<text><reference value="#vsm0018"></reference></text>
+									<text><reference value="#med-002-pdt"></reference></text>
 									<statusCode code="completed"/>
 									<!-- Durée du traitement -->
 									<effectiveTime xsi:type="IVL_TS">
@@ -1439,38 +1367,35 @@
 										<period value="6" unit="h"/>
 									</effectiveTime>
 									<!-- Voie d'administration -->
-									<routeCode code="PO" displayName="prendre par la boouche"
-										codeSystem="2.16.840.1.113883.5.112"/>
+									<routeCode code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM">
+										<originalText><reference value="#med-002-voie"></reference></originalText>
+									</routeCode>       
 									<!-- Dose à administrer -->
 									<doseQuantity>
-										<low value="1" unit="{tbl}"/>
-										<high value="1" unit="{tbl}"/>
+										<low value="1" unit="{tablet}"/>
+										<high value="1" unit="{tablet}"/>
 									</doseQuantity>
 									<!-- Rythme d'administration -->
 									<rateQuantity nullFlavor="NAV"/>
-									<!-- Produit de santé -->
+									<!-- [1..1] Entrée FR-Produit-de-sante -->
 									<consumable>
 										<manufacturedProduct>
-											<!-- Conformité CCD -->
+											<!-- Product (CCD) -->
 											<templateId root="2.16.840.1.113883.10.20.1.53"/>
-											<!-- Conformité IHE PCC Product entry -->
+											<!-- Product Entry (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-											<!-- Conformité CI-SIS FR-Produit-de-sante -->
+											<!-- FR-Produit-de-sante (FR CI-SIS) -->
 											<templateId root="1.2.250.1.213.1.1.3.43"/>
 											<manufacturedMaterial>
 												<!-- Code CIS du produit -->
 												<code code="63245753" displayName="COUMADINE 5mg, comprimé sécable"
 													codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
 													<originalText mediaType="text/xml">
-														<reference value="#vsm0018"/>
+														<reference value="#med-002-pdt"/>
 													</originalText>
 													<!-- Code CIP du produit -->
 													<translation code="3400935693099" displayName="COUMADINE 5mg, comprimé sécable, plaquette(s) thermoformée(s) PVC-aluminium de 30 comprimé(s)"
-														codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
-														<originalText mediaType="text/xml">
-															<reference value="#vsm0019"/>
-														</originalText>
-													</translation>
+														codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
 												</code>
 												<name>COUMADINE 5mg</name>
 												<lotNumberText/>
@@ -1480,15 +1405,15 @@
 									<!-- Motif du traitement -->
 									<entryRelationship typeCode="RSON">
 										<act classCode="ACT" moodCode="EVN">
-											<!-- Conformité IHE PCC Internal References -->
+											<!-- Conformité Internal References (IHE PCC) -->
 											<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-											<!-- Conformité CI-SIS FR-Reference-interne  -->
+											<!-- Conformité FR-Reference-interne (FR CI-SISI)  -->
 											<templateId root="1.2.250.1.213.1.1.3.36"/>
 											<id root="12DA3A06-18E7-40B7-9397-1FA5B1552472"/>
 											<code code="G45.9" displayName="Accident Ischémique Cérébral Transitoire"
 												codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM10">
 												<originalText mediaType="text/xml">
-													<reference value="#vsm0020"/>
+													<reference value="#med-002-motif"/>
 												</originalText>
 											</code>											
 										</act>

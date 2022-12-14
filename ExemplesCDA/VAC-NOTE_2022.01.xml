@@ -834,7 +834,7 @@
           <!-- Conformité FR-Allergies-et-intolerances (CI-SIS) -->
           <templateId root="1.2.250.1.213.1.1.2.137"/>
           <id root="7649C5FA-A444-49A6-91E9-78D2E5880C67" />
-          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies et hypersensibilités" />
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, réactions adverses, alertes" />
           <title>Allergies et hypersensibilités</title>
           <text>
             <table border="0">
@@ -1513,7 +1513,7 @@
               <!-- Conformité FR-Directive-Anticipée (CI-SIS) -->
               <templateId root="1.2.250.1.213.1.1.3.54"/>
               <id root="47F84EF0-FB1C-4FF4-BFD3-7026F22E3701" />
-              <code code="71388002" displayName="Autre directive" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+              <code code="75793-0" displayName="Autre directive"  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <qualifier>
                   <name code="Z28.2" displayName="Refus de vaccination" codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" />
                 </qualifier>

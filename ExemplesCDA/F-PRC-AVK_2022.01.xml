@@ -950,7 +950,7 @@
           <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.137"/>
           <id root="D378469D-E117-4799-A8D0-08934A8053A0" />
-          <code code="48765-2" displayName="Allergies et hypersensibil-ités " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <code code="48765-2" displayName="Allergies et hypersensibilités" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Allergies et hypersensibil-ités</title>
           <text>
             <table border="0" width="100%">
