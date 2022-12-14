@@ -23,30 +23,18 @@
     <ns prefix="svs" uri="urn:ihe:iti:svs:2008"/>
     
     <!--Entete-->    
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Entete/Entete_OBP.sch"/>
+    <include href="include/specificationsVolets/OBP-SCE_2022.01/Entete/Entete_OBP-SCE.sch"/>
     
    <!-- Abstract patterns -->    
     <include href="abstract/dansJeuDeValeurs.sch"/>
     <include href="abstract/IVL_TS.sch"/>   
-    
-    <!-- Sections -->   
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_BirthOrganizer_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_activeProblem_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_codedDetailedPhysicalExamination_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_codedSocialHistory_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_patientEducation_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_pregnancyHistoryOrganizer_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCE_2022.01/Sections/S_procedureEntry_OBP.sch"/>
-    
+        
     <!-- JDV -->    
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_LesionTraumatiqueObstetricale_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_approachSiteCode_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_TypePortageAgentInfectieux_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_CertitudeDiagnostic-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_TypeInfectionNN_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_ModeSortie_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_TypeAllaitementNN_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_StaticSCEprocedures_OBP.sch"/> 
+    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_LesionTraumatiqueObstetricale_OBP-SCE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_TypeInfectionNN_OBP-SCE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_ModeSortie_OBP-SCE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_TypeAllaitementNN_OBP-SCE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SCE_2022.01/JDV_StaticSCEprocedures_OBP-SCE.sch"/> 
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
@@ -57,48 +45,24 @@
         <p>Vérification complète de la conformité au CI-SIS</p>
         
         <!-- Activation Entete -->
-        <active pattern="Entete_OBP"/>
+        <active pattern="Entete_OBP-SCE"/>
         
-        <!-- Activation Sections -->
-        <active pattern="S_BirthOrganizer_OBP"/>
-        <active pattern="S_activeProblem_OBP"/>
-        <active pattern="S_CodedDetailedPhysicalExamination_OPB.sch"/>
-        <active pattern="S_codedSocialHistory_OBP"/>
-        <active pattern="S_patientEducation_OBP"/>
-        <active pattern="S_pregnancyHistoryOrganizer_OBP"/>
-        <active pattern="S_procedureEntry_OBP"/>
-      
         <!-- Activation JDV -->
-        <active pattern="JDV_LesionTraumatiqueObstetricale_OBP"/>
-        <active pattern="JDV_approachSiteCode_OBP"/>
-        <active pattern="JDV_TypePortageAgentInfectieux_OBP"/>
-        <active pattern="JDV_CertitudeDiagnostic-CISIS"/>
-        <active pattern="JDV_TypeInfectionNN_OBP"/>
-        <active pattern="JDV_ModeSortie_OBP"/>
-        <active pattern="JDV_TypeAllaitementNN_OBP"/>
-        <active pattern="JDV_StaticSCEprocedures_OBP"/>        
+        <active pattern="JDV_LesionTraumatiqueObstetricale_OBP-SCE"/>
+        <active pattern="JDV_TypeInfectionNN_OBP-SCE"/>
+        <active pattern="JDV_ModeSortie_OBP-SCE"/>
+        <active pattern="JDV_TypeAllaitementNN_OBP-SCE"/>
+        <active pattern="JDV_StaticSCEprocedures_OBP-SCE"/>        
         
     </phase>
      
     <!-- Variables globales -->
     <pattern id="variables">
-        <let name="jdv_OBP_LesionTraumatiqueObstetricale" value="'../jeuxDeValeurs/JDV_OBP_LesionTraumatiqueObstetricale-CISIS.xml'"/>
-        <let name="jdv_approachSiteCode_OBP" value="'../jeuxDeValeurs/JDV_RouteOfAdministration-CISIS.xml'"/>
-        <let name="jdv_OBP_TypePortageAgentInfectieux" value="'../jeuxDeValeurs/JDV_OBP_TypePortageAgentInfectieux-CISIS.xml'"/>
-        <let name="JDV_CertitudeDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_CertitudeDiagnostic-CISIS.xml'"/>
-        <let name="jdv_OBP_TypeInfectionNN" value="'../jeuxDeValeurs/JDV_OBP_TypeInfectionNN-CISIS.xml'"/>
-        <let name="jdv_OBP_ModeSortie" value="'../jeuxDeValeurs/JDV_OBP_ModeSortie-CISIS.xml'"/>
-        <let name="jdv_OBP_TypeAllaitementNN" value="'../jeuxDeValeurs/JDV_OBP_TypeAllaitementNN-CISIS.xml'"/>
-        <let name="jdv_OBP_StaticSCEprocedures" value="'../jeuxDeValeurs/JDV_OBP_StaticSCEprocedures-CISIS.xml'"/>
+        <let name="jdv_LesionTraumatiqueObstetricale_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_LesionTraumatiqueObstetricale-CISIS.xml'"/>
+        <let name="jdv_TypeInfectionNN_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_TypeInfectionNN-CISIS.xml'"/>
+        <let name="jdv_ModeSortie_OBP-SCE" value="'../jeuxDeValeurs/JDV_ModeSortie-OBP-SCE-CISIS.xml'"/>
+        <let name="jdv_TypeAllaitementNN_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_TypeAllaitementNN-CISIS.xml'"/>
+        <let name="jdv_StaticSCEprocedures_OBP-SCE" value="'../jeuxDeValeurs/JDV_OBP_StaticSCEprocedures-CISIS.xml'"/>
         
-        <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.12.5']"> 
-                [CI-SIS_OBP-SCE_2022.01] Le template du modèle OBP-SCE (1.2.250.1.213.1.1.1.12.5) doit être présent.
-            </assert>
-            
-            <assert test="./cda:code[@code='15508-5' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                [CI-SIS_OBP-SCE_2022.01] L'élément code doit avoir @code ="15508-5" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
-            </assert>
-        </rule>
     </pattern>
 </schema>

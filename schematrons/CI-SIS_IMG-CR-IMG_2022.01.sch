@@ -35,6 +35,8 @@
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_contre-indications-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_StatutGrossesse-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_ImagerieObjectifsReference-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueTechniqueImg-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-CR-IMG_2022.01/JDV_LocalisationAnatomiqueQuantite-CISIS.sch"/>
  
     
     <!-- Entete -->
@@ -73,6 +75,8 @@
         <active pattern="JDV_contre-indications-CISIS"/>
         <active pattern="JDV_StatutGrossesse-CISIS"/>
         <active pattern="JDV_ImagerieObjectifsReference-CISIS"/>
+        <active pattern="JDV_LocalisationAnatomiqueTechniqueImg-CISIS"/>
+        <active pattern="JDV_LocalisationAnatomiqueQuantite-CISIS"/>
         
         <!-- Sections spécifiques au volet CI-SIS_IMG-CR-IMG -->
         <active pattern="S_EducationDuPatient_IMG-CR-IMG"/>
@@ -104,6 +108,8 @@
         <let name="JDV_contre-indications-CISIS" value="'../jeuxDeValeurs/JDV_contre-indications-CISIS.xml'"/>
         <let name="JDV_StatutGrossesse-CISIS" value="'../jeuxDeValeurs/JDV_StatutGrossesse-CISIS.xml'"/>
         <let name="JDV_ImagerieObjectifsReference-CISIS" value="'../jeuxDeValeurs/JDV_ImagerieObjectifsReference-CISIS.xml'"/>
+        <let name="JDV_LocalisationAnatomiqueTechniqueImg-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
+        <let name="JDV_LocalisationAnatomiqueQuantite-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
         
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">    
             <!-- présence des sections obligatoires --> 

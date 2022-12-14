@@ -27,26 +27,21 @@
     <include href="abstract/IVL_TS.sch"/>   
     
     <!-- Entete -->    
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Entete/Entete_OBP.sch"/>
+    <include href="include/specificationsVolets/OBP-SNE_2022.01/Entete/Entete_OBP-SNE.sch"/>
     
     <!-- Sections -->   
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_BirthOrganizer_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_activeProblem_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_codedDetailedPhysicalExamination_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_codedSocialHistory_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_patientEducation_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_pregnancyHistoryOrganizer_OBP.sch"/>
+    <include href="include/specificationsVolets/OBP-SNE_2022.01/Sections/S_codedDetailedPhysicalExamination_OBP-SNE.sch"/>
     
     <!-- JDV -->   
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_ModeNaissance_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_TypeInterventionVoieBasse_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_PresentationFoetale_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_QuantiteLA_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_AspectLA_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_CirconstancesDeces_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_GesteReanimationNN_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_approachSiteCode_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_PrelevementsPeriph_OBP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_ModeNaissance_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_TypeInterventionVoieBasse_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_PresentationFoetale_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_QuantiteLA_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_AspectLA_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_CirconstancesDeces_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_GesteReanimationNN_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_approachSiteCode_OBP-SNE.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SNE_2022.01/JDV_PrelevementsPeriph_OBP-SNE.sch"/>
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
@@ -57,26 +52,21 @@
         <p>Vérification complète de la conformité au CI-SIS</p>
         
         <!-- Activation Entete -->        
-        <active pattern="Entete_OBP"/>
+        <active pattern="Entete_OBP-SNE"/>
         
         <!-- Activation Sections -->        
-        <active pattern="S_BirthOrganizer_OBP"/>
-        <active pattern="S_activeProblem_OBP"/>
-        <active pattern="S_CodedDetailedPhysicalExamination_OPB.sch"/>
-        <active pattern="S_codedSocialHistory_OBP"/>
-        <active pattern="S_patientEducation_OBP"/>
-        <active pattern="S_pregnancyHistoryOrganizer_OBP"/>
+        <active pattern="S_CodedDetailedPhysicalExamination_OPB-SNE"/>
         
         <!-- Activation JDV -->        
-        <active pattern="JDV_ModeNaissance_OBP"/>
-        <active pattern="JDV_TypeInterventionVoieBasse_OBP"/>
-        <active pattern="JDV_PresentationFoetale_OBP"/>
-        <active pattern="JDV_QuantiteLA_OBP"/>
-        <active pattern="JDV_AspectLA_OBP"/>
-        <active pattern="JDV_CirconstancesDeces_OBP"/>
-        <active pattern="JDV_GesteReanimationNN_OBP"/>
-        <active pattern="JDV_approachSiteCode_OBP"/>
-        <active pattern="JDV_PrelevementsPeriph_OBP"/>
+        <active pattern="JDV_ModeNaissance_OBP-SNE"/>
+        <active pattern="JDV_TypeInterventionVoieBasse_OBP-SNE"/>
+        <active pattern="JDV_PresentationFoetale_OBP-SNE"/>
+        <active pattern="JDV_QuantiteLA_OBP-SNE"/>
+        <active pattern="JDV_AspectLA_OBP-SNE"/>
+        <active pattern="JDV_CirconstancesDeces_OBP-SNE"/>
+        <active pattern="JDV_GesteReanimationNN_OBP-SNE"/>
+        <active pattern="JDV_approachSiteCode_OBP-SNE"/>
+        <active pattern="JDV_PrelevementsPeriph_OBP-SNE"/>
  
     </phase>
     
@@ -84,25 +74,15 @@
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="jdv_approachSiteCode_OBP" value="'../jeuxDeValeurs/JDV_RouteofAdministration-CISIS.xml'"/>
-        <let name="jdv_OBP_ModeNaissance" value="'../jeuxDeValeurs/JDV_OBP_ModeNaissance-CISIS.xml'"/>
-        <let name="jdv_OBP_TypeInterventionVoieBasse" value="'../jeuxDeValeurs/JDV_OBP_TypeInterventionVoieBasse-CISIS.xml'"/>
-        <let name="jdv_OBP_PresentationFoetale" value="'../jeuxDeValeurs/JDV_OBP_PresentationFoetale-CISIS.xml'"/>
-        <let name="jdv_OBP_QuantiteLA" value="'../jeuxDeValeurs/JDV_OBP_QuantiteLA-CISIS.xml'"/>
-        <let name="jdv_OBP_AspectLA" value="'../jeuxDeValeurs/JDV_OBP_AspectLA-CISIS.xml'"/>
-        <let name="jdv_OBP_CirconstancesDeces" value="'../jeuxDeValeurs/JDV_OBP_CirconstancesDeces-CISIS.xml'"/>
-        <let name="jdv_OBP_GesteReanimationNN" value="'../jeuxDeValeurs/JDV_OBP_GesteReanimationNN-CISIS.xml'"/>
-        <let name="jdv_OBP_PrelevementsPeriph" value="'../jeuxDeValeurs/JDV_OBP_PrelevementsPeriph-CISIS.xml'"/>
-        
-        <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.12.3']"> 
-                [CI-SIS_OBP-SNE_2022.01] Le template "Synthèse Salle de Naissance Enfant (SNE)" (1.2.250.1.213.1.1.1.12.2) doit être présent.
-            </assert>
-            
-            <assert test="./cda:code[@code='15508-5' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                [CI-SIS_OBP-SNE_2022.01] L'élément code doit avoir @code="15508-5" et @codeSystem="2.16.840.1.113883.6.1"/>. 
-            </assert>
-        </rule>
+        <let name="jdv_approachSiteCode_OBP-SNE" value="'../jeuxDeValeurs/JDV_RouteofAdministration-CISIS.xml'"/>
+        <let name="jdv_ModeNaissance_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_ModeNaissance-CISIS.xml'"/>
+        <let name="jdv_TypeInterventionVoieBasse_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_TypeInterventionVoieBasse-CISIS.xml'"/>
+        <let name="jdv_PresentationFoetale_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_PresentationFoetale-CISIS.xml'"/>
+        <let name="jdv_QuantiteLA_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_QuantiteLA-CISIS.xml'"/>
+        <let name="jdv_AspectLA_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_AspectLA-CISIS.xml'"/>
+        <let name="jdv_CirconstancesDeces_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_CirconstancesDeces-CISIS.xml'"/>
+        <let name="jdv_GesteReanimationNN_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_GesteReanimationNN-CISIS.xml'"/>
+        <let name="jdv_PrelevementsPeriph_OBP-SNE" value="'../jeuxDeValeurs/JDV_OBP_PrelevementsPeriph-CISIS.xml'"/>
         
     </pattern>
 </schema>

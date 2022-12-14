@@ -28,24 +28,14 @@
     <include href="abstract/IVL_TS.sch"/>
     
     <!-- Entete -->    
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Entete/Entete_OBP.sch"/>
+    <include href="include/specificationsVolets/OBP-SCM_2022.01/Entete/Entete_OBP-SCM.sch"/>
     
     <!-- Sections --> 
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_BirthOrganizer_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_activeProblem_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_codedDetailedPhysicalExamination_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_codedSocialHistory_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_patientEducation_OBP.sch"/>
-    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_pregnancyHistoryOrganizer_OBP.sch"/>
+    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_ResultatsEvenements_OBP-SCM.sch"/>
+    <include href="include/specificationsVolets/OBP-SCM_2022.01/Sections/S_ActesInterventions_OBP-SCM.sch"/>
         
     <!-- JDV --> 
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_LesionTraumatiqueObstetricale_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_approachSiteCode_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_TypePortageAgentInfectieux_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_CertitudeDiagnostic-CISIS.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_TypeInfectionNN_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_ModeSortie_OBP.sch"/>
-    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_TypeAllaitementNN_OBP.sch"/>
+    <include href="include/jeuxDeValeurs/OBP-SCM_2022.01/JDV_ModeSortie_OBP-SCM.sch"/>
         
     <!-- ::::::::::::::::::::::::::::::::::::: -->
     <!--           Phase en vigueur            -->    
@@ -56,48 +46,22 @@
         <p>Vérification complète de la conformité au CI-SIS</p>
         
         <!-- Activation Entete -->
-        <active pattern="Entete_OBP"/>
+        <active pattern="Entete_OBP-SCM"/>
         
         <!-- Activation Sections -->
-        <active pattern="S_BirthOrganizer_OBP"/>
-        <active pattern="S_activeProblem_OBP"/>
-        <active pattern="S_CodedDetailedPhysicalExamination_OPB.sch"/>
-        <active pattern="S_codedSocialHistory_OBP"/>
-        <active pattern="S_patientEducation_OBP"/>
-        <active pattern="S_pregnancyHistoryOrganizer_OBP"/>
+        <active pattern="S_ResultatsEvenements_OBP-SCM"/>
+        <active pattern="S_ActesInterventions_OBP-SCM"/>
         
         <!-- Activation JDV -->
-        <active pattern="JDV_approachSiteCode_OBP"/>
-        <active pattern="JDV_ModeSortie_OBP"/>
-        <active pattern="JDV_LesionTraumatiqueObstetricale_OBP"/>
-        <active pattern="JDV_TypePortageAgentInfectieux_OBP"/>
-        <active pattern="JDV_CertitudeDiagnostic-CISIS"/>
-        <active pattern="JDV_TypeInfectionNN_OBP"/>
-        <active pattern="JDV_TypeAllaitementNN_OBP"/>
+        <active pattern="JDV_ModeSortie_OBP-SCM"/>
         
     </phase>
 
     <!-- Variables globales -->
-
     <pattern id="variables">
         
         <!-- chemins relatifs des fichiers jeux de valeurs -->
-        <let name="jdv_approachSiteCode_OBP" value="'../jeuxDeValeurs/JDV_HL7_RouteOfAdministration-CISIS.xml'"/>
-        <let name="JDV_CertitudeDiagnostic-CISIS" value="'../jeuxDeValeurs/JDV_CertitudeDiagnostic-CISIS.xml'"/>
-        <let name="jdv_OBP_ModeSortie" value="'../jeuxDeValeurs/JDV_OBP_ModeSortie-CISIS.xml'"/>
-        <let name="jdv_OBP_LesionTraumatiqueObstetricale" value="'../jeuxDeValeurs/JDV_OBP_LesionTraumatiqueObstetricale-CISIS.xml'"/>
-        <let name="jdv_OBP_TypePortageAgentInfectieux" value="'../jeuxDeValeurs/JDV_OBP_TypePortageAgentInfectieux-CISIS.xml'"/>
-        <let name="jdv_OBP_TypeInfectionNN" value="'../jeuxDeValeurs/JDV_OBP_TypeInfectionNN-CISIS.xml'"/>
-        <let name="jdv_OBP_TypeAllaitementNN" value="'../jeuxDeValeurs/JDV_OBP_TypeAllaitementNN-CISIS.xml'"/>
+        <let name="jdv_ModeSortie_OBP-SCM" value="'../jeuxDeValeurs/JDV_ModeSortie-OBP-SCM-CISIS.xml'"/>
         
-        <rule context="cda:ClinicalDocument">
-            <assert test="cda:templateId[@root='1.2.250.1.213.1.1.1.12.4']"> 
-                [CI-SIS_OBP-SCM_2022.01] Le template "Synthèse Suites de Couches Mère (SCM)" (1.2.250.1.213.1.1.1.12.4) doit être présent.
-            </assert>
-            
-            <assert test="./cda:code[@code='15508-5' and @codeSystem='2.16.840.1.113883.6.1']"> 
-                [CI-SIS_OBP-SCM_2022.01] L'élément code doit avoir @code ="15508-5" et @codeSystem = "2.16.840.1.113883.6.1"/>. 
-            </assert>
-        </rule>
     </pattern>
 </schema>
