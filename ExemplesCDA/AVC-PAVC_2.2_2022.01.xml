@@ -314,7 +314,7 @@
           <!-- Conformité IHE PCC -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" />
           <!-- Conformité IHE CI-SIS -->
-          <templateId root="1.2.250.1.213.1.1.2.132.4" />
+          <templateId root="1.2.250.1.213.1.1.2.132" />
           <id root="8DABD85E-13B0-4109-AC62-92819DCCD8CE" />
           <code code="11450-4" displayName="Liste des problèmes actifs" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>Evaluation éducation thérapeutique et prévention secondaire (E1)</title>
@@ -929,7 +929,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1" />
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.29" />
-                  <code code="SEV" displayName="Severity" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+                  <code code="SEV" displayName="Severity" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
                   <text>
                     <reference value="#spasticite-severite">
                     </reference>
@@ -1758,7 +1758,7 @@
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1" />
                   <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.29" />
-                  <code code="SEV" displayName="Severity" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+                  <code code="SEV" displayName="Severity" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode" />
                   <text>
                     <reference value="#deterioration-sev">
                     </reference>

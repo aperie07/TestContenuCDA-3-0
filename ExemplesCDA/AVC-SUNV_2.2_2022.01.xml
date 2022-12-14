@@ -292,9 +292,9 @@
           <!-- Conformité IHE PCC -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.7" />
           <!-- Conformité CI-SIS -->
-          <templateId root="1.2.250.1.213.1.1.2.133.1" />
+          <templateId root="1.2.250.1.213.1.1.2.133" />
           <id root="533CCEBD-8B91-46C2-A109-58E9D0F369AA" />
-          <code code="11535-2" displayName="interprétation diagnostique de sortie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <code code="11535-2" displayName="Diagnostic de sortie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <title>interprétation diagnostique de sortie</title>
           <text>
             <table border="0">
