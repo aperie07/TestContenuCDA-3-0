@@ -3572,8 +3572,8 @@
                      <routeCode code="20035000" displayName="Voie intramusculaire"
                         codeSystem="0.4.0.127.0.16.1.1.2.1" codeSystemName="EDQM"/> 
                      <!-- Site d'administration : valeur issue du JDV_ImmunizationApproachSiteCode-CISIS (1.2.250.1.213.1.1.5.621) -->
-                     <approachSiteCode code="LD" displayName="deltoïde gauche"
-                        codeSystem="2.16.840.1.113883.5.1052" codeSystemName="HL7:ActSite"/>
+                     <approachSiteCode code="16217701000119102" displayName="deltoïde gauche"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                      <!-- Dose administrée -->
                      <doseQuantity value="1"/>
                      <!-- Vaccin -->
