@@ -33,6 +33,7 @@
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_ModificateurTopographique-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_FonctionEtudieeScintigraphie-CISIS.sch"/>
     <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_FonctionEtudieeTEP-CISIS.sch"/>
+    <include href="include/jeuxDeValeurs/IMG-DA-IMG_2022.01/JDV_LocalisationAnatomique-CISIS.sch"/>
     
     <!-- Entete -->
     <include href="include/specificationsVolets/IMG-DA-IMG_2022.01/Entete/Entete_IMG-DA-IMG.sch"/>
@@ -56,6 +57,7 @@
         <active pattern="JDV_ModificateurTopographique-CISIS"/>
         <active pattern="JDV_FonctionEtudieeScintigraphie-CISIS"/>
         <active pattern="JDV_FonctionEtudieeTEP-CISIS"/>
+        <active pattern="JDV_LocalisationAnatomique-CISIS"/>
         
         <!-- Sections spécifiques au volet CI-SIS_IMG-CR-IMG -->
         <active pattern="S_DICOM_InformationClinique_IMG-DA-IMG"/>
@@ -73,6 +75,7 @@
         <let name="JDV_ModificateurTopographique-CISIS" value="'../jeuxDeValeurs/JDV_ModificateurTopographique-CISIS.xml'"/>
         <let name="JDV_FonctionEtudieeScintigraphie-CISIS" value="'../jeuxDeValeurs/JDV_FonctionEtudieeScintigraphie-CISIS.xml'"/>
         <let name="JDV_FonctionEtudieeTEP-CISIS" value="'../jeuxDeValeurs/JDV_FonctionEtudieeTEP-CISIS.xml'"/>
+        <let name="JDV_LocalisationAnatomique-CISIS" value="'../jeuxDeValeurs/JDV_LocalisationAnatomique-CISIS.xml'"/>
         
         <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">    
             <!-- présence des sections obligatoires --> 
@@ -82,8 +85,8 @@
             <assert test="count(cda:component/cda:section[cda:templateId/@root='1.2.250.1.213.1.1.2.107'])=1"> 
                 [CI-SIS_IMG-DA-IMG] Erreur de conformité au modèle : La section "FR-Education-du-patient" (1.2.250.1.213.1.1.2.107) doit être présente.
             </assert>
-            <assert test="count(cda:component/cda:section[cda:templateId/@root='1.2.250.1.213.1.1.2.158.2'])=1"> 
-                [CI-SIS_IMG-DA-IMG] Erreur de conformité au modèle : La section " FR-Plan-de-soins-IMG-DA" (1.2.250.1.213.1.1.2.158.2) doit être présente.
+            <assert test="count(cda:component/cda:section[cda:templateId/@root='1.2.250.1.213.1.1.2.158.3'])=1"> 
+                [CI-SIS_IMG-DA-IMG] Erreur de conformité au modèle : La section " FR-Plan-de-soins-IMG-DA" (1.2.250.1.213.1.1.2.158.3) doit être présente.
             </assert>
         </rule>
     </pattern>
