@@ -17,12 +17,13 @@
     
     <rule context='*[cda:templateId/@root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"]'> 
  
-        <assert test='cda:code[@code="ORG-076" or            
+        <assert test='cda:code[
+            @code="ORG-076" or            
             @code="11977-6" or
             @code="11996-6" or
             @code="11637-6" or
+            @code="57062-2" or
             @code="MED-159" or
-            @code="MED-160" or
             @code="11636-8" or
             @code="O82.9" or
             @code="MED-164" or
@@ -58,10 +59,6 @@
         <assert test='not(cda:code[@code="MED-159"]) or cda:value[@xsi:type="INT"]'>
             [E_pregnancyHistory_CSE-CS8] Erreur de conformité :
             L'élément "Nb d'enfants pesant moins de 2500g" s'exprime en entier sans unité (@xsi:type="INT").           
-        </assert>
-        <assert test='not(cda:code[@code="MED-160"]) or cda:value[@xsi:type="INT"]'>
-            [E_pregnancyHistory_CSE-CS8] Erreur de conformité :
-            L'élément "Nb d'enfants morts-nés" s'exprime en entier sans unité (@xsi:type="INT").           
         </assert>
         <assert test='not(cda:code[@code="11636-8"]) or cda:value[@xsi:type="INT"]'>
             [E_pregnancyHistory_CSE-CS8] Erreur de conformité :
