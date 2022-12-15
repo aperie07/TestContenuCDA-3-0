@@ -143,7 +143,7 @@
     <include href="../include/jeuxDeValeurs/JDV_TypeDirectiveAnticipee.sch"/>
     
     
-    <include href="../include/jeuxDeValeurs/ImmunizationCode.sch"/>
+    <include href="../include/jeuxDeValeurs/JDV_ImmunizationCode.sch"/>
     
     
     <!-- ::::::::::::::::::::::::::::::::::::: -->
