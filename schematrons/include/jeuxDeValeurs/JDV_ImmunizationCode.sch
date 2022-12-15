@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    documentCode.sch :
+    JDV_immunizationCode.sch :
     Contenu :
         Contrôle du code du JDV utilisé dans l'entrée FR-Vaccination 
         Spécialisation du pattern dansJeuDeValeurs
