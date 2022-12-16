@@ -37,8 +37,8 @@
             l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement value 
         </assert>
         
-        <assert test="cda:targetSiteCode[@nullFlavor or @code='MED-976']"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
-            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement targetSiteCode avec l'attribut @nullFlavor ou @code 'MED-976' 
+        <assert test="cda:targetSiteCode[@nullFlavor or @code='421591000']"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
+            l'élément "mesures de dispositifs oculaires Observation" doit contenir un élement targetSiteCode avec l'attribut @nullFlavor ou @code '421591000' 
         </assert>
         
         <assert test="cda:methodCode"> [E_mesuresDispositifsOculairesObservation_int] Erreur de Conformité IHE EYE CARE (GEE) :
