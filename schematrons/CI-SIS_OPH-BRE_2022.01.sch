@@ -45,10 +45,10 @@
         <!-- En-tête du document OPH-BRE  -->
         <include href="include/specificationsVolets/OPH-BRE_2022.01/en-tete/Entete_OPH-BRE.sch"/>
         <!-- Entrées du document OPH-BRE -->
-        <include href="include/specificationsVolets/OPH-BRE_2022.01/Entrees/E_raisonDeLaRecommandation_OPH-BRE.sch"/>        
-        <include href="include/specificationsVolets/OPH-BRE_2022.01/Entrees/E_mesuresDeRefractionOrganizer_OPH-BRE.sch"/>   
-        <include href="include/specificationsVolets/OPH-BRE_2022.01/Entrees/E_mesuresAcuiteVisuelle_OPH-BRE.sch"/>
-
+        <include href="include/specificationsVolets/OPH-BRE_2022.01/Entrees/E_raisonDeLaRecommandation_OPH-BRE.sch"/> 
+        <include href="include/specificationsVolets/OPH-BRE_2022.01/Entrees/E_mesuresDeRefractionOrganizer_OPH-BRE.sch"/> 
+        <include href="include/specificationsVolets/OPH-BRE_2022.01/Entrees/E_mesuresAcuiteVisuelle_OPH-BRE.sch"/> 
+        
         <phase id="OPH-BRE">
                 <active pattern="variables"/>
                 <p>Vérification complète de la conformité au CI-SIS</p>
@@ -80,7 +80,6 @@
                 <active pattern="E_mesuresDeRefractionOrganizer_OPH-BRE"/>
                 <active pattern="E_mesuresAcuiteVisuelle_OPH-BRE"/>
                 
-                
         </phase>
         <pattern id="variables">      
                 <let name="jdv_MotifConsultationOphtalmologique-CISIS" value="'../jeuxDeValeurs/JDV_MotifConsultationOphtalmologique-CISIS.xml'"/>
@@ -90,7 +89,7 @@
                 <let name="jdv_TypeDeLentilles-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeLentilles-CISIS.xml'"/>
                 <let name="jdv_AdditionGrandeur-CISIS" value="'../jeuxDeValeurs/JDV_AdditionGrandeur-CISIS.xml'"/>
                 <let name="jdv_TypeDePrisme-CISIS" value="'../jeuxDeValeurs/JDV_TypeDePrisme-CISIS.xml'"/>
-                <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_LateraliteNCIT-CISIS.xml'"/>
+                <let name="JDV_Lateralite-CISIS" value="'../jeuxDeValeurs/JDV_Lateralite-CISIS.xml'"/>
                 <let name="jdv_TypeDeMesureAcuiteVisuelle-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureAcuiteVisuelle-CISIS.xml'"/>
                 <let name="jdv_TypeDeMesureDeRefraction-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureDeRefraction-CISIS.xml'"/>
                 <let name="jdv_TypeDeMesureDispositifOculaire-CISIS" value="'../jeuxDeValeurs/JDV_TypeDeMesureDispositifOculaire-CISIS.xml'"/>
