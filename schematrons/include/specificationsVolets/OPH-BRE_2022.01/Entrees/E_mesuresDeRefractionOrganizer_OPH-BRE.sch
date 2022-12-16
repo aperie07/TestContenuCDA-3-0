@@ -14,17 +14,17 @@
     <rule context="*[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.3']">
 
         <assert
-            test=".//cda:observation[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.7']/cda:code[@code = '65894-8' or @code='65890-6']"
+            test=".//cda:observation[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.7']/cda:code[@code = '95290-3']"
             > [E_mesuresDeRefractionOrganizer_OPH-BRE] Erreur de conformité : L'entrée
             FR-Liste-des-mesures-de-refraction doit contenir une entrée FR-Mesure-de-refraction pour la
-            puissance de la sphère (code="65894-8" ou code="65890-6").
+            puissance de la sphère (code="95290-3").
         </assert>
         
         <assert
-            test=".//cda:observation[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.7']/cda:code[@code = '65896-3' or @code='65892-2']"
+            test=".//cda:observation[cda:templateId/@root = '1.3.6.1.4.1.19376.1.12.1.3.7']/cda:code[@code = '95292-9']"
             > [E_mesuresDeRefractionOrganizer_OPH-BRE] Erreur de conformité : L'entrée
             FR-Liste-des-mesures-de-refraction doit contenir un élement observation pour la
-            puissance du cylindre (code="65896-3" ou code="65892-2").
+            puissance du cylindre (code="95292-9").
         </assert>
     </rule>
 </pattern>
