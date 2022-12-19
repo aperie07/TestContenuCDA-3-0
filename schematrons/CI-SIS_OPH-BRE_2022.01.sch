@@ -41,6 +41,7 @@
         <include href="include/jeuxDeValeurs/OPH-BRE_2022.01/JDV_MesureTypeVerreDelivre-CISIS.sch"/>
         <include href="include/jeuxDeValeurs/OPH-BRE_2022.01/JDV_MesureLentillePrescrite-CISIS.sch"/>
         <include href="include/jeuxDeValeurs/OPH-BRE_2022.01/JDV_MesureLentilleDelivree-CISIS.sch"/>
+        <include href="include/jeuxDeValeurs/OPH-BRE_2022.01/JDV_MethodeDeMesureAcuiteVisuelle-CISIS.sch"/>
         
         <!-- En-tête du document OPH-BRE  -->
         <include href="include/specificationsVolets/OPH-BRE_2022.01/en-tete/Entete_OPH-BRE.sch"/>
@@ -71,6 +72,7 @@
                 <active pattern="JDV_MesureTypeVerreDelivre-CISIS"/>
                 <active pattern="JDV_MesureLentillePrescrite-CISIS"/>
                 <active pattern="JDV_MesureLentilleDelivree-CISIS"/>
+                <active pattern="JDV_MethodeDeMesureAcuiteVisuelle-CISIS"/>
                 
                 <!-- schématrons de l'en-tête OPH-BRE -->
                 <active pattern="Entete_OPH-BRE"/>
@@ -100,6 +102,7 @@
                 <let name="jdv_MesureTypeVerreDelivre-CISIS" value="'../jeuxDeValeurs/JDV_MesureTypeVerreDelivre-CISIS.xml'"/>
                 <let name="jdv_MesureLentillePrescrite-CISIS " value="'../jeuxDeValeurs/JDV_MesureLentillePrescrite-CISIS.xml'"/>
                 <let name="jdv_MesureLentilleDelivree-CISIS" value="'../jeuxDeValeurs/JDV_MesureLentilleDelivree-CISIS.xml'"/>
+                <let name="jdv_MethodeDeMesureAcuiteVisuelle-CISIS" value="'../jeuxDeValeurs/JDV_MethodeDeMesureAcuiteVisuelle-CISIS.xml'"/>
                 
                 <rule context="cda:ClinicalDocument/cda:component/cda:structuredBody">
                         <!-- [1..1] Section FR-Raison-de-la-recommandation (obligatoire) -->
