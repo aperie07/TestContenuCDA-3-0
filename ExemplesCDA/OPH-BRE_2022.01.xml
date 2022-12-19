@@ -952,6 +952,7 @@
                               <reference value="#visionLoinOd" />
                             </originalText>
                           </value>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="252973004" displayName="échelle de Snellen" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -993,7 +994,8 @@
                             <originalText>
                               <reference value="#visionLoinOg" />
                             </originalText>
-                          </value>                          
+                          </value>   
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="252973004" displayName="échelle de Snellen" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1027,7 +1029,8 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="INT" value="70" />
-                          <methodCode code=" 400914004" displayName="tableau de l'Oeil ETDRS" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="C117877" displayName="Tableau de l'Oeil ETDRS" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1058,8 +1061,9 @@
                           </text>
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
-                          <value xsi:type="INT" value="70" />                          
-                          <methodCode code=" 400914004" displayName="tableau de l'Oeil ETDRS" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>                  
+                          <value xsi:type="INT" value="70" /> 
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="C117877" displayName="Tableau de l'Oeil ETDRS" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT"/>                  
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1096,6 +1100,7 @@
                               <reference value="#visionPresOd" />
                             </originalText>
                           </value>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="252973004" displayName="échelle de Snellen" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1132,6 +1137,7 @@
                               <reference value="#visionPresOd" />
                             </originalText>
                           </value>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="252973004" displayName="échelle de Snellen" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1165,6 +1171,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1197,6 +1204,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1230,6 +1238,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1262,6 +1271,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1295,6 +1305,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1327,6 +1338,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1360,6 +1372,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1392,6 +1405,7 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="2.50" unit="d" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
                           <methodCode code="C158246" displayName="Tableau des yeux de Sloan" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCIT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
@@ -1425,7 +1439,8 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="0.50" unit="d" />
-                          <methodCode code="28770-6" displayName="Test du double prisme Maddox pour l’hétérophorie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="252872008" displayName="test du double prisme Maddox" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1457,7 +1472,8 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="0.50" unit="d" />
-                          <methodCode code="28770-6" displayName="Test du double prisme Maddox pour l’hétérophorie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="252872008" displayName="test du double prisme Maddox" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1491,7 +1507,8 @@
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur issue du JDV_OrientationBaseDuPrisme-CISIS(1.2.250.1.213.1.1.5.623) -->
                           <value xsi:type="CD" code="260540009" displayName="nasale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                          <methodCode code="421877000" displayName="réfracteur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="MED-1177" displayName="réfracteur" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1524,7 +1541,8 @@
                           <effectiveTime value="20210416093000+0100" />
                           <!-- Valeur issue du JDV_OrientationBaseDuPrisme-CISIS(1.2.250.1.213.1.1.5.623) -->
                           <value xsi:type="CD" code="260540009" displayName="Nasale" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                          <methodCode code="421877000" displayName="réfracteur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="MED-1177" displayName="réfracteur" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                           <!-- vValeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1557,7 +1575,8 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="15" unit="deg" />
-                          <methodCode code="421877000" displayName="réfracteur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="MED-1177" displayName="réfracteur" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                           <!-- Valeur issue du JDV_OeilExamine-CISIS (1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="18944008" displayName="oeil droit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
@@ -1589,7 +1608,8 @@
                           <statusCode code="completed" />
                           <effectiveTime value="20210416093000+0100" />
                           <value xsi:type="PQ" value="15" unit="deg" />
-                          <methodCode code="421877000" displayName="réfracteur" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <!-- Valeur provenant du JDV_MethodeDeMesureAcuiteVisuelle-CISIS(1.2.250.1.213.1.1.5.715) -->
+                          <methodCode code="MED-1177" displayName="réfracteur" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                           <!-- Valeur issue du JDV_OeilExamine-CISIS(1.2.250.1.213.1.1.5.627) -->
                           <targetSiteCode code="8966001" displayName="oeil gauche" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>   
                           <!-- Entrée FR-Reference-interne qui lie cette observation à l'entrée FR-Liste-des-mesures-de-refraction (1.3.6.1.4.1.19376.1.12.1.3.3) -->
