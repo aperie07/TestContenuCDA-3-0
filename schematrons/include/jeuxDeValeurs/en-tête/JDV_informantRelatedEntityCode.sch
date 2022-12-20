@@ -23,5 +23,5 @@
     <param name="path_jdv2" value="$jdv_informantRelatedEntityCode_2"/>
     <param name="vue_elt" value="'informant/relatedEntity/code'"/>
     <param name="xpath_elt" value="cda:informant/cda:relatedEntity/cda:code"/>
-    <param name="nullFlavor" value="1"/>
+    <param name="nullFlavor" value="0"/>
 </pattern>   
