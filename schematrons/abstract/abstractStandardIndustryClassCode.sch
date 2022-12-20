@@ -26,24 +26,13 @@
         
         <assert test="(
             (@code and @codeSystem and @displayName) or
-            ($nullFlavor and 
-            (@nullFlavor='UNK' or 
-            @nullFlavor='NA' or 
-            @nullFlavor='NASK' or 
-            @nullFlavor='ASKU' or 
-            @nullFlavor='NI' or 
-            @nullFlavor='NAV' or 
-            @nullFlavor='MSK' or 
-            @nullFlavor='OTH')) or
             (@xsi:type and not(@xsi:type = 'CD') and not(@xsi:type = 'CE'))
             )">
             [abstractStandardIndustryClassCode] L'élément "<value-of select="$vue_elt"/>" doit avoir ses attributs 
             @code, @codeSystem et @displayName renseignés, ou si le nullFlavor est autorisé, une valeur admise pour cet attribut, ou un xsi:type différent de CD ou CE.
         </assert>
         
-        <assert test="(
-            @nullFlavor or
-            (@xsi:type and not(@xsi:type = 'CD') and not(@xsi:type = 'CE')) or 
+        <assert test="((@xsi:type and not(@xsi:type = 'CD') and not(@xsi:type = 'CE')) or 
             (document($path_jdv1)//svs:Concept[@code=$att_code and @codeSystem=$att_codeSystem]) or  (document($path_jdv2)//svs:Concept[@code=$att_code and @codeSystem=$att_codeSystem])
             )">
             [abstractStandardIndustryClassCode] L'élément <value-of select="$vue_elt"/>
