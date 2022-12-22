@@ -466,7 +466,7 @@
   <!-- [0..1] Prescription en urgence -->
   <documentationOf>
     <serviceEvent classCode="INFO">
-      <code code="MED-1095" displayName="Prescription en urgence" 
+      <code code="MED-1095" displayName="Exécution en urgence" 
         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"></code>
     </serviceEvent>
   </documentationOf> 
