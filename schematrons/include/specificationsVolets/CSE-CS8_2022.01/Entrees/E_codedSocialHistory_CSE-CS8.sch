@@ -60,12 +60,12 @@
         
         <!-- Vérification de la présence de l'entrée 'Consommation d'alcool' (mère) -->
         <assert test='.//cda:entry/cda:observation[cda:subject/cda:relatedSubject/cda:code/@code="MTH"]/cda:code/@code="74013-4"'>             
-            [E_codedSocialHistory_CSE-CS8] Erreur de Cconformité : L'entrée "Consommation d'alcool" de code 74205-6 est obligatoire pour la mère.
+            [E_codedSocialHistory_CSE-CS8] Erreur de Cconformité : L'entrée "Consommation d'alcool" de code 74013-4 est obligatoire pour la mère.
         </assert>
         
         <!-- Vérification de la présence de l'entrée 'Consommation de tabac et exposition durant la grossesse' (mère) -->
         <assert test='.//cda:entry/cda:observation[cda:subject/cda:relatedSubject/cda:code/@code="MTH"]/cda:code/@code="74011-8"'>             
-            [E_codedSocialHistory_CSE-CS8] Erreur de Cconformité : L'entrée "Consommation de tabac et exposition durant la grossesse" de code 72166-2 est obligatoire pour la mère.
+            [E_codedSocialHistory_CSE-CS8] Erreur de Cconformité : L'entrée "Consommation de tabac et exposition durant la grossesse" de code 74011-8 est obligatoire pour la mère.
         </assert>
         
     </rule>

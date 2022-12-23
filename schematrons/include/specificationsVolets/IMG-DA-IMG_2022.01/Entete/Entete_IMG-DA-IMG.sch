@@ -33,8 +33,8 @@
             [Entete_IMG-DA-IMG] l'acte principal documenté est obligatoire [1..1] et doit avoir le code/@code="55115-0" et code/@codeSystem="2.16.840.1.113883.6.1".     
         </assert>
         
-        <assert test="count(cda:documentationOf[cda:serviceEvent/cda:code/@code!='55115-0' and cda:serviceEvent/cda:code/@codeSystem!='2.16.840.1.113883.6.1'])&lt;=1">
-            [Entete_IMG-DA-IMG] un autre acte documenté peut être présent [0..1].
+        <assert test="count(cda:documentationOf[cda:serviceEvent/cda:code/@code!='55115-0' and cda:serviceEvent/cda:code/@codeSystem!='2.16.840.1.113883.6.1'])&gt;=0">
+            [Entete_IMG-DA-IMG] un ou plusieurs autres actes documentés peuvent être présents [0..*].
         </assert>
     </rule>
   

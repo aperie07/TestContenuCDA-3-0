@@ -47,7 +47,8 @@
   <!-- Identifiant du document -->
   <id root="1.2.250.1.213.1.1.1.23.1"/>
   <!-- Type de document -->
-  <code code="34133-9" displayName="Synthèse d'épisode de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <code code="74207-2" displayName="Dossier de liaison d'urgence"
+    codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <!-- Titre du document -->
   <title> FICHE DE LIAISON D'URGENCE/DOCUMENT DE TRANSFERT DE L'EHPAD VERS LE SERVICE DES
 		URGENCES</title>

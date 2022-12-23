@@ -10,6 +10,6 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_CerveletLoc" is-a="dansJeuDeValeurs">
     <param name="path_jdv" value="$JDV_CerveletLoc"/>
     <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/entryRelationship/observation/targetSiteCode"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='D3-89200']/cda:entryRelationship/cda:observation[cda:value/@code='T-A6000']/cda:targetSiteCode"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='D3-89200']/cda:entryRelationship/cda:observation[cda:value/@code='180924008']/cda:targetSiteCode"/>
     <param name="nullFlavor" value="1"/>
 </pattern>   

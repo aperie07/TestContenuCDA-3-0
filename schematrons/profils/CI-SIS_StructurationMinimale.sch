@@ -267,7 +267,7 @@
         <let name="jdv_substanceAdministration_ImmunizationRouteCodes" value="'../../jeuxDeValeurs/JDV_ImmunizationRouteCodes-CISIS.xml'"/>
 <!--        <let name="jdv_substanceAdministration_RouteOfAdministration" value="'../../jeuxDeValeurs/JDV_HL7_RouteOfAdministration-CISIS.xml'"/>-->
         <let name="jdv_vitalSignCode" value="'../../jeuxDeValeurs/JDV_SignesVitaux-CISIS.xml'"/>
-        <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/TRE_R303-HL7v3AdministrativeGen.xml'"/>
+        <let name="jdv_administrativeGenderCode" value="'../../jeuxDeValeurs/TRE_R303-HL7v3AdministrativeGender.xml'"/>
         <let name="jdv_SocialHistoryCodes" value="'../../jeuxDeValeurs/JDV_SocialHistoryCodes-CISIS.xml'"/>
 <!--        <let name="jdv_AllergieReaction" value="'../../jeuxDeValeurs/JDV_AllergieReaction-CISIS.xml'"/> -->
         <let name="jdv_typeDirectiveAnticipee" value="'../../jeuxDeValeurs/JDV_TypeDirectiveAnticipee-CISIS.xml'"/>

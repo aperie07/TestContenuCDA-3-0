@@ -26,5 +26,5 @@
     <param name="path_jdv3" value="$jdv_authorFunctionCode_3"/>
     <param name="vue_elt" value="'author/functionCode'"/>
     <param name="xpath_elt" value="cda:author/cda:functionCode"/>
-    <param name="nullFlavor" value="0"/>
+    <param name="nullFlavor" value="1"/>
 </pattern>   

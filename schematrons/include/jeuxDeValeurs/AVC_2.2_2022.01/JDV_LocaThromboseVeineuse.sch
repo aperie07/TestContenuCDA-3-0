@@ -10,7 +10,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_LocaThromboseVeineuse" is-a="dansJeuDeValeurs">
     <param name="path_jdv" value="$JDV_LocaThromboseVeineuse"/>
     <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/targetSiteCode"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='D3-89424']/cda:targetSiteCode"/>
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation[cda:value/@code='I63.6']/cda:targetSiteCode"/>
     <param name="nullFlavor" value="1"/>
 </pattern>   
 

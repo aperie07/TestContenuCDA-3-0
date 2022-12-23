@@ -2518,7 +2518,7 @@
                   <c:code code="MED-570" displayName="Mesure associée"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="GEN-097" displayName="Autre (préciser)"
+                      <c:value code="GEN-092" displayName="Autre"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </c:qualifier>
                   </c:code>
@@ -3465,7 +3465,7 @@
                   <c:code code="MED-573" displayName="Accompagnement social ou socioprofessionnel"
                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                     <c:qualifier>
-                      <c:value code="GEN-097" displayName="Autre (préciser)"
+                      <c:value code="GEN-092" displayName="Autre"
                         codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
                     </c:qualifier>
                   </c:code>

@@ -10,7 +10,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="JDV_NIHSSMiInt" is-a="dansJeuDeValeurs">
     <param name="path_jdv" value="$JDV_NIHSSMiInt"/>
     <param name="vue_elt" value="ClinicalDocument/component/structuredBody/component/section/entry/observation/entryRelationship/observation/interpretationCode"/>
-    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:entry/cda:observation/cda:entryRelationship/cda:observation
+    <param name="xpath_elt" value="/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/cda:component/cda:section/cda:entry/cda:observation/cda:entryRelationship/cda:observation
         [cda:code/@code='70968-3' or cda:code/@code='70191-2']/cda:interpretationCode"/>
     <param name="nullFlavor" value="1"/>
 </pattern>   

@@ -49,7 +49,7 @@
 	<!-- Identifiant du document -->
 	<id root="1.2.250.1.213.1.1.1.22.1"/>
 	<!-- Type de document -->
-	<code code="34133-9" displayName="Synthèse d'épisode de soins"
+	<code code="74207-2" displayName="Dossier de liaison d'urgence"
 		codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 	<!-- Titre du document -->
 	<title>DOCUMENT DE LIAISON D'URGENCE</title>
