@@ -6,7 +6,7 @@
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
-<?oxygen SCHSchema="../schematrons/CI-SIS_CARD-F-PRC_2022.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_CARD-F-PRC-PPV_2022.01.sch"?>
 <!-- 
       **********************************************************************************************************
       Document : UFCV - Porteur d'une Prothèse Valvulaire (F-PRC-PPV_2022.01)

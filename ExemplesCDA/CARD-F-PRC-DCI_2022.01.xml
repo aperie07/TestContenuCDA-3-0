@@ -6,7 +6,7 @@
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_ModelesDeContenusCDA.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/CI-SIS_Modeles_ANS.sch"?>
 <?oxygen SCHSchema="../schematrons/profils/terminologies/schematron/terminologie.sch"?>
-<?oxygen SCHSchema="../schematrons/CI-SIS_CARD-F-PRC_2022.sch"?>
+<?oxygen SCHSchema="../schematrons/CI-SIS_CARD-F-PRC-DCI_2022.01.sch"?>
 <!-- 
       **********************************************************************************************************
       Document : UFCV - Porteur d'un Défibrillateur Cardiaque (F-PRC-DCI_1.4)
@@ -430,7 +430,7 @@
       </component>
       <!-- 
             ********************************************************
-            Coded List of surgeries section
+           FR-Historique-des-actes
             ********************************************************
          -->
       <component>
@@ -1070,7 +1070,7 @@
                   <!-- ID du matériel implanté (numéro de série)-->
                   <id root="45ABC65F-FB6D-41DB-92B9-2FEE853BA87D" />
                   <playingDevice classCode="DEV" determinerCode="INSTANCE">
-                    <!-- Valeur issue du JDV_UFCV_TypEndoPt-CISIS -->
+                    <!-- Valeur issue du JDV_UFCV_MatImpl-CISIS -->
                     <!-- [ANS] Code à remplacer par EMDN -->
                     <code code="D0001-1" displayName="Défibrillateur" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC">
                       <originalText><reference value="#DM-01"/></originalText>
@@ -1479,6 +1479,7 @@
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NASK"/>
                   <!-- [ANS] Code à remplacer -->
+                  <!-- Valeur provenant du JDV_UFCV_Connx-CISIS -->
                   <value xsi:type="CD" code="D0020-2" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="IS-1" />
                 </observation>
               </entryRelationship>
@@ -2204,23 +2205,6 @@
                   <statusCode code="completed"/>
                   <effectiveTime nullFlavor="NASK"/>
                   <value xsi:type="PQ" value="71" unit="V" />
-                </observation>
-              </entryRelationship>
-              <!-- Entrée Simple Observation : Dernier Examen de contrôle Recueil (Sonde VG) -->
-              <entryRelationship typeCode="RSON">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Conformité IHE PCC -->
-                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
-                  <!-- Conformité CI-SIS -->
-                  <templateId root="1.2.250.1.213.1.1.3.48" />
-                  <id root="70F7D106-3D46-4760-B58D-661A1DF880B1" />
-                  <code code="L0027" codeSystem="1.2.250.1.213.1.1.4.2" codeSystemName="TA_PRC" displayName="Recueil"/>
-                  <text>
-                    <reference value="#def0085" />
-                  </text>
-                  <statusCode code="completed"/>
-                  <effectiveTime nullFlavor="NASK"/>
-                  <value xsi:type="PQ" value="11" unit="mV" />
                 </observation>
               </entryRelationship>
               <!-- Entrée Simple Observation : Dernier Examen de contrôle Impédance (Sonde VG) -->
