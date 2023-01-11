@@ -3023,70 +3023,67 @@
                   <table border="0">
                      <thead>
                         <tr>
-                           <th colspan="9">Vaccinations</th>
+                           <th colspan="11">Vaccinations</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
                            <td>&#160;</td>
-                           <td><content styleCode="BoldItalics" ID="vaccinPolio">Vaccin antituberculeux</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinCoq">Vaccin contre la coqueluche</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinInf">Vaccin anti haemophilus influenzae B</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinHepB">Vaccin anti haemophilus influenzae B</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinPneumo">Vaccin antipneumococcique</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinBcg">Vaccin antituberculeux (BCG)</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinMening">Méningocoque C</content></td>
-                           <td><content styleCode="BoldItalics" ID="vaccinRor">Vaccin contre la rougeole, oreillons et rubéole</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin diphtérie-polyomielite-tétanos</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin contre la coqueluche</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin anti haemophilus influenzae B</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin contre l'hépatite B</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin antipneumococcique</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin contre le méningocoque C</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin contre la rougeole, oreillons et rubéole</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin antituberculeux (BCG)</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin contre la fièvre jaune</content></td>
+                           <td><content styleCode="BoldItalics">Autre vaccin</content></td>
                         </tr>
                         <tr>
                            <td>1ère dose</td>
-                           <td><content ID="polioPremDose">Oui</content></td>
-                           <td><content ID="coqPremDose">Oui</content></td>
-                           <td><content ID="infPremDose">Oui</content></td>
-                           <td><content ID="hepBPremDose">Oui</content></td>
-                           <td><content ID="pneumoPremDose">Oui</content></td>
-                           <td><content ID="bcgPremDose">Oui</content></td>
-                           <td><content ID="meningPremDose">Oui</content></td>
-                           <td><content ID="rorPremDose">Oui</content></td>
+                           <td><content ID="vaccin-DPT-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-Coq-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-InfB-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-HepB-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-Pneumo-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-Mening-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-ROR-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-BCG-dose-1">Oui</content></td>
+                           <td><content ID="vaccin-FievreJaune-dose-1">Oui</content></td>
+                           <td>-</td>
                         </tr>
                         <tr>
                            <td>2ème dose</td>
-                           <td><content ID="polioDeuxDose">Oui</content></td>
-                           <td><content ID="coqDeuxDose">Oui</content></td>
-                           <td><content ID="infDeuxDose">Oui</content></td>
-                           <td><content ID="hepBDeuxDose">Oui</content></td>
-                           <td><content ID="pneumoDeuxDose">Oui</content></td>
-                           <td><content ID="bcgDeuxDose">-</content></td>
-                           <td><content ID="meningDeuxDose">-</content></td>
-                           <td><content ID="rorDeuxDose">Oui</content></td>
-                        </tr>
-                        <tr>
-                           <td>3ème dose</td>
-                           <td><content ID="polioTroisDose">-</content></td>
-                           <td><content ID="coqTroisDose">-</content></td>
-                           <td><content ID="infTroisDose">-</content></td>
-                           <td><content ID="hepBTroisDose">Oui</content></td>
-                           <td><content ID="pneumoTroisDose">-</content></td>
-                           <td><content ID="bcgTroisDose">-</content></td>
-                           <td><content ID="meningTroisDose">-</content></td>
-                           <td><content ID="rorTroisDose">-</content></td>
-                        </tr>
+                           <td><content ID="vaccin-DPT-dose-2">Oui</content></td>
+                           <td><content ID="vaccin-Coq-dose-2">Oui</content></td>
+                           <td><content ID="vaccin-InfB-dose-2">Oui</content></td>
+                           <td><content ID="vaccin-HepB-dose-2">Oui</content></td>
+                           <td><content ID="vaccin-Pneumo-dose-2">Oui</content></td>
+                           <td><content ID="vaccin-Mening-dose-2">Oui</content></td>
+                           <td><content ID="vaccin-ROR-dose-2">Oui</content></td>
+                           <td>-</td>
+                           <td>-</td>
+                           <td>-</td>
+                        </tr>                        
                         <tr>
                            <td>Rappel</td>
-                           <td><content ID="polioRApDose">Oui</content></td>
-                           <td><content ID="coqRapDose">Oui</content></td>
-                           <td><content ID="infRapDose">Oui</content></td>
-                           <td><content ID="hepBRapDose">-</content></td>
-                           <td><content ID="pneumoRapDose">Oui</content></td>
-                           <td><content ID="bcgRapDose">-</content></td>
-                           <td><content ID="meningRapDose">Oui</content></td>
-                           <td><content ID="rorRapDose">-</content></td>
+                           <td><content ID="vaccin-DPT-rappel">Oui</content></td>
+                           <td><content ID="vaccin-Coq-rappel">Oui</content></td>
+                           <td><content ID="vaccin-InfB-rappel">Oui</content></td>
+                           <td><content ID="vaccin-HepB-rappel">Oui</content></td>
+                           <td><content ID="vaccin-Pneumo-rappel">Oui</content></td>
+                           <td>-</td>
+                           <td>-</td>
+                           <td>-</td>
+                           <td>-</td>
+                           <td>-</td>
                         </tr>
                      </tbody>
                   </table>
                </text>
                
-               <!-- Entrée FR-Vaccination : Vaccination DT Polio 1ère dose -->
+               <!-- Entrée FR-Vaccination : Vaccination Diphtérie, tétanos, poliomyélite (1ère dose) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3098,441 +3095,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130084"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#polioPremDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AN" displayName="Vaccin antituberculeux"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinPolio"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="1"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination DT Polio 2ère dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130085"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#polioDeuxDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>                     
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AN" displayName="Vaccin antituberculeux"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinPolio"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="2"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination DT Polio Rappel -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130086"/>
-                     <code code="BOOSTER" displayName="Rappel de vaccin" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#polioRapDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AN" displayName="Vaccin antituberculeux"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinPolio"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="3"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination Coqueluche 1ère dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130087"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#CoqPremDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AJ" displayName="Vaccin contre la coqueluche"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinCoq"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="1"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination Coqueluche 2ème dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130088"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#CoqDeuxDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AJ" displayName="Vaccin contre la coqueluche"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinCoq"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="2"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination Coqueluche Rappel -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130089"/>
-                     <code code="BOOSTER" displayName="Rappel de vaccin" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#CoqRapDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AJ" displayName="Vaccin contre la coqueluche"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinCoq"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="3"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination Haemophilus influenzae 1ère dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130091"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#infPremDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AG"
-                                 displayName="Vaccin anti haemophilus influenzae B"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinInf"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="1"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination Haemophilus influenzae 2ème dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130092"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#infDeuxDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="1"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AG"
-                                 displayName="Vaccin anti haemophilus influenzae B"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinInf"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="2"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : Vaccination Haemophilus influenzae Rappel -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130095"/>
-                     <code code="BOOSTER" displayName="Rappel de vaccin" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#infRapDose"/></text>
+                     <text><reference value="#vaccin-DPT-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3549,11 +3112,117 @@
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
                               <code>
-                                 <originalText>
-                                    <reference value="vaccinInf"/>
-                                 </originalText>
-                                 <translation code="J07AG"
-                                    displayName="Vaccin anti haemophilus influenzae B"
+                                 <originalText><reference value="#vaccin-DPT-dose-1"/></originalText>
+                                 <!-- code ATC du vaccin -->
+                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="1"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Diphtérie, tétanos, poliomyélite (2ème dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130085"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-DPT-dose-2"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>                     
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-DPT-dose-2"/></originalText>  
+                                 <!-- code ATC du vaccin -->
+                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="2"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Diphtérie, tétanos, poliomyélite (Rappel) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130086"/>
+                     <code code="BOOSTER" displayName="Rappel de vaccin" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-DPT-rappel"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-DPT-rappel"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
                                     codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
@@ -3576,7 +3245,331 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Hépatite Virale B 1ère dose -->
+               <!-- Entrée FR-Vaccination : Vaccination Coqueluche (1ère dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130087"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-Coq-dose-1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>        
+                                 <originalText><reference value="#vaccin-Coq-dose-1"/></originalText>   
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="1"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Coqueluche (2ème dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130088"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-Coq-dose-2"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>  
+                                 <originalText><reference value="#vaccin-Coq-dose-2"/></originalText> 
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="2"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Coqueluche (Rappel) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130089"/>
+                     <code code="BOOSTER" displayName="Rappel de vaccin" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-Coq-rappel"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-Coq-rappel"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AJ" displayName="Vaccin contre la coqueluche"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="3"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Haemophilus influenzae B (1ère dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130091"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-InfB-dose-1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-InfB-dose-1"/></originalText>     
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="1"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Haemophilus influenzae B (2ème dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130092"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-InfB-dose-2"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-InfB-dose-2"/></originalText> 
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="2"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Haemophilus influenzae B (Rappel) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130095"/>
+                     <code code="BOOSTER" displayName="Rappel de vaccin" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-InfB-rappel"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="1"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-InfB-rappel"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>  
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="3"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Vaccination Hépatite B (1ère dose) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3588,7 +3581,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130096"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#hepBPremDose"/></text>
+                     <text><reference value="#vaccin-HepB-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3604,12 +3597,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code  code="J07AG"
-                                 displayName="Vaccin anti haemophilus influenzae B"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinHepB"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-HepB-dose-1"/></originalText> 
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AG" displayName="Vaccin anti haemophilus influenzae B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3631,7 +3623,7 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Hépatite Virale B 2ème dose -->
+               <!-- Entrée FR-Vaccination : Vaccination Hépatite B (2ème dose) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3643,7 +3635,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130097"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#hepBDeuxDose"/></text>
+                     <text><reference value="#vaccin-HepB-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3659,12 +3651,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07BC01"
-                                 displayName="Vaccin contre l'hépatite B"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinHepB"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-HepB-dose-2"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3686,7 +3677,7 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Hépatite Virale B 3ème dose -->
+               <!-- Entrée FR-Vaccination : Vaccination Hépatite B (Rappel) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3696,9 +3687,9 @@
                      <!-- Conformité FR-Vaccination (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.45"/>
                      <id root="FD850158-7CCD-11EB-9439-0242AC130098"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                     <code code="BOOSTER" displayName="Rappel de vaccin" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#hepBTroisDose"/></text>
+                     <text><reference value="#vaccin-HepB-rappel"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3714,12 +3705,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07BC01"
-                                 displayName="Vaccin contre l'hépatite B"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinHepB"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-HepB-rappel"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3741,7 +3731,7 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Pneumocoque 1ère dose -->
+               <!-- Entrée FR-Vaccination : Vaccination Pneumocoque (1ère dose) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3753,7 +3743,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130099"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#pneumoPremDose"/></text>
+                     <text><reference value="#vaccin-Pneumo-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3769,11 +3759,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07AL" displayName="Vaccin antipneumococcique"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinPneumo"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-Pneumo-dose-1"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AL" displayName="Vaccin antipneumococcique"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3795,7 +3785,7 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Pneumocoque 2ème dose -->
+               <!-- Entrée FR-Vaccination : Vaccination Pneumocoque (2ème dose) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3807,7 +3797,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130100"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#pneumoDeuxDose"/></text>
+                     <text><reference value="#vaccin-Pneumo-dose-2"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3823,11 +3813,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07AL" displayName="Vaccin antipneumococcique"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinPneumo"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-Pneumo-dose-2"/></originalText>  
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AL" displayName="Vaccin antipneumococcique"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3849,7 +3839,7 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Pneumocoque Rappel -->
+               <!-- Entrée FR-Vaccination : Vaccination Pneumocoque (Rappel) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3861,7 +3851,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130101"/>
                      <code code="BOOSTER" displayName="Rappel de vaccin" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#pneumoRapDose"/></text>
+                     <text><reference value="#vaccin-Pneumo-rappel"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3877,11 +3867,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07AL" displayName="Vaccin antipneumococcique"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinPneumo"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-Pneumo-rappel"/></originalText>   
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AL" displayName="Vaccin antipneumococcique"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3903,7 +3893,223 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Vaccination Tuberculose BCG -->
+               <!-- Entrée FR-Vaccination : Méningocoque C (1ère dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130103"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-Mening-dose-1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="2"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-Mening-dose-1"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AH07" displayName="Vaccin contre le méningocoque C"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="1"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Méningocoque C (2ème dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130104"/>
+                     <code code="BOOSTER" displayName="Rappel de vaccin" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-Mening-dose-2"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="2"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-Mening-dose-2"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AH07" displayName="Vaccin contre le méningocoque C"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="2"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : ROR (1ère dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130106"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-ROR-dose-1"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="2"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-ROR-dose-1"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07BD52" displayName="Vaccin contre la rougeole, oreillons et rubéole"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="1"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : ROR (2ème dose) -->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                     <!-- Conformité Medication activity (CCD) -->
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <!-- Conformité Immunizations Entry (IHE PCC) -->
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+                     <!-- Conformité FR-Vaccination (CI-SIS) -->
+                     <templateId root="1.2.250.1.213.1.1.3.45"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130107"/>
+                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
+                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
+                     <text><reference value="#vaccin-ROR-dose-2"/></text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NAV"/>
+                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
+                     <routeCode nullFlavor="NA"/>
+                     <doseQuantity value="2"/>
+                     <!-- Entrée FR-Produit-de-sante -->
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <!-- Conformité Product (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                           <!-- Conformité Product Entry (IHE PCC) -->
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.43"/>
+                           <manufacturedMaterial>
+                              <code>
+                                 <originalText><reference value="#vaccin-ROR-dose-2"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07BD52" displayName="Vaccin contre la rougeole, oreillons et rubéole"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                              </code>
+                              <lotNumberText nullFlavor="UNK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <!-- Entrée FR-Rang-de-la-vaccination -->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Conformité Medication series number observation (CCD) -->
+                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
+                           <templateId root="1.2.250.1.213.1.1.3.82"/>
+                           <code code="30973-2" displayName="Rang de la vaccination"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="INT" value="2"/>
+                        </observation>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </entry>
+               
+               <!-- Entrée FR-Vaccination : Tuberculose BCG -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3915,7 +4121,7 @@
                      <id root="FD850158-7CCD-11EB-9439-0242AC130102"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#bcg"/></text>
+                     <text><reference value="#vaccin-BCG-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3931,11 +4137,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07AN" displayName="Vaccin antituberculeux"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinBcg"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-BCG-dose-1"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -3957,7 +4163,7 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Méningocoque C 1ère dose -->
+               <!-- Entrée FR-Vaccination : Fièvre jaune (1ère dose) -->
                <entry>
                   <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
                      <!-- Conformité Medication activity (CCD) -->
@@ -3966,15 +4172,15 @@
                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
                      <!-- Conformité FR-Vaccination (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130103"/>
+                     <id root="FD850158-7CCD-11EB-9439-0242AC130102"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#meningPremDose"/></text>
+                     <text><reference value="#vaccin-FievreJaune-dose-1"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
                      <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="2"/>
+                     <doseQuantity value="1"/>
                      <!-- Entrée FR-Produit-de-sante -->
                      <consumable typeCode="CSM">
                         <manufacturedProduct>
@@ -3985,11 +4191,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07AH07" displayName="Vaccin contre le méningocoque C"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinMening"/>
-                                 </originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-FievreJaune-dose-1"/></originalText>
+                                 <!-- Code ATC du vaccin -->
+                                 <translation code="J07BL" displayName="Vaccin contre la fièvre jaune"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="UNK"/>
                            </manufacturedMaterial>
@@ -4011,168 +4217,6 @@
                   </substanceAdministration>
                </entry>
                
-               <!-- Entrée FR-Vaccination : Méningocoque C Rappel -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130104"/>
-                     <code code="BOOSTER" displayName="Rappel de vaccin" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#meningRapDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="2"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07AH07" displayName="Vaccin contre le méningocoque C"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinMening"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="2"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : ROR 1ère dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130106"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#rorPremDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="2"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07BD52" displayName="Vaccin contre la rougeole, oreillons et rubéole"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinRor"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="1"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-               
-               <!-- Entrée FR-Vaccination : ROR 2ème dose -->
-               <entry>
-                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                     <!-- Conformité Medication activity (CCD) -->
-                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
-                     <!-- Conformité Immunizations Entry (IHE PCC) -->
-                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-                     <!-- Conformité FR-Vaccination (CI-SIS) -->
-                     <templateId root="1.2.250.1.213.1.1.3.45"/>
-                     <id root="FD850158-7CCD-11EB-9439-0242AC130107"/>
-                     <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
-                        codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#rorDeuxDose"/></text>
-                     <statusCode code="completed"/>
-                     <effectiveTime nullFlavor="NAV"/>
-                     <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
-                     <routeCode nullFlavor="NA"/>
-                     <doseQuantity value="2"/>
-                     <!-- Entrée FR-Produit-de-sante -->
-                     <consumable typeCode="CSM">
-                        <manufacturedProduct>
-                           <!-- Conformité Product (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.53"/>
-                           <!-- Conformité Product Entry (IHE PCC) -->
-                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-                           <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.43"/>
-                           <manufacturedMaterial>
-                              <code code="J07BD52" displayName="Vaccin contre la rougeole, oreillons et rubéole"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText>
-                                    <reference value="vaccinRor"/>
-                                 </originalText>
-                              </code>
-                              <lotNumberText nullFlavor="UNK"/>
-                           </manufacturedMaterial>
-                        </manufacturedProduct>
-                     </consumable>
-                     <!-- Entrée FR-Rang-de-la-vaccination -->
-                     <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                           <!-- Conformité Medication series number observation (CCD) -->
-                           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                           <!-- Conformité FR-Rang-de-la-vaccination (CI-SIS) -->
-                           <templateId root="1.2.250.1.213.1.1.3.82"/>
-                           <code code="30973-2" displayName="Rang de la vaccination"
-                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                           <statusCode code="completed"/>
-                           <value xsi:type="INT" value="2"/>
-                        </observation>
-                     </entryRelationship>
-                  </substanceAdministration>
-               </entry>
-
             </section>
          </component>
                   

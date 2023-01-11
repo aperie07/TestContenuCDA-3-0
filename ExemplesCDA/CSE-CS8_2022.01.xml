@@ -3221,12 +3221,12 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td>Vaccination par le BCG</td>
-                           <td><content ID="bcg">Oui</content></td>
+                           <td><content styleCode="BoldItalics">Vaccin antituberculeux</content></td>
+                           <td><content ID="vaccin-BCG">Oui</content></td>
                         </tr>
                         <tr>
-                           <td>Vaccination Hépatite B</td>
-                           <td><content ID="hepatite">Non</content></td>
+                           <td><content styleCode="BoldItalics">Vaccination Hépatite B</content></td>
+                           <td><content ID="vaccin-Hepatite-B">Non</content></td>
                         </tr>
                      </tbody>
                   </table>
@@ -3243,7 +3243,7 @@
                      <templateId root="1.2.250.1.213.1.1.3.45"/>
                      <id root="DD747E48-7B65-11EB-9439-0242AC130002"/>
                      <code code="INITIMMUNIZ" displayName="Primo-vaccination" codeSystem="2.16.840.1.113883.5.4"/>
-                     <text><reference value="#bcg"/></text>
+                     <text><reference value="#vaccin-BCG"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3259,12 +3259,11 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07AN" displayName="Vaccin antituberculeux"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText><reference value="#bcg"/></originalText>
-                                 <translation  code="61077869"
-                                    displayName="VACCIN BCG SSI, poudre et solvant pour suspension injectable"
-                                    codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS"/>
+                              <code code="61077869" displayName="VACCIN BCG SSI, poudre et solvant pour suspension injectable"
+                                    codeSystem="1.2.250.1.213.2.3.1" codeSystemName="CIS">
+                                 <originalText><reference value="#vaccin-BCG"/></originalText>
+                                 <translation code="J07AN" displayName="Vaccin antituberculeux"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                               </code>
                               <lotNumberText nullFlavor="NA"/>
                            </manufacturedMaterial>
@@ -3298,7 +3297,7 @@
                      <id root="41DAC707-7C96-47B7-B600-AC63D8002142"/>
                      <code code="INITIMMUNIZ" displayName="1ère série vaccinante" 
                         codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7:ActCode"/>
-                     <text><reference value="#hepatite"/></text>
+                     <text><reference value="#vaccin-Hepatite-B"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NAV"/>
                      <!-- Voie d'administration : valeur issue du JDV_ImmunizationRouteCodes-CISIS (1.2.250.1.213.1.1.5.676) -->
@@ -3314,9 +3313,12 @@
                            <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.43"/>
                            <manufacturedMaterial>
-                              <code code="J07BC01" displayName="Vaccin contre l'hépatite B"
-                                 codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
-                                 <originalText><reference value="#hepatite"/></originalText>
+                              <code>
+                                 <originalText><reference value="#vaccin-Hepatite-B"/></originalText>
+                                 <!-- Code ATC -->
+                                 <translation code="J07BC01" displayName="Vaccin contre l'hépatite B"
+                                    codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
+                                 </translation>
                               </code>
                               <lotNumberText nullFlavor="NA"/>
                            </manufacturedMaterial>
