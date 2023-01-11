@@ -65,7 +65,7 @@
     <include href="../include/entrees/E_problemEntry_fr.sch"/><!--
     <include href="../include/entrees/E_problemStatusObservation_fr.sch"/>-->
     <include href="../include/entrees/E_procedureEntry_fr.sch"/>
-<!--    <include href="../include/entrees/E_produitDeSantePrescrit_fr.sch"/>-->
+    <include href="../include/entrees/E_produitDeSante_fr.sch"/>
     <include href="../include/entrees/E_quantiteProduit_fr.sch"/>
     <include href="../include/entrees/E_referenceItemPlanTraitement_fr.sch"/>
     <include href="../include/entrees/E_severity_fr.sch"/>
@@ -115,7 +115,7 @@
         <active pattern="E_problemEntry_fr"/>
 <!--        <active pattern="E_problemStatusObservation_fr"/>-->
         <active pattern="E_procedureEntry_fr"/>
-        <!--<active pattern="E_produitDeSantePrescrit_fr"/>-->
+        <active pattern="E_produitDeSante_fr"/>
         <active pattern="E_quantiteProduit_fr"/>
         <active pattern="E_referenceItemPlanTraitement_fr"/>
         <active pattern="E_severity_fr"/>
