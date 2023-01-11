@@ -37,29 +37,12 @@
             Une entrée 'Immunization' doit comporter un (et un seul) élément 'effectiveTime'.
         </assert>
         
-        <!-- la voie d'administration n'est plus obligatoire (suppression du contrôle) -->
-        <!-- <assert test="count(cda:routeCode)=1">
-            [E_immunizations_fr] Erreur de Conformité CI-SIS :
-            Une entrée 'Immunization' doit comporter un (et un seul) élément 'routeCode' pour préciser la voie d'administration.
-        </assert> -->
-        
-        <!-- la dose à administrer n'est plus obligatoire (suppression du contrôle) -->
-        <!-- <assert test="count(cda:doseQuantity)=1">
-            [E_immunizations_fr] Erreur de Conformité CI-SIS :
-            Une entrée 'Immunization' doit comporter un (et un seul) élément 'doseQuantity' pour préciser la dose à administrer.
-        </assert> -->
-        
         <assert test='count(cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial/cda:code/cda:originalText/cda:reference)=1 or cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial/cda:code/@nullFlavor'>
             [E_immunizations_fr] Erreur de conformité CI-SIS :
             Une entrée 'Immunization' doit comporter un (et un seul) élément 'consumable' pour décrire le produit (manufacturedProduct) avec une entrée de type Product Entry.
             Cette entrée 'Product Entry' doit comporter un élément 'code' et une description narrative via une référence à l'élément narratif de la section (originalText/reference).
         </assert>
-        
-        <!-- le numéro de lot n'est plus obligatoire (suppression du contrôle) -->
-        <!-- <assert test='count(cda:consumable/cda:manufacturedProduct/cda:manufacturedMaterial/cda:lotNumberText)=1'>
-            [E_immunizations_fr] Erreur de conformité CI-SIS : Le numéro de lot du produit est obligatoire
-        </assert> -->
-        
+
         <assert test="not(cda:entryRelationship) or 
             cda:entryRelationship[@typeCode='CAUS']/cda:observation/cda:templateId[@root='2.16.840.1.113883.10.20.1.28'] or 
             cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.2'] or
