@@ -829,7 +829,7 @@
                     </high>
                   </rateQuantity>
                   
-                  <!-- Produit de santé prescrit à nullFlavor="NA" -->
+                  <!-- Produit de santé à nullFlavor="NA" -->
                   <consumable>
                     <manufacturedProduct classCode="MANU">
                       <!-- Conformité Product (CCD) -->
@@ -837,7 +837,7 @@
                       <!-- Conformité Product Entry (IHE PCC) -->
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
                       <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                      <templateId root="1.2.250.1.213.1.1.3.84"/>
+                      <templateId root="1.2.250.1.213.1.1.3.43"/>
                       <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
                         <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
                         <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
@@ -913,7 +913,7 @@
                       </translation>
                     </high>
                   </rateQuantity>
-                  <!-- Produit de santé prescrit à nullFlavor="NA" -->
+                  <!-- Produit de santé à nullFlavor="NA" -->
                   <consumable>
                     <manufacturedProduct classCode="MANU">
                       <!-- Conformité Product (CCD) -->
@@ -921,7 +921,7 @@
                       <!-- Conformité Product Entry (IHE PCC) -->
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
                       <!-- Conformité FR-Produit-de-sante (CI-SIS) -->
-                      <templateId root="1.2.250.1.213.1.1.3.84"/>
+                      <templateId root="1.2.250.1.213.1.1.3.43"/>
                       <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
                         <!-- Conformité Medicine Entry (IHE PHARM PRE) -->
                         <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>

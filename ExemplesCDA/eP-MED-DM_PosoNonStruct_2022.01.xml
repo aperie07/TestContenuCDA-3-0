@@ -682,7 +682,7 @@
               <!-- [0..*] Dose maximale d'administration : uniquement si posologie structurée -->
               <!-- <maxDoseQuantity> </maxDoseQuantity> -->
               
-              <!-- [1..1] Entrée FR-Produit-de-sante-prescrit -->
+              <!-- [1..1] Entrée FR-Produit-de-sante -->
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <!-- Conformité Product (CCD) -->
