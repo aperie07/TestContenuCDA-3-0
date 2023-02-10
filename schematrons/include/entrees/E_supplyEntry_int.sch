@@ -17,7 +17,7 @@
         <let name="count_templateId" value="count(cda:templateId)"/>
         <let name="count_id" value="count(cda:id)"/>
         
-        <assert test="cda:entryRelationship[@typeCode = 'REFR' and  @inversionInd = 'false']">
+        <assert test="not(../../cda:entryRelationship) or ../../cda:entryRelationship[@typeCode = 'REFR' and  @inversionInd = 'false']">
             [E_supplyEntry_int.sch] Errreur de conformité PCC : Dans l'entrée 'Prescription', l'entryRelationShip doit contenir les attributs 
             @typeCode et @inversionInd fixés respectivement aux valeurs 'REFR' et 'false'
         </assert>
