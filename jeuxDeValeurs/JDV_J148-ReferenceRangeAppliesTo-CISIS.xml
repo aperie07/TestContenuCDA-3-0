@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20210430120000" dateValid="20210430120000" description="JDV pour le champ d'application de l'intervalle de référence" displayName="JDV_J148-ReferenceRangeAppliesTo-CISIS.tabs" id="1.2.250.1.213.1.1.5.603" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J148-ReferenceRangeAppliesTo-CISIS">
-        <ConceptList>
-            <Concept code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Féminin"/>
-            <Concept code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Masculin"/>
-            <Concept code="LA15173-0" codeSystem="2.16.840.1.113883.6.1" displayName="Femme enceinte"/>
-        </ConceptList>
-    </ValueSet>
-</RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Créé par nmahraz, le 03/02/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.603" displayName="JDV_J148-ReferenceRangeAppliesTo-CISIS" version="test"><ConceptList><Concept code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1" dateValid="20210603000000" dateFin=""/><Concept code="M" displayName="Masculin" codeSystem="2.16.840.1.113883.5.1" dateValid="20210603000000" dateFin=""/><Concept code="LA15173-0" displayName="Femme enceinte" codeSystem="2.16.840.1.113883.6.1" dateValid="20210603000000" dateFin="20220410000000"/><Concept code="77386006" displayName="patiente enceinte actuellement" codeSystem="2.16.840.1.113883.6.96" dateValid="20220411000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>

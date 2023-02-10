@@ -1,9 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RetrieveValueSetResponse xmlns="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ValueSet dateFin="" dateMaj="20210430120000" dateValid="20210430120000" description="JDV pour la localisation de la mesure de la pression artérielle" displayName="JDV_J149-BodySiteBP-ENS.tabs" id="1.2.250.1.213.1.1.5.604" typeFichier="JDV" urlFichier="https://mos.esante.gouv.fr/NOS/JDV_J149-BodySiteBP-ENS">
-        <ConceptList>
-            <Concept code="24890" codeSystem="2.16.840.1.113883.6.119" displayName="Bras"/>
-            <Concept code="24922" codeSystem="2.16.840.1.113883.6.119" displayName="Poignet"/>
-        </ConceptList>
-    </ValueSet>
-</RetrieveValueSetResponse>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Créé par nmahraz, le 03/02/2023-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="1.2.250.1.213.1.1.5.604" displayName="JDV_J149-BodySiteBP-ENS" version="test"><ConceptList><Concept code="24890" displayName="Bras" codeSystem="2.16.840.1.113883.6.119" dateValid="20210603000000" dateFin=""/><Concept code="24922" displayName="Poignet" codeSystem="2.16.840.1.113883.6.119" dateValid="20210603000000" dateFin=""/></ConceptList></ValueSet></RetrieveValueSetResponse>
