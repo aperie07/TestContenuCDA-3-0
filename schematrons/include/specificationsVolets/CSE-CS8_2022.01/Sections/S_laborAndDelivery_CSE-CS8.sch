@@ -29,9 +29,9 @@
             [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
             Cette section doit mentionner l"Analgésie au cours du travail" (MED-168).
         </assert>
-        <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='MED-169'"> 
+        <assert test="cda:component/cda:section[cda:templateId/@root='1.3.6.1.4.1.19376.1.7.3.1.1.13.7']/cda:entry/cda:observation/cda:code/@code='57071-3'"> 
             [S_laborAndDelivery_CSE-CS8] Erreur de conformité : 
-            Cette section doit mentionner la "Méthode d'accouchement" (MED-169).
+            Cette section doit mentionner la "Méthode d'accouchement" (57071-3).
         </assert>
     </rule>
 </pattern>

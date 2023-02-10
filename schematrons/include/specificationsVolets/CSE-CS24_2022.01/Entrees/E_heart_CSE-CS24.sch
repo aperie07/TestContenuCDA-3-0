@@ -24,7 +24,7 @@
         </assert>
         
         <!-- Observation: autre pathologie -->
-        <assert test='(.//cda:entry/cda:observation/cda:value/@code="GEN-097")'>
+        <assert test='(.//cda:entry/cda:observation/cda:value/@code="GEN-092.01.02")'>
             [E_heart_CSE-CS24] Erreur de conformité : 
             L'absence ou la présence d'une autre affection du système cardiovasculaire est obligatoire.
         </assert>

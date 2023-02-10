@@ -34,9 +34,9 @@
         </assert>
         
         <!-- Vérifier que l'entrée 'Autre' est présente -->
-        <assert test='.//cda:entry/cda:observation/cda:value/@code="GEN-097"'>
+        <assert test='.//cda:entry/cda:observation/cda:value/@code="GEN-092.01.02"'>
             [E_generalApp_CSE-CS24] Erreur de conformité : 
-            L'entrée FR-Probleme de code "GEN-097" est obligatoire pour indiquer l'absence ou la présence d'une autre anomalie.
+            L'entrée FR-Probleme de code "GEN-092.01.02" est obligatoire pour indiquer l'absence ou la présence d'une autre anomalie.
         </assert>
         
     </rule>

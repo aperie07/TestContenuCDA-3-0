@@ -31,7 +31,7 @@
             @code="ORG-086" or
             @code="O24.4" or
             @code="O13" or
-            @code="MED-165" or
+            @code="O99" or
             @code="ORG-077" or
             @code="29463-7" or
             @code="8302-2"
@@ -84,7 +84,7 @@
             [E_pregnancyHistory_CSE-CS8] Erreur de conformité :
             L'élément "Diabète sucré survenant au cours de la grossesse" est un booléen (@xsi:type="BL").
         </assert>
-        <assert test='not(cda:code[@code="MED-165"]) or cda:value[@xsi:type="BL"]'>
+        <assert test='not(cda:code[@code="O99"]) or cda:value[@xsi:type="BL"]'>
             [E_pregnancyHistory_CSE-CS8] Erreur de conformité :
             L'élément "Autre pathologie en cours de grossesse" est un booléen (@xsi:type="BL").
         </assert>

@@ -28,8 +28,8 @@
         </assert>
         
         <!-- Vérifier que l'entrée 'Autre anomalie' est présente -->
-        <assert test='.//cda:entry/cda:observation/cda:value/@code="GEN-097"'>
-            [E_generalApp_CSE-CS8] Erreur de conformité : L'entrée FR-Probleme de code "GEN-097" est obligatoire pour indiquer l'absence ou la présence d'Autre anomalie.
+        <assert test='.//cda:entry/cda:observation/cda:value/@code="GEN-092.01.02"'>
+            [E_generalApp_CSE-CS8] Erreur de conformité : L'entrée FR-Probleme de code "GEN-092.01.02" est obligatoire pour indiquer l'absence ou la présence d'Autre anomalie.
         </assert>
         
         <!-- Vérifier que l'entrée 'Trisomie 21' est présente -->
@@ -43,7 +43,7 @@
         </assert>
         
         <!-- Vérifier que l'entrée FR-Certitude est présente dans l'entrée 'Autre anomalie' -->
-        <assert test='.//cda:entry/cda:observation[cda:templateId/@root="1.2.250.1.213.1.1.3.37" and cda:value/@code="GEN-097"]/cda:entryRelationship/cda:observation[cda:templateId/@root="1.2.250.1.213.1.1.3.171"]/cda:code/@code="66455-7"'>
+        <assert test='.//cda:entry/cda:observation[cda:templateId/@root="1.2.250.1.213.1.1.3.37" and cda:value/@code="GEN-092.01.02"]/cda:entryRelationship/cda:observation[cda:templateId/@root="1.2.250.1.213.1.1.3.171"]/cda:code/@code="66455-7"'>
             [E_generalApp_CSE-CS8] Erreur de conformité : L'entrée FR-Certitude de code "66455-7" est obligatoire dans l'entrée 'Autre anomalie'.
         </assert>
         
