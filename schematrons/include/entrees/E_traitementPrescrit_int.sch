@@ -112,8 +112,8 @@
             </assert>       
             
             <!-- Test du repeatNumber : si pas de renouvellement autorisé, value=0 ; si pas limité (période renouvellement fournie), alors @nullFlavor=NI -->
-            <assert test="(//cda:entry/cda:substanceAdministration[cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.2']]/cda:repeatNumber[@value&gt;=0]) 
-                or (//cda:entry/cda:substanceAdministration[cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.2']]/cda:repeatNumber[@nullFlavor='NI'])">
+            <assert test="(//cda:substanceAdministration[cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.2']]/cda:repeatNumber[@value&gt;=0]) 
+                or (//cda:substanceAdministration[cda:templateId[@root='1.3.6.1.4.1.19376.1.9.1.3.2']]/cda:repeatNumber[@nullFlavor='NI'])">
                 
                 [8] [E_traitementPrescrit_int.sch] Erreur de conformité IHE Pharm PRE : 
                 L'élément 'repeatNumber' est obligatoire pour l'entrée "Prescription Item Entry Content Module" et doit avoir une valeur d'attribut. Selon la situation :
