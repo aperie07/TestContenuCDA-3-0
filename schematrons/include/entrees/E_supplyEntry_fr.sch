@@ -41,12 +41,8 @@
         <assert test="$count_performer&lt;=1">
             [E_supplyEntry_fr.sch] Errreur de conformité CI-SIS: L'élément supply ne doit contenir qu'un élément 'performer' au maximum (cardinalité [0..1])
         </assert>
-        <assert test="$count_entryRelationShip&lt;=1">
-            [E_supplyEntry_fr.sch] Errreur de conformité CI-SIS: L'élément supply ne doit contenir qu'un élément 'entryRelationShip' au maximum (cardinalité [0..1])
-        </assert>
-        
         <assert test="not(cda:entryRelationship) or (cda:entryRelationship and cda:entryRelationship[@typeCode='SUBJ']/cda:act/cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1'])">
-            [E_supplyEntry_fr.sch] Errreur de conformité CI-SIS: Si l'élément supply conttient un entryRelationship, il doit avoir la forme suivante : entryRelationship[@typeCode='SUBJ']/act/templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1'])
+            [E_supplyEntry_fr.sch] Errreur de conformité CI-SIS: Si l'élément supply contient un entryRelationship, il doit avoir la forme suivante : entryRelationship[@typeCode='SUBJ']/act/templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1'])
         </assert>
        
        
