@@ -419,8 +419,8 @@
                             <text><reference value="#statutDoc"/></text>
                             <statusCode code="completed"/>
                             <effectiveTime value="20181203"/>
-                            <value xsi:type="CD" code="GEN-066" displayName="En cours"
-                                codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                            <value xsi:type="CD" code="385651009" displayName="en cours d'exécution"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         </observation>
                     </entry>
                 </section>
@@ -583,7 +583,7 @@
                             <text><reference value="modaliteS"/></text>
                             <statusCode code="completed"/>
                             <effectiveTime value="20181203"/>
-                            <value xsi:type="CE" code="ORG-073" displayName="Autre établissement de santé"
+                            <value xsi:type="CE" code="GEN-092.06.01" displayName="Autre établissement de santé"
                                 codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
                         </observation>
                     </entry>

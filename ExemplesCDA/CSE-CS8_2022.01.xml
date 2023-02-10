@@ -1109,8 +1109,8 @@
                      <text><reference value="#CS8_6"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
-                     <value xsi:type="CD" code="GEN-094" displayName="1er trimestre"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                     <value xsi:type="CD" code="57630001" displayName="premier trimestre de la grossesse"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   </observation>
                </entry>
                
@@ -1201,8 +1201,8 @@
                      <!-- Conformité FR-Observation-sur-la-grossesse (CI-SIS) -->
                      <templateId root="1.2.250.1.213.1.1.3.53"/>
                      <id root="582BB12C-7B63-11EB-9439-0242AC130026"/>
-                     <code code="MED-165" displayName="Autre complication de la grossesse"
-                        codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                     <code code="O99" displayName="Autres maladies de la mère classées ailleurs, mais compliquant la grossesse, l'accouchement et la puerpéralité"
+                        codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10"/>
                      <text><reference value="#autrePatho"/></text>
                      <statusCode code="completed"/>
                      <effectiveTime nullFlavor="NA"/>
@@ -1680,8 +1680,8 @@
                            <!-- Conformité FR-Simple-Observation (CI-SIS) -->
                            <templateId root="1.2.250.1.213.1.1.3.48"/>
                            <id root="582BB12C-7B63-11EB-9439-0242AC130048"/>
-                           <code code="MED-169" displayName="Méthode d'accouchement"
-                              codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+                           <code code="57071-3" displayName="Méthode d'accouchement"
+                              codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                            <text><reference value="#typeAccou"/></text>
                            <statusCode code="completed"/>
                            <effectiveTime value="20210425"/>
@@ -2092,10 +2092,8 @@
                                  <effectiveTime>
                                     <low nullFlavor="UNK"/>
                                  </effectiveTime>
-                                 <value xsi:type="CD" code="GEN-097"
-                                    displayName="Autre (préciser)"
-                                    codeSystem="1.2.250.1.213.1.1.4.322"
-                                    codeSystemName="TA_ASIP">
+                                 <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
+                                    codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                                     <originalText>
                                        <reference value="#autreAnomalie"/>
                                     </originalText>
@@ -2868,7 +2866,7 @@
                                  <effectiveTime>
                                     <low nullFlavor="UNK"/>
                                  </effectiveTime>
-                                 <value xsi:type="CD" code="MED-171"
+                                 <value xsi:type="CD" code="GEN-092.01.11"
                                     displayName="Autres pathologies de la 1ère semaine"
                                     codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                                     <originalText><reference value="#autrePatho"/></originalText>

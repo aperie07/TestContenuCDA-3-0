@@ -994,12 +994,14 @@
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <manufacturedMaterial>
-                    <!-- code CIP ou UCD -->
-                    <code code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
-                      codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
+                    
+                    <code>
                       <originalText mediaType="text/xml">
                         <reference value="#acte-01-traitement"/>
                       </originalText>
+                      <!-- code CIP ou UCD -->
+                      <translation code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
+                        codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
                       <!-- code ATC -->
                       <translation code="V08AB11" displayName="IOBITRIDOL" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                     </code>
@@ -1194,11 +1196,12 @@
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (1.2.250.1.213.1.1.5.695)  -->  
-                        <code code="V09AX01" displayName="111In-indium acide pentétique"
-                          codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
+                        <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-01-radiopharmaceutique"/>
                           </originalText>
+                          <translation code="V09AX01" displayName="111In-indium acide pentétique"
+                            codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                         </code>                        
                         <name>111In-indium acide pentétique</name>
                         <lotNumberText>0001512</lotNumberText>
@@ -1469,14 +1472,15 @@
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <manufacturedMaterial>
-                    <!-- code CIP ou UCD -->
-                    <code code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
-                      codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
+                    <code>
                       <originalText mediaType="text/xml">
                         <reference value="#acte-02-traitement"/>
                       </originalText>
                       <!-- code ATC -->
                       <translation code="V08AB11" displayName="IOBITRIDOL" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                      <!-- code CIP ou UCD -->
+                      <translation code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
+                        codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
                     </code>
                     <name>XENETIX 350</name>
                     <lotNumberText>0002034</lotNumberText>
@@ -1702,11 +1706,12 @@
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (APE : préciser l'OID du JDV)  --> 
-                        <code code="V09AX01" displayName="111In-indium acide pentétique"
-                          codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
+                        <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-02-radiopharmaceutique"/>
                           </originalText>
+                          <translation code="V09AX01" displayName="111In-indium acide pentétique"
+                            codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                         </code>                        
                         <name>111In-indium acide pentétique</name>
                         <lotNumberText>0001512</lotNumberText>
@@ -1978,14 +1983,15 @@
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <manufacturedMaterial>
-                    <!-- code CIP ou UCD -->
-                    <code code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
-                      codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP">
+                    <code >
                       <originalText mediaType="text/xml">
                         <reference value="#acte-03-traitement"/>
                       </originalText>
                       <!-- code ATC -->
                       <translation code="V08AB11" displayName="IOBITRIDOL" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                      <!-- code CIP ou UCD -->
+                      <translation code="3400936915657" displayName="XENETIX 350 SOL INJ POC150ML PP"
+                        codeSystem="1.2.250.1.213.2.3.2" codeSystemName="CIP"/>
                     </code>
                     <name>XENETIX 350</name>
                     <lotNumberText>0002034</lotNumberText>
@@ -2212,11 +2218,12 @@
                     <manufacturedProduct classCode="MANU">
                       <manufacturedMaterial>
                         <!-- valeur issue du JDV_Radiopharmaceutique-CISIS (APE : préciser l'OID du JDV)  -->
-                        <code code="V09AX01" displayName="111In-indium acide pentétique"
-                          codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC">
+                        <code>
                           <originalText mediaType="text/xml">
                             <reference value="#acte-03-radiopharmaceutique"/>
                           </originalText>
+                          <translation  code="V09AX01" displayName="111In-indium acide pentétique"
+                            codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                         </code>                        
                         <name>111In-indium acide pentétique</name>
                         <lotNumberText>0001512</lotNumberText>

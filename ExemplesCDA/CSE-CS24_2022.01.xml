@@ -1025,8 +1025,8 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="MED-206"
-                              displayName="Autres accidents domestiques"
+                           <value xsi:type="CD" code="GEN-092.01.13"
+                              displayName="Autre(s) accident(s) domestique(s)"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="autreAcc"/>-</originalText>
                            </value>
@@ -1420,7 +1420,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie"/></originalText>
                            </value>
@@ -1549,7 +1549,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-systeme-nerveux"/></originalText>
                            </value>
@@ -1644,7 +1644,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-systeme-cardiovasculaire"/></originalText>
                            </value>
@@ -1769,7 +1769,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-systeme-respiratoire"/></originalText>
                            </value>
@@ -1862,7 +1862,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-systeme-digestif"/></originalText>
                            </value>
@@ -2078,7 +2078,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-systeme-uro-genital"/></originalText>
                            </value>
@@ -2168,7 +2168,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-musculo-squelettique"/></originalText>
                            </value>
@@ -2260,7 +2260,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-systeme-tegumentaire"/></originalText>
                            </value>
@@ -2597,7 +2597,7 @@
                            <effectiveTime>
                               <low nullFlavor="UNK"/>
                            </effectiveTime>
-                           <value xsi:type="CD" code="GEN-097" displayName="Autre (préciser)"
+                           <value xsi:type="CD" code="GEN-092.01.02" displayName="Autre pathologie"
                               codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP">
                               <originalText><reference value="#autre-anomalie-hemato"/></originalText>
                            </value>

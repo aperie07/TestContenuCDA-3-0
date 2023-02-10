@@ -1493,7 +1493,7 @@
               <!-- Conformité CI-SIS Simple Observation -->
               <templateId root="1.2.250.1.213.1.1.3.48" />
               <id root="8DCEB2C9-BDFA-46BB-AC4C-980FFF7285D6" />
-              <code code="MED-510" displayName=" Autre infection" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <code code="GEN-092.01.14" displayName="Autre infection" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
               <text>
                 <reference value="autreInfect">
                 </reference>
@@ -2730,7 +2730,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime value="20181011232000+0100" />
-              <value xsi:type="CD" code="GEN-068" displayName="Validé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="9571008" displayName="Approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
         </section>

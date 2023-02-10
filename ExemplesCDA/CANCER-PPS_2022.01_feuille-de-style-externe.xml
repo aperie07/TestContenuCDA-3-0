@@ -3649,8 +3649,8 @@
                   <!-- Date de mise à jour du statut du document -->
                   <effectiveTime value="20210113"/>
                   <!-- Statut du document -->
-                  <value xsi:type="CD" code="GEN-068" displayName="Validé"
-                    codeSystem="1.2.250.1.213.1.1.4.322"/>
+                  <value xsi:type="CD" code="9571008" displayName="approuvé"
+                    codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   <!-- [0..1] Entrée FR-Commentaire-ER : Commentaire sur le document -->
                   <entryRelationship inversionInd="true" typeCode="SUBJ">
                     <act classCode="ACT" moodCode="EVN">

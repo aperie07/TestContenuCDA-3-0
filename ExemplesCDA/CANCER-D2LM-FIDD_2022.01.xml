@@ -695,8 +695,7 @@
               <statusCode code="completed" />
               <effectiveTime value="20210729" />
               <!-- Valeur issue du JDV_TechniqueBilan-CISIS (1.2.250.1.213.1.1.5.84) -->
-              <value xsi:type="CD" code="MED-114" displayName="Autre technique" 
-                codeSystemName="TA_ASIP" codeSystem="1.2.250.1.213.1.1.4.322" />
+              <value xsi:type="CD" code="OT" displayName="Autre technique d'imagerie" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" />
             </observation>
           </entry>
           

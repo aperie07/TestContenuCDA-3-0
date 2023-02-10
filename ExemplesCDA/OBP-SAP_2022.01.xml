@@ -2059,7 +2059,7 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA" />
                       <!-- valeur issue du JDV_EtatNaissance-CISIS (1.2.250.1.213.1.1.4.2.289.6) -->
-                      <value xsi:type="CD" code="OBS_111" displayName="Vivant" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS"/>
+                      <value xsi:type="CD" code="281050002" displayName="naissance vivante" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     </observation>
                   </component>
                   <!-- [1..1] FR-Observation-sur-la-grossesse : Transfert ou mutation -->
@@ -2255,7 +2255,7 @@
                   </code>
                   <statusCode code="completed" />
                   <effectiveTime value="20060321063000" />
-                  <value xsi:type="CE" code="OBS_263" displayName="A Positif" codeSystem="1.2.250.1.213.1.1.4.2.289" codeSystemName="TA_OBS" />
+                  <value xsi:type="CE" code="278149003" displayName="groupe sanguin A positif" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                   <!-- Référence à un document -->
                   <entryRelationship typeCode="SPRT">
                     <act classCode="ACT" moodCode="EVN">
@@ -2693,7 +2693,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime value="20110314" />
-              <value xsi:type="CD" code="GEN-068" displayName="Validé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="9571008" displayName="approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
         </section>

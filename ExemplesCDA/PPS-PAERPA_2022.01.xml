@@ -1224,7 +1224,7 @@
               <!-- Date du statut du document -->
               <effectiveTime value="20210824" />
               <!-- Statut du document -->
-              <value xsi:type="CD" code="GEN-068" displayName="Validé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP"/>
+              <value xsi:type="CD" code="9571008" displayName="approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             </observation>
           </entry>
         </section>

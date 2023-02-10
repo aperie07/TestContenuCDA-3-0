@@ -683,7 +683,7 @@
               <effectiveTime>
                 <low value="20181003" />
               </effectiveTime>
-              <value xsi:type="CD" code="ORG-073" displayName="Autre Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="GEN-092.06.01" displayName="Autre Etablissement de santé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
             </observation>
           </entry>
           <!-- Destination -->
@@ -887,7 +887,7 @@
               </text>
               <statusCode code="completed" />
               <effectiveTime value="20180923232000+0100" />
-              <value xsi:type="CD" code="GEN-068" displayName="Validé" codeSystem="1.2.250.1.213.1.1.4.322" codeSystemName="TA_ASIP" />
+              <value xsi:type="CD" code="9571008" displayName="Approuvé" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
         </section>
