@@ -2115,7 +2115,7 @@
                         discuter en staff moléculaire.<br /></item>
                       <!-- Mutation de valeur prédictive indéterminée -->
                       <item>Présence d'une mutation du gène <content ID="Gene2" styleCode="Bold">NRAS</content> de
-                        valeur prédictive indéterminée de réponse à la classe des <content ID="ClasseTherapie2" styleCode="Bold">Anticorps monoclonaux</content>.<br /></item>
+                        valeur prédictive indéterminée de réponse à la classe des <content ID="ClasseTherapie2" styleCode="Bold">anticorps monoclonaux et conjugués anticorps-médicaments</content>.<br /></item>
                       
                       <!-- Commentaire -->
                       <!--item>Commentaire sur les résultats avec une mutation observée : <content ID="comments2"> ..........</content>.<br/></item-->
@@ -2261,7 +2261,7 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA"/>
                       <!-- Classe de thérapie ciblée -->
-                      <value xsi:type="CD" code="L01XE" displayName="Inhibiteurs de la protéine kinase" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
+                      <value xsi:type="CD" code="L01E" displayName="Inhibiteurs de la protéine kinase" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
                     </observation>
                   </entryRelationship>
                 </observation>
@@ -2319,7 +2319,7 @@
                       <statusCode code="completed" />
                       <effectiveTime nullFlavor="NA"/>
                       <!-- Classe de thérapie -->
-                      <value xsi:type="CD" code="L01XC" displayName="Anticorps monoclonaux" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
+                      <value xsi:type="CD" code="L01F" displayName="anticorps monoclonaux et conjugués anticorps-médicaments" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" />
                     </observation>
                   </entryRelationship>
                 </observation>
